@@ -228,6 +228,19 @@ section {
 	text-align: right;
 }
 
+@media only screen and (max-width: 767px) {
+	.hero {
+	background: #C6131E;
+	padding:0 30px;
+	max-height:100vh;
+	}
+	.hero a {
+	color:#ffffff;
+	}
+	.hero h1 {
+	font-size: 4em;
+	}
+}
 
 /* ------ BLOG POST SECTION ------------------------------- */
 
@@ -682,8 +695,6 @@ section {
 	line-height: .9em;
 	padding:15px 0;
 }
-
-
 .staff_grid h2 {
 	font-size: 50px;
 	line-height: 1em;
@@ -694,19 +705,61 @@ section {
 	font-size: 16px;
 	/*line-height: .7em;*/
 }
-.team_socials {
-	padding:15px 0px;
+
+/*.team_socials {	padding:15px 0px;}
+.team_socials ul li {	display:inline;	padding:5px;}
+.team_socials a {	color: #C6131E;}
+.team_socials a:hover {	color:red;}*/
+
+@media only screen and (max-width: 767px) {
+		.staff_grid {
+		/*padding:75px;*/
+		display: grid;
+		justify-content: space-between;
+		grid-template-columns: repeat(2, 1fr);
+		border: 2px dotted #ff00ff;
+	}
+	/*.staff_profiles_row {
+		display: flex;
+		justify-content: space-between;
+		padding:35px 0px;
+	}*/
+	.staff_grid .photo { /*not working*/
+		padding:0;
+		margin:0;
+	}
+	.staff_member {
+		min-width:50%;
+		/*padding:0px 18px;*/
+	}
+	.staff_grid .city {
+		color: #C6131E;
+		text-transform: uppercase;
+		font-size: 14px;
+		line-height: 1em;
+	}
+	.staff_grid h4 {
+		font-family: adobe-garamond-pro, serif;
+		font-weight: 400;
+		/*font-style: normal;*/
+		font-size: 25px;
+		color: #000000!important;
+		line-height: .9em;
+		/*padding:15px 0;*/
+	}
+	.staff_grid h2 {
+		font-size: 25px;
+		line-height: 1.3em;
+		color: #000000;
+	}
+	.staff_grid h3 {
+		color:#C6131E;
+		font-size: 14px;
+		/*line-height: .7em;*/
+	}
 }
-.team_socials ul li {
-	display:inline;
-	padding:5px;
-}
-.team_socials a {
-	color: #C6131E;
-}
-.team_socials a:hover {
-	color:red;
-}
+
+
 
 
 /* --- @CONTACT PAGE ------------------------- */
@@ -795,5 +848,13 @@ footer a {
 }
 .footer_socials a:hover {
 	color:red;
+}
+
+@media only screen and (max-width: 767px) {
+	.footer_layout {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		
+	}
 }
 /* === END FOOTER STYLES ========================================== */
