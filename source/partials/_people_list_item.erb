@@ -1,0 +1,12 @@
+<div class="person"> 
+  <div class="photo">
+    <%= image_tag person.photo.url + "?w=460&h=460&fit=thumb" %>
+  </div>
+  
+  <div class="overview">
+    <h4><%= person.name %></h4>
+    <% if !person.location.blank? %>
+      <span class="city"><%= person.location %></span>
+    <% end %>
+  </div>  
+</div>

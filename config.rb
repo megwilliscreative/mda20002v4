@@ -47,27 +47,54 @@ activate :livereload
 #   activate :minify_javascript
 # end
 
+
+
+# helpers
+# require "lib/common_helpers"
+# require "lib/video_helpers"
+# require "lib/content_block_helpers"
+# require "lib/speaker_helpers"
+# require "lib/event_helpers"
+# require "lib/post_helpers"
+# require "lib/podcast_helpers"
+require "lib/people_helpers"
+# require "lib/value_helpers"
+# require "lib/announcement_helpers"
+# helpers CommonHelpers
+# helpers VideoHelpers
+# helpers ContentBlockHelpers
+# helpers SpeakerHelpers
+# helpers EventHelpers
+# helpers PostHelpers
+# helpers PodcastHelpers
+helpers PeopleHelpers
+# helpers ValueHelpers
+# helpers AnnouncementHelpers
+
+
+
+
 # contentful integration !! copied from previous
-# activate :contentful do |f|
-#   f.space         = { website: ENV['MD_CONTENTFUL_SPACE_ID'] }
-#   f.access_token  = ENV['MD_CONTENTFUL_API_KEY']
-#   f.cda_query     = { include: 1, order: 'sys.createdAt' }
-#   f.all_entries = true
-#   f.content_types = { 
-#     book: 'book', 
-#     video: 'video',
-#     supporter: 'supporter',
-#     contentBlock: 'contentBlock',
-#     speaker: 'speaker',
-#     event: 'event',
-#     post: 'post',
-#     person: 'person',
-#     value: 'value',
-#     podcastEpisode: 'podcastEpisode',
-#     announcement: 'announcement'
-#   }
-#   f.use_preview_api = !ENV['MD_CONTENTFUL_USE_PREVIEW'].nil? && ENV['MD_CONTENTFUL_USE_PREVIEW'] == "true"
-# end
+activate :contentful do |f|
+  f.space         = { website: ENV['MD_CONTENTFUL_SPACE_ID'] }
+  f.access_token  = ENV['MD_CONTENTFUL_API_KEY']
+  f.cda_query     = { include: 1, order: 'sys.createdAt' }
+  f.all_entries = true
+  f.content_types = { 
+    book: 'book', 
+    video: 'video',
+    supporter: 'supporter',
+    contentBlock: 'contentBlock',
+    speaker: 'speaker',
+    event: 'event',
+    post: 'post',
+    person: 'person',
+    value: 'value',
+    podcastEpisode: 'podcastEpisode',
+    announcement: 'announcement'
+  }
+  f.use_preview_api = !ENV['MD_CONTENTFUL_USE_PREVIEW'].nil? && ENV['MD_CONTENTFUL_USE_PREVIEW'] == "true"
+end
 
 # if Dir.exist?(config.data_dir + "/website")
 #   # events

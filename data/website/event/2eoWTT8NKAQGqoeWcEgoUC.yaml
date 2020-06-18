@@ -1,0 +1,293 @@
+---
+:id: 2eoWTT8NKAQGqoeWcEgoUC
+:_meta:
+  :content_type_id: event
+  :updated_at: '2019-02-21T05:47:46+00:00'
+  :created_at: '2018-09-05T06:35:18+00:00'
+  :id: 2eoWTT8NKAQGqoeWcEgoUC
+:title: Movement Day Perth
+:sub_title: City event
+:slug: movement-day-perth
+:hero_image:
+  :title: MD-Perth
+  :description: 
+  :url: "//images.ctfassets.net/4oc5oe1vkkeh/35j6vnDEreo6qIKCocGuYS/e5b2087cc9d386069c32d3ec04d3428e/md_perth2.jpg"
+  :_meta:
+    :updated_at: '2019-02-14T06:29:48+00:00'
+    :created_at: '2018-09-05T06:34:28+00:00'
+    :id: 35j6vnDEreo6qIKCocGuYS
+:hero_video: https://player.vimeo.com/video/317400140?color=ffffff&title=0&byline=0&portrait=0&autoplay=1
+:year: '2019'
+:date_from: !ruby/object:DateTime 2019-05-03 09:00:00.000000000 Z
+:date_to: !ruby/object:DateTime 2019-05-04 17:00:00.000000000 Z
+:location: |-
+  Mount Pleasant Baptist Church<br/>
+  497 Marmion St, Booragoon
+:city:
+  :id: 6os5jPbYJiagyqUUeEyAU6
+  :_meta:
+    :content_type_id: city
+    :updated_at: '2018-09-05T06:34:58+00:00'
+    :created_at: '2018-09-05T06:34:58+00:00'
+    :id: 6os5jPbYJiagyqUUeEyAU6
+  :name: Perth
+  :state_region: WA
+  :country: Australia
+:cost: "$70 - One day registration"
+:colour_scheme: blue
+:sections:
+- :id: 2MCrZs9cRMiHX2o25LR3YK
+  :_meta:
+    :content_type_id: eventAboutSection
+    :updated_at: '2019-02-15T08:19:44+00:00'
+    :created_at: '2019-02-15T08:19:44+00:00'
+    :id: 2MCrZs9cRMiHX2o25LR3YK
+  :title: About
+  :introduction: Movement Day exists to convene ministry, marketplace and non-profit
+    leaders to impact cities through gospel movements by forming high-level, city-changing,
+    collaborative partnerships.
+- :id: 3cUOF17ktHEvivXpi7RRIv
+  :_meta:
+    :content_type_id: eventSpeakersSection
+    :updated_at: '2019-02-15T06:52:29+00:00'
+    :created_at: '2019-02-15T03:32:43+00:00'
+    :id: 3cUOF17ktHEvivXpi7RRIv
+  :title: Speakers
+  :introduction: The following speakers will be sharing short talks, interviews and
+    sit on panels. Sessions will be supported by multimedia. Speakers will be released
+    periodically.
+  :speakers:
+  - :id: 5B2OyFmfdY8AgiAQsm2Ie4
+    :_meta:
+      :content_type_id: person
+      :updated_at: '2019-11-18T23:57:42+00:00'
+      :created_at: '2018-06-18T03:54:16+00:00'
+      :id: 5B2OyFmfdY8AgiAQsm2Ie4
+    :name: Nick Scott
+    :photo:
+      :title: nick-scott
+      :description: 
+      :url: "//images.ctfassets.net/4oc5oe1vkkeh/7MWLvmKPu9HIpf0NIjuHd9/18f161bb54a4744655aa6bab508e767e/nick-scott.png"
+      :_meta:
+        :updated_at: '2019-01-24T05:46:40+00:00'
+        :created_at: '2019-01-24T05:46:40+00:00'
+        :id: 7MWLvmKPu9HIpf0NIjuHd9
+    :role: Senior Pastor
+    :organisation: Mount Pleasant Baptist Church
+    :location: Perth
+    :short_biography: 'Nick is the Senior Pastor of Mount Pleasant Baptist Church, '
+    :full_biography: Nick is the Senior Pastor of Mount Pleasant Baptist Church, a
+      large, thriving church in the inner southern suburbs of Perth, Western Australia.
+      One of Nick’s great passions is for unity across the full spectrum of the Body
+      of Christ. He is actively involved in various networks across the city of Perth,
+      which encourage prayer and unity between pastors and leaders, breaking down
+      barriers between denominations.
+    :tags:
+    - Committee Member
+  - :id: 6pbdeRkNAzSz7kUhyXVp7b
+    :_meta:
+      :content_type_id: person
+      :updated_at: '2019-02-15T06:50:35+00:00'
+      :created_at: '2019-02-15T06:50:19+00:00'
+      :id: 6pbdeRkNAzSz7kUhyXVp7b
+    :name: Adam Meredith
+    :photo:
+      :title: Dale Meredith
+      :description: 
+      :url: "//images.ctfassets.net/4oc5oe1vkkeh/IXBbc27hu0tQ6AmqoZCyK/b19b63ec45570e6f358f9ee7d1cdc6a6/adam-meredith.png"
+      :_meta:
+        :updated_at: '2019-03-15T07:42:28+00:00'
+        :created_at: '2019-02-15T06:44:20+00:00'
+        :id: IXBbc27hu0tQ6AmqoZCyK
+    :role: Senior Minister
+    :organisation: The Red Door Community Church
+    :location: Perth
+    :short_biography: Adam currently serves as Senior Minister at The Red Door Community
+      Church
+    :full_biography: Adam currently serves as Senior Minister at The Red Door Community
+      Church in Cockburn Central since 2012 alongside his wife Dale, and before that
+      from 2000 he served in various ministry roles at Riverview Church. He is a father
+      of three teenage children who enjoys discovering creative ways to communicate
+      the truth of the Gospel and the person of Jesus. He is passionate about cultivating
+      unity in the body of Christ in Perth and beyond.  [www.thereddoor.cc](https://www.thereddoor.cc)
+  - :id: 6JWxZswCfSs2UYUK6qO6Kg
+    :_meta:
+      :content_type_id: person
+      :updated_at: '2020-02-18T04:15:09+00:00'
+      :created_at: '2018-06-18T03:52:37+00:00'
+      :id: 6JWxZswCfSs2UYUK6qO6Kg
+    :name: Ian Shelton
+    :photo:
+      :title: ian-shelton
+      :description: 
+      :url: "//images.ctfassets.net/4oc5oe1vkkeh/2uhX7fCxxdMfJIHpAbljzk/665456a4be09992a93e34afb3d94dd71/ian-shelton.png"
+      :_meta:
+        :updated_at: '2019-01-24T02:10:58+00:00'
+        :created_at: '2019-01-24T02:10:58+00:00'
+        :id: 2uhX7fCxxdMfJIHpAbljzk
+    :role: CEO
+    :organisation: Movement.org.au
+    :location: Toowoomba
+    :tags:
+    - Committee Member
+- :id: 1u8RWEZd6anYnFDvzvzKj6
+  :_meta:
+    :content_type_id: eventScheduleSection
+    :updated_at: '2019-02-15T04:22:21+00:00'
+    :created_at: '2019-02-15T04:22:21+00:00'
+    :id: 1u8RWEZd6anYnFDvzvzKj6
+  :title: Schedule
+  :introduction: "\n"
+  :days:
+  - :id: 1yDdSZH4PJ1yaW8hfvlHMH
+    :_meta:
+      :content_type_id: scheduleDay
+      :updated_at: '2019-02-15T04:32:06+00:00'
+      :created_at: '2019-02-15T04:20:25+00:00'
+      :id: 1yDdSZH4PJ1yaW8hfvlHMH
+    :day: Friday 3rd May
+    :activities:
+    - :id: 4fIsIZi4fVQpX6l5NzwVBT
+      :_meta:
+        :content_type_id: scheduleActivity
+        :updated_at: '2019-02-22T03:01:22+00:00'
+        :created_at: '2019-02-15T04:20:08+00:00'
+        :id: 4fIsIZi4fVQpX6l5NzwVBT
+      :title: Diversity Dinner
+      :time: 6:30 PM
+      :description: |-
+        In partnership with *[Perth Together](https://www.facebook.com/perthtogether)*<br/>
+        6:30pm for 7:00pm start
+    :further_information: Pan Pacific Hotel
+  - :id: 283IkRQFZkB7iFShx03f5j
+    :_meta:
+      :content_type_id: scheduleDay
+      :updated_at: '2019-02-15T04:32:56+00:00'
+      :created_at: '2019-02-15T04:17:15+00:00'
+      :id: 283IkRQFZkB7iFShx03f5j
+    :day: Saturday 4th May
+    :activities:
+    - :id: 53eiucjUCsAW6lKVwLyh7B
+      :_meta:
+        :content_type_id: scheduleActivity
+        :updated_at: '2019-02-15T04:08:10+00:00'
+        :created_at: '2019-02-15T04:08:10+00:00'
+        :id: 53eiucjUCsAW6lKVwLyh7B
+      :title: Registration
+      :time: '08:00 AM'
+      :description: Registration opens at 8am for an 9am start
+    - :id: 76DGFD25z1EO1pP8RCJtY5
+      :_meta:
+        :content_type_id: scheduleActivity
+        :updated_at: '2019-02-15T04:08:47+00:00'
+        :created_at: '2019-02-15T04:08:47+00:00'
+        :id: 76DGFD25z1EO1pP8RCJtY5
+      :title: Worship
+      :time: '09:00 AM'
+    - :id: 5GplCq9G2v3zK5dId23Xdj
+      :_meta:
+        :content_type_id: scheduleActivity
+        :updated_at: '2019-02-15T04:35:02+00:00'
+        :created_at: '2019-02-15T04:10:49+00:00'
+        :id: 5GplCq9G2v3zK5dId23Xdj
+      :title: Plenary Session
+      :time: '09:30 AM'
+      :description: Speakers to be announced
+    - :id: 6z2ZVuVp5seZXwZNQz9lnn
+      :_meta:
+        :content_type_id: scheduleActivity
+        :updated_at: '2019-02-15T04:11:28+00:00'
+        :created_at: '2019-02-15T04:11:28+00:00'
+        :id: 6z2ZVuVp5seZXwZNQz9lnn
+      :title: Morning Tea
+      :time: 11:30 AM
+    - :id: 4zcc9xtPUAuuujpNxqwZJw
+      :_meta:
+        :content_type_id: scheduleActivity
+        :updated_at: '2019-02-15T04:12:14+00:00'
+        :created_at: '2019-02-15T04:12:14+00:00'
+        :id: 4zcc9xtPUAuuujpNxqwZJw
+      :title: Plenary Session
+      :time: 11:30 AM
+      :description: Speakers to be announced
+    - :id: BMARBKmH4B6bTEBiwluPA
+      :_meta:
+        :content_type_id: scheduleActivity
+        :updated_at: '2019-02-15T04:13:18+00:00'
+        :created_at: '2019-02-15T04:13:18+00:00'
+        :id: BMARBKmH4B6bTEBiwluPA
+      :title: Lunch
+      :time: 12:30 PM
+    - :id: 2YmQ8EkAB8J1iULJeyYVfz
+      :_meta:
+        :content_type_id: scheduleActivity
+        :updated_at: '2019-02-15T04:14:57+00:00'
+        :created_at: '2019-02-15T04:14:57+00:00'
+        :id: 2YmQ8EkAB8J1iULJeyYVfz
+      :title: Plenary Session
+      :time: 1:30 PM
+      :description: Speakers to be announced
+    - :id: 6P5yFloTrPIGpXULNDXBTe
+      :_meta:
+        :content_type_id: scheduleActivity
+        :updated_at: '2019-02-15T04:15:57+00:00'
+        :created_at: '2019-02-15T04:15:57+00:00'
+        :id: 6P5yFloTrPIGpXULNDXBTe
+      :title: Afternoon Tea
+      :time: 2:30 PM
+    - :id: 4G0mYdEfmUVmBXW7IS4iAj
+      :_meta:
+        :content_type_id: scheduleActivity
+        :updated_at: '2019-02-15T04:16:36+00:00'
+        :created_at: '2019-02-15T04:16:36+00:00'
+        :id: 4G0mYdEfmUVmBXW7IS4iAj
+      :title: Plenary Session
+      :time: 3:00 PM
+      :description: Speakers to be announced
+    - :id: 6yGUe1JdAmS0wxOTDvw3pm
+      :_meta:
+        :content_type_id: scheduleActivity
+        :updated_at: '2019-02-15T04:17:01+00:00'
+        :created_at: '2019-02-15T04:17:01+00:00'
+        :id: 6yGUe1JdAmS0wxOTDvw3pm
+      :title: Worship to close
+      :time: 4:00 PM
+    :further_information: Mount Pleasant Baptist Church
+  - :id: f2wb9c0Fhjh8YMWy15ZIW
+    :_meta:
+      :content_type_id: scheduleDay
+      :updated_at: '2019-02-15T04:22:06+00:00'
+      :created_at: '2019-02-15T04:22:06+00:00'
+      :id: f2wb9c0Fhjh8YMWy15ZIW
+    :day: Sunday 5th May
+    :activities:
+    - :id: m3HRRt1sPRLI0WfbIbnwp
+      :_meta:
+        :content_type_id: scheduleActivity
+        :updated_at: '2019-02-21T04:08:21+00:00'
+        :created_at: '2019-02-15T04:21:33+00:00'
+        :id: m3HRRt1sPRLI0WfbIbnwp
+      :title: Sunday Evening Gathering (Free)
+      :time: 5:30 PM
+      :description: Rev. Roger Sutton
+    :further_information: Mount Pleasant Baptist Church
+- :id: 6HEOzPDz6zbWBVSlMrQxsK
+  :_meta:
+    :content_type_id: eventRegistrationSection
+    :updated_at: '2019-02-26T05:01:08+00:00'
+    :created_at: '2019-02-20T04:19:47+00:00'
+    :id: 6HEOzPDz6zbWBVSlMrQxsK
+  :title: Register Here
+  :introduction: 'Movement Day Perth is a one-day event being held in Booragoon, Perth.
+    There is also a Diversity Dinner (in partnership with *[Perth Together](https://www.facebook.com/perthtogether)*)
+    the night before at the Pan Pacific Hotel. To proceed to registration and payment,
+    please select the number of registrations you require:'
+  :registration_code: movementday/perth2019
+:seo_title: Movement Day Perth 2019
+:seo_description: Movement Day Perth exists to convene ministry, marketplace and non-profit
+  leaders to impact cities through gospel movements by forming high-level, city-changing,
+  collaborative partnerships.
+:seo_keywords: movement day, city church, gospel movement, Christian leaders, city
+  transformation, transform your place, collaboration, church unity, word and deed,
+  marketplace collaboration, spheres collaborating, good news, Jesus Christ, Australia
+  , Perth

@@ -1,0 +1,228 @@
+---
+:id: 3d0GdFnoFGywca8u8kEwik
+:_meta:
+  :content_type_id: event
+  :updated_at: '2018-11-07T23:50:22+00:00'
+  :created_at: '2018-06-11T04:23:53+00:00'
+  :id: 3d0GdFnoFGywca8u8kEwik
+:title: What's Next - Round Table
+:sub_title: For those interested in starting a city gospel movement
+:slug: round-table-sydney
+:hero_image:
+  :title: RT-image
+  :description: 
+  :url: "//images.ctfassets.net/4oc5oe1vkkeh/3E53tJ8ZV6KayCaiWUUyMe/09dc535ebbfe90dc6bb35a5d9da94fd6/web-red-roundtable_1_.jpg"
+  :_meta:
+    :updated_at: '2018-09-06T03:35:54+00:00'
+    :created_at: '2018-09-05T06:30:30+00:00'
+    :id: 3E53tJ8ZV6KayCaiWUUyMe
+:year: '2018'
+:date_from: !ruby/object:DateTime 2018-10-30 12:00:00.000000000 Z
+:date_to: !ruby/object:DateTime 2018-10-30 20:30:00.000000000 Z
+:location: "Salvation Army Headquarters, \n261-265 Chalmers St, \nSydney NSW 2016"
+:city:
+  :id: 5A8JUZyHcsq2Q8qOwoY0Mw
+  :_meta:
+    :content_type_id: city
+    :updated_at: '2019-08-07T01:35:25+00:00'
+    :created_at: '2018-06-11T02:31:31+00:00'
+    :id: 5A8JUZyHcsq2Q8qOwoY0Mw
+  :name: Melbourne
+  :state_region: VIC
+  :country: Australia
+:time: 12 to 8:30 pm including lunch and afternoon tea.  At night all are invited,
+  at your own expense, to eat and fellowship together over dinner.
+:cost: A$35.00 (inc. GST)
+:description: "This Round Table is a half day of dialogue and discussion to assist
+  leaders from Church, Christian agencies, the marketplace, young and old, to further
+  develop a gospel movement in their respective communities.\n\nA gospel movement
+  flourishes in a city or town when leaders collaborate to proclaim the gospel in
+  word and deed to their respective communities. These leaders would include Church,
+  market place, not for profits, youth, women, ethnic and community influencers, all
+  with the desire for city transformation through the gospel.\n\nAn optional dinner
+  will be served between 5:45 - 6:30 pm and will cost $30. If you have not purchased
+  the optional extra, please be sure to RSVP to contact@oneheart.com.au "
+:is_featured: false
+:sections:
+- :id: 5SHuf51ks08EkKoUkIkA6o
+  :_meta:
+    :content_type_id: eventAboutSection
+    :updated_at: '2018-06-11T04:10:36+00:00'
+    :created_at: '2018-06-11T04:10:36+00:00'
+    :id: 5SHuf51ks08EkKoUkIkA6o
+  :title: About
+  :further_information: For more information, please contact [Ian Shelton](mailto:ians@oneheart.com.au)
+    or [Joshua Townsend](mailto:josht@oneheart.com.au).
+- :id: X59LMN0scmEWMIWq8WMu2
+  :_meta:
+    :content_type_id: eventDiscussionTopicsSection
+    :updated_at: '2018-06-11T05:23:59+00:00'
+    :created_at: '2018-06-11T05:22:13+00:00'
+    :id: X59LMN0scmEWMIWq8WMu2
+  :title: Discussion Topics
+  :introduction: |-
+    This will be a practical half day aimed to further equip you with ideas and resources, and most of all, a deeper cry to God for your city or town.
+
+    Topics to be discussed include:
+  :discussion_topics:
+  - :id: 4bmagoq4H6q8AiKEi4WOs4
+    :_meta:
+      :content_type_id: discussionTopic
+      :updated_at: '2018-06-11T06:52:13+00:00'
+      :created_at: '2018-06-11T05:21:51+00:00'
+      :id: 4bmagoq4H6q8AiKEi4WOs4
+    :title: Building church unity
+    :description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
+      dignissim, libero nec molestie porttitor, neque magna suscipit purus, in vulputate
+      metus lorem non nibh. Curabitur tempor velit sit amet arcu fermentum, nec feugiat
+      lectus feugiat. In facilisis tempus tortor non egestas.
+  - :id: 2gm8Z4e8uc2G02E8ysu0cg
+    :_meta:
+      :content_type_id: discussionTopic
+      :updated_at: '2018-06-11T05:22:09+00:00'
+      :created_at: '2018-06-11T05:22:09+00:00'
+      :id: 2gm8Z4e8uc2G02E8ysu0cg
+    :title: Understanding your community, it's demography, it's pain and it's needs
+  - :id: 4BpzGgvuzC20ywksiU8Sc6
+    :_meta:
+      :content_type_id: discussionTopic
+      :updated_at: '2018-06-11T05:22:27+00:00'
+      :created_at: '2018-06-11T05:22:27+00:00'
+      :id: 4BpzGgvuzC20ywksiU8Sc6
+    :title: Connecting spheres such as business, politics and education
+  - :id: 4mHQS2IGUgcqmMCmU4W6qq
+    :_meta:
+      :content_type_id: discussionTopic
+      :updated_at: '2018-06-11T05:22:36+00:00'
+      :created_at: '2018-06-11T05:22:36+00:00'
+      :id: 4mHQS2IGUgcqmMCmU4W6qq
+    :title: Releasing women into effective city mission
+  - :id: 79ltbpM8RUQcGAoOWuaeI0
+    :_meta:
+      :content_type_id: discussionTopic
+      :updated_at: '2018-06-11T05:22:51+00:00'
+      :created_at: '2018-06-11T05:22:51+00:00'
+      :id: 79ltbpM8RUQcGAoOWuaeI0
+    :title: Building city-wide prayer teams to intercede and undertake spiritual warfare
+  - :id: 6lH6YVoKHKUASKiuegU62a
+    :_meta:
+      :content_type_id: discussionTopic
+      :updated_at: '2018-06-11T05:23:04+00:00'
+      :created_at: '2018-06-11T05:23:04+00:00'
+      :id: 6lH6YVoKHKUASKiuegU62a
+    :title: Raising up community impact events and building bridges to the wider community
+  - :id: 5HgqaDbxi8Oww2UO0E8wcq
+    :_meta:
+      :content_type_id: discussionTopic
+      :updated_at: '2018-06-11T05:23:18+00:00'
+      :created_at: '2018-06-11T05:23:18+00:00'
+      :id: 5HgqaDbxi8Oww2UO0E8wcq
+    :title: Meeting the needs of those in need
+  - :id: 43fHKyYR9esCIiw8q0A0yg
+    :_meta:
+      :content_type_id: discussionTopic
+      :updated_at: '2018-06-11T05:23:30+00:00'
+      :created_at: '2018-06-11T05:23:30+00:00'
+      :id: 43fHKyYR9esCIiw8q0A0yg
+    :title: Connecting the generations, ethnic communities and the citizens of good
+      will
+  - :id: 3WFblsH85G8McM0S80sIAm
+    :_meta:
+      :content_type_id: discussionTopic
+      :updated_at: '2018-06-11T05:23:46+00:00'
+      :created_at: '2018-06-11T05:23:46+00:00'
+      :id: 3WFblsH85G8McM0S80sIAm
+    :title: Raising up city "champions"
+- :id: 1lecEzVeiMmESck4UCmwo2
+  :_meta:
+    :content_type_id: eventRegistrationSection
+    :updated_at: '2018-06-11T05:24:22+00:00'
+    :created_at: '2018-06-11T05:24:22+00:00'
+    :id: 1lecEzVeiMmESck4UCmwo2
+  :title: Register Now
+  :registration_code: movementday/movement-day-round-table
+- :id: 7qLdXMB0qcoIa4iICYYwoa
+  :_meta:
+    :content_type_id: eventScheduleSection
+    :updated_at: '2018-09-20T23:22:09+00:00'
+    :created_at: '2018-09-20T23:20:43+00:00'
+    :id: 7qLdXMB0qcoIa4iICYYwoa
+  :title: Schedule
+  :days:
+  - :id: 2vSTlLuGSYMWWSoUsMSW0S
+    :_meta:
+      :content_type_id: scheduleDay
+      :updated_at: '2018-09-20T23:20:39+00:00'
+      :created_at: '2018-09-20T23:20:39+00:00'
+      :id: 2vSTlLuGSYMWWSoUsMSW0S
+    :day: Tuesday 30th
+    :activities:
+    - :id: 6qVcoV3he0aGuSEIuaMYEM
+      :_meta:
+        :content_type_id: scheduleActivity
+        :updated_at: '2018-09-20T23:08:23+00:00'
+        :created_at: '2018-09-20T23:08:23+00:00'
+        :id: 6qVcoV3he0aGuSEIuaMYEM
+      :title: Registration opens
+      :time: 11:45 am
+    - :id: 6ladzqCDscWmCgm4GWWI0o
+      :_meta:
+        :content_type_id: scheduleActivity
+        :updated_at: '2018-09-20T23:09:05+00:00'
+        :created_at: '2018-09-20T23:09:05+00:00'
+        :id: 6ladzqCDscWmCgm4GWWI0o
+      :title: Lunch served
+      :time: 12:00 pm
+    - :id: Or2SZ40GqGeWIm4Kam8ai
+      :_meta:
+        :content_type_id: scheduleActivity
+        :updated_at: '2018-09-20T23:09:27+00:00'
+        :created_at: '2018-09-20T23:09:27+00:00'
+        :id: Or2SZ40GqGeWIm4Kam8ai
+      :title: Session 1
+      :time: 12:45 pm
+    - :id: 23BQkxjtCkGgwkockeesqq
+      :_meta:
+        :content_type_id: scheduleActivity
+        :updated_at: '2018-09-20T23:10:10+00:00'
+        :created_at: '2018-09-20T23:10:10+00:00'
+        :id: 23BQkxjtCkGgwkockeesqq
+      :title: Break
+      :time: 3:00 pm
+    - :id: 5vhAlbEUGkmOYeAGYEssKs
+      :_meta:
+        :content_type_id: scheduleActivity
+        :updated_at: '2018-09-20T23:10:31+00:00'
+        :created_at: '2018-09-20T23:10:31+00:00'
+        :id: 5vhAlbEUGkmOYeAGYEssKs
+      :title: Session 2
+      :time: 3:30 pm
+    - :id: AZdHBCDNegw2KMWWkoQUA
+      :_meta:
+        :content_type_id: scheduleActivity
+        :updated_at: '2018-09-20T23:14:28+00:00'
+        :created_at: '2018-09-20T23:11:54+00:00'
+        :id: AZdHBCDNegw2KMWWkoQUA
+      :title: Dinner served
+      :time: 5:45 pm
+      :description: "(optional dinner $30 - Please RSVP to contact@oneheart.com.au) "
+    - :id: cEb7FSiYCcwM06CAGG4wS
+      :_meta:
+        :content_type_id: scheduleActivity
+        :updated_at: '2018-09-20T23:12:29+00:00'
+        :created_at: '2018-09-20T23:12:29+00:00'
+        :id: cEb7FSiYCcwM06CAGG4wS
+      :title: Session 3
+      :time: 6:30 pm
+    - :id: 3U7nHgvl9u8GOWsCceI2K6
+      :_meta:
+        :content_type_id: scheduleActivity
+        :updated_at: '2018-09-20T23:13:16+00:00'
+        :created_at: '2018-09-20T23:13:16+00:00'
+        :id: 3U7nHgvl9u8GOWsCceI2K6
+      :title: Evening concludes
+      :time: 8:30 pm
+:seo_title: What's Next Round Table
+:seo_description: This Round Table is a half day of dialogue and discussion to assist
+  leaders from Church, Christian agencies, the marketplace, young and old, to further
+  develop a gospel movement in their respective communities.

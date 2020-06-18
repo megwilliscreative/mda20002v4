@@ -1,0 +1,25 @@
+---
+:id: 68v3VP4plpOoaDUUSlet42
+:_meta:
+  :content_type_id: announcement
+  :updated_at: '2019-01-23T22:59:12+00:00'
+  :created_at: '2019-01-23T21:38:31+00:00'
+  :id: 68v3VP4plpOoaDUUSlet42
+:title: Register for Movement Day 2019
+:background_image:
+  :title: MD Aus 3
+  :description: 
+  :url: "//images.ctfassets.net/4oc5oe1vkkeh/4RBBAkS120Aa4MSWG4ma6o/e77eac6d4c5855bae945e139b9f28891/Melbourne-red-1.jpg"
+  :_meta:
+    :updated_at: '2019-08-07T05:32:46+00:00'
+    :created_at: '2018-09-05T10:09:41+00:00'
+    :id: 4RBBAkS120Aa4MSWG4ma6o
+:content: "## Movement Day Australia\n### A two-day national gathering with inspiring
+  stories of Christians from all spheres of society collaborating to see their towns
+  and cities blessed. \n8-9 May 2019 | Sydney Congress Hall\n"
+:primary_button_label: Register Now
+:primary_button_url: https://www.movementday.com.au/events/2019/movement-day-2019#register-here
+:secondary_button_label: Find out more
+:secondary_button_url: https://www.movementday.com.au/events/2019/movement-day-2019
+:start_date: !ruby/object:DateTime 2019-01-01 00:00:00.000000000 Z
+:end_date: !ruby/object:DateTime 2019-05-09 00:00:00.000000000 Z

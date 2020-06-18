@@ -1,0 +1,58 @@
+---
+:id: 73wbDGWKXYGo2CAuGIkW82
+:_meta:
+  :content_type_id: event
+  :updated_at: '2019-02-21T06:30:20+00:00'
+  :created_at: '2018-06-26T02:55:51+00:00'
+  :id: 73wbDGWKXYGo2CAuGIkW82
+:title: Movement Day New Zealand
+:sub_title: National 2 day event
+:slug: movement-day-new-zealand-2019
+:hero_image:
+  :title: MD NZ
+  :description: 
+  :url: "//images.ctfassets.net/4oc5oe1vkkeh/s9NLgrpCw08kMKMqEGsMm/dbecdfae90bf6e2a211e1011676cfb75/nz.jpg"
+  :_meta:
+    :updated_at: '2019-02-18T10:47:39+00:00'
+    :created_at: '2018-06-26T02:55:37+00:00'
+    :id: s9NLgrpCw08kMKMqEGsMm
+:year: '2019'
+:date_from: !ruby/object:DateTime 2019-05-14 09:00:00.000000000 Z
+:date_to: !ruby/object:DateTime 2019-05-15 17:00:00.000000000 Z
+:location: Wellington, New Zealand
+:city:
+  :id: 5Epzv0J6uIS6sU8uKA8KiY
+  :_meta:
+    :content_type_id: city
+    :updated_at: '2018-06-26T02:46:17+00:00'
+    :created_at: '2018-06-26T02:46:17+00:00'
+    :id: 5Epzv0J6uIS6sU8uKA8KiY
+  :name: Wellington
+  :state_region: QLD
+  :country: New Zealand
+:cost: "$99 NZD"
+:description: |-
+  Speakers include Roger Sutton (Gather Global, UK), Seth Fawcet (Hope Centre, Lower Hutt), and Craig Sider (Movement.org, New York). The majority of our time together will be devoted to stories of unity and city transformation from all around New Zealand.
+
+  For more information, please visit [www.citybycity.co.nz](https://www.citybycity.co.nz).
+
+  Registrations for this event can be made through the [NZ Christian Network](https://nzchristiannetwork.org.nz/events/movement-day-new-zealand/).
+:colour_scheme: blue
+:is_featured: false
+:sections:
+- :id: 3gBWTo3jtCSAT5v5k0CFfG
+  :_meta:
+    :content_type_id: eventAboutSection
+    :updated_at: '2019-01-31T05:42:05+00:00'
+    :created_at: '2019-01-31T05:42:05+00:00'
+    :id: 3gBWTo3jtCSAT5v5k0CFfG
+  :title: About
+  :introduction: |-
+    A unique conference to celebrate unity, prayer, and transformation in cities, towns, and regions across Aotearoa.
+
+    __Be Inspired__ by stories of what God is doing in cities and towns across our nation.
+
+    __Be Challenged__ to seek unity in relationship with other city/business/civic leaders.
+
+    __Be Resourced__ with fresh ideas for the advancement of the Gospel in your city/town.
+:seo_title: Movement Day New Zealand Wellington
