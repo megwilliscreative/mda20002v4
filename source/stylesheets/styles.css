@@ -652,18 +652,38 @@ section {
 /* ---- @team page -------------------------------- */
 
 .staff_grid {
-	padding:75px;
+	/*padding:75px;*/
+	display: grid;
+	justify-content: space-between;
+	grid-template-columns: repeat(4, 1fr);
+	border: 2px dotted #ff00ff;
 }
-.staff_profiles_row {
+/*.staff_profiles_row {
 	display: flex;
 	justify-content: space-between;
 	padding:35px 0px;
-}
+}*/
 .staff_member {
 	min-width:25%;
 	padding:0px 18px;
-
 }
+.staff_grid .city {
+	color: #C6131E;
+	text-transform: uppercase;
+	font-size: 18px;
+	line-height: 1em;
+}
+.staff_grid h4 {
+	font-family: adobe-garamond-pro, serif;
+	font-weight: 400;
+	/*font-style: normal;*/
+	font-size: 45px;
+	color: #000000!important;
+	line-height: .9em;
+	padding:15px 0;
+}
+
+
 .staff_grid h2 {
 	font-size: 50px;
 	line-height: 1em;
