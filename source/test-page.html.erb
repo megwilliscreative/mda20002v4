@@ -1,0 +1,18 @@
+<section id="committee" class="red">
+  <header>
+    <% if (!about_committee_cb.nil?) %>
+      <h2><%= about_committee_cb.heading %></h2>
+      <%= Markdown.new(!about_committee_cb.content.nil? ? about_committee_cb.content : "").to_html %>
+    <% end %>
+  </header>
+  <div class="content">
+    <ul class="people red">
+      <% committee_members.each do |index, person| %>
+        <li class="person">
+          <%= partial "partials/people_list_item", :locals => { :person => person } %>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+  <a href="#our-committee" class="scroll_to scroll_down">Scroll down</a>
+</section>
