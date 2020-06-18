@@ -103,21 +103,23 @@ button i:hover {
 
 	margin:35px;
 	width:25%;
-	font-size: 0.5em;
+	font-size: 1em;
 	padding: 2em;
-	text-align: center;
+	text-align: left;
 	background-color: rgba(255, 0, 255, 0.72);
 	color:#ffffff;
 	z-index: 999;
 	box-shadow: 0 1px 1em rgba(0, 0, 0, 0.2);
 }
-
+.site-notice li {
+	padding-bottom: 35px;
+}
 .site-notice a {
 	color:#ff00ff;
 	text-transform: uppercase;
 	background: #ffffff;
 	padding: 6px 15px;
-	margin: 25px 15px;
+	margin: 25px 0;
 	border-radius: 2px; 
 }
 
@@ -199,6 +201,7 @@ nav {
 }
 .replace_w_supplied {
 	background: yellow;
+	color:#000000;
 }
 
 
