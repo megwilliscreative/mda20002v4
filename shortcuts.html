@@ -1,0 +1,66 @@
+_____________________
+TERMINAL COMMANDS
+
+cd ~/Development/mda20002
+
+gem install unsplash
+
+<!-- code Tim used to fix contentful -->
+source ~/.bash_profile
+echo $MD_CONTENTFUL_SPACE_ID
+<!-- answer -> 4oc5oe1vkkeh -->
+
+
+______________________
+code to insert partial
+
+<%= partial "partials/footer" %>
+
+
+_____________________
+.replace_w_contentful
+
+_____________________
+button
+<button>More <i class="fas fa-chevron-right"></i></button>
+
+_____________________
+insert image
+<img src="/imgs/gold-coast-1280px.jpg"/>
+
+_____________________
+Unsplash random image
+
+https://source.unsplash.com/random/900×700/?people
+<img src="https://source.unsplash.com/random/900×700/?people"/>
+
+
+_____________________
+CODE TO CREATE LINK
+<a href=""></a>
+
+_____________________
+CODE FOR SITE NOTICE
+<div class="site-notice">
+  <span>Anything with a pink background is waiting on contentful</span>
+     |   <a href="test-page.html">TEST PGE</a>
+</div>
+
+
+.site-notice {
+	position: absolute;
+	top: auto;
+	left: 0;
+	right:0;
+	bottom:0;
+
+	margin:0;
+	width:100%;
+	font-size: 1em;
+	padding: 1em 0;
+	text-align: center;
+	background-color: rgba(255, 0, 255, 0.2);
+	color:#ff00ff;
+	z-index: 999;
+	box-shadow: 0 1px 1em rgba(0, 0, 0, 0.2);
+}

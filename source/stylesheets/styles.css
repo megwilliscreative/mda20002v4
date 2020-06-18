@@ -103,7 +103,7 @@ button i:hover {
 
 	margin:35px;
 	width:25%;
-	font-size: 1em;
+	font-size: 14px;
 	padding: 2em;
 	text-align: left;
 	background-color: rgba(255, 0, 255, 0.72);
@@ -112,7 +112,7 @@ button i:hover {
 	box-shadow: 0 1px 1em rgba(0, 0, 0, 0.2);
 }
 .site-notice li {
-	padding-bottom: 35px;
+	padding-bottom: 15px;
 }
 .site-notice a {
 	color:#ff00ff;
