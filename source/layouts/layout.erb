@@ -6,12 +6,25 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Use the title from a page's frontmatter if it has one -->
-    <title><%= current_page.data.title || "Middleman" %></title>
+    <title><%= current_page.data.title || "Movement Australia" %></title>
+    <link rel="stylesheet" href="https://use.typekit.net/xyl4dix.css">
+    <script src="https://kit.fontawesome.com/c334506879.js" crossorigin="anonymous"></script>
     <%= stylesheet_link_tag "styles" %>
     <%= javascript_include_tag "site" %>
-    <script src="https://kit.fontawesome.com/c334506879.js" crossorigin="anonymous"></script>
+    <link rel="icon" 
+      type="image/png" 
+      href="/imgs/favicon.png">
   </head>
   <body>
+    
+    <%= partial "partials/header" %>
     <%= yield %>
+    <%= partial "partials/footer" %>
+
+    <div class="site-notice">
+      <span>Anything with a <strong>pink background</strong> is waiting on contentful</span>
+           |   <a href="test-page.html">Test Page</a>
+    </div>
+
   </body>
 </html>
