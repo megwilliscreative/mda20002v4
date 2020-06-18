@@ -197,6 +197,9 @@ nav {
 	background:rgba(255, 0, 255, 0.35);
 	z-index: 99999;
 }
+.replace_w_supplied {
+	background: yellow;
+}
 
 
 body {
