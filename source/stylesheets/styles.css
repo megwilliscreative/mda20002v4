@@ -91,27 +91,33 @@ button i:hover {
 
 .site-notice {
 	position: fixed;
-	top: auto;
+	/*top: auto;
 	left: 0;
 	right:0;
-	bottom:0!important;
+	bottom:0!important;*/
 
-	margin:0;
-	width:100%;
-	font-size: 1em;
-	padding: 1em 0;
+	top: 0;
+	left: auto;
+	right: 0;
+	bottom: auto !important;
+
+	margin:35px;
+	width:25%;
+	font-size: 0.5em;
+	padding: 2em;
 	text-align: center;
 	background-color: rgba(255, 0, 255, 0.72);
 	color:#ffffff;
 	z-index: 999;
 	box-shadow: 0 1px 1em rgba(0, 0, 0, 0.2);
 }
+
 .site-notice a {
 	color:#ff00ff;
 	text-transform: uppercase;
 	background: #ffffff;
 	padding: 6px 15px;
-	margin: 0 15px;
+	margin: 25px 15px;
 	border-radius: 2px; 
 }
 
