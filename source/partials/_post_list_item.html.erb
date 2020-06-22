@@ -1,0 +1,17 @@
+<div class="post">
+  <% if (!post.tags.nil? && post.tags.include?("Story")) %>
+    <span class="type">Story</span>
+  <% end %>
+  
+  <a href="/resources/blog/<%= post.slug %>.html">
+    <%= image_tag post.hero_image.url + "?w=700&h=460&fit=thumb" %>
+  </a>
+  
+  <div class="overview">
+    <h4><a href="/resources/blog/<%= post.slug %>.html"><%= post.title %></a></h4>
+    <p class="date"><%= post.post_date.day %> <%= Date::MONTHNAMES[post.post_date.month] %> <%= post.post_date.year %></p>
+    <% if include_excerpt %>
+      <%= Markdown.new(!post.excerpt.nil? ? post.excerpt : "").to_html %>
+    <% end %>
+  </div>  
+</div>

@@ -66,6 +66,7 @@ button {
 	font-size:16px;
 	text-transform: uppercase;
 	border:0px;
+	cursor: pointer;
 }
 button i {
 	color:#C6131E;
@@ -102,7 +103,7 @@ button i:hover {
 	bottom: auto !important;
 
 	/*margin:35px;*/
-	width:10%;
+	width:25vw;
 	font-size: 14px;
 	padding: 2em;
 	text-align: left;
