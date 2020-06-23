@@ -69,7 +69,7 @@ button {
 	cursor: pointer;
 }
 button i {
-	color:#C6131E;
+	color:#ffffff;
 	padding: 2px 0px 2px 15px;
 }
 button i:hover {
@@ -286,13 +286,19 @@ section {
 	background:#C6131E;
 	color:#ffffff;
 	padding: 25px;
-	display: flex;
+	/*border: 5px blue dotted;*/
 }
 .email_slim_form {
 	min-width:450px;	
+	/*border: dotted 5px yellow;*/
+	display: grid;
+	grid-template-columns: 3fr 5fr 1fr;
+	align-items: center;
+	grid-gap: 1em;
+	justify-content: center;
 }
 .email_slim input[type="email" ] {
-  padding:10px;
+  	padding:10px;
 }
 
 .email_slim input{
@@ -307,7 +313,11 @@ section {
 	text-transform: uppercase;
 	/*font-weight: 600;*/
 }
-
+.email_slim h2 {
+	color:#ffffff!important;
+	padding:.3em;
+	font-size: 2em;
+}
 
 
 /* stats section @home ---------------*/
