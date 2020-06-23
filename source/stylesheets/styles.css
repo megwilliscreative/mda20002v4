@@ -86,6 +86,10 @@ button i:hover {
 	/*max-width:125px;*/
 	font-size: 16px;
 }
+.btn-white i {
+	color:#000000;
+	padding: 2px 0px 2px 15px;
+}
 .btn-white i:hover {
 	padding-left: 25px;
 }
@@ -107,8 +111,8 @@ button i:hover {
 	font-size: 14px;
 	padding: 2em;
 	text-align: left;
-	background-color: #ff00ff;
-	color:#ffffff;
+	background-color: #fff1ac;
+	color:#000000;
 	z-index: 9999;
 	box-shadow: 0 1px 1em rgba(0, 0, 0, 0.2);
 }
@@ -116,9 +120,9 @@ button i:hover {
 	padding-bottom: 15px;
 }
 .site-notice a {
-	color:#ff00ff;
+	color:#fff;
 	text-transform: uppercase;
-	background: #ffffff;
+	background: #ff00ff;
 	padding: 6px 15px;
 	margin: 25px 0;
 	border-radius: 2px; 
@@ -197,11 +201,15 @@ nav {
 /*============== MAIN SECTION STYLES ========================================*/
 
 .replace_w_contentful {
-	background:rgba(255, 0, 255, 0.35);
+	background:rgba(35, 175, 186, 0.10);
 	z-index: 99999;
 }
 .replace_w_supplied {
 	background: yellow;
+	color:#000000;
+}
+.meg_to_edit{
+	background: rgba(255, 181, 28, 0.50);
 	color:#000000;
 }
 
@@ -285,7 +293,7 @@ section {
 .email_slim {
 	background:#C6131E;
 	color:#ffffff;
-	padding: 25px;
+	padding: 10px;
 	/*border: 5px blue dotted;*/
 }
 .email_slim_form {
@@ -300,18 +308,20 @@ section {
 .email_slim input[type="email" ] {
   	padding:10px;
 }
-
 .email_slim input{
 	width:100%;
 	background:none;
 	border:0px;
-	border-bottom: 1px solid white;
+	border-bottom: 1px solid white;	
 	padding: 6px 10px;
-	margin: 15px 0px;
+	/*margin: 0 15px;*/
 	font-size:18px;
 	color: #ffffff;
 	text-transform: uppercase;
 	/*font-weight: 600;*/
+}
+.email_slim button {
+	margin:0px 15px;
 }
 .email_slim h2 {
 	color:#ffffff!important;
@@ -320,46 +330,61 @@ section {
 }
 
 
-/* stats section @home ---------------*/
-
-/*.stats_home {	background: #ff00ff;}*/
+/* stats section @home --------------------------------*/
 
 .stats_x3 {
-	display: flex;
-	/*align-items: center;*/
+	display:grid; /*grid container*/
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 1em;
 	justify-content: space-between;
-	height:350px;
+
 }
+.stats_1 { /*grid boxes*/
+	background:#C6131E;
+	height:100%;
+
+	display: grid;
+	grid-template-columns: 1fr;
+	align-items: center;
+}
+.stats_x3 img {
+	padding:0!important;
+}
+
+
+
+
 .stats_x3 h2 {
 	font-size: 4em;
-	text-align: center;
 	line-height: .9em;
-	/*vertical-align: middle;*/
-	/*padding:auto;*/
 }
 .stats_x3 h3 {
 	font-size:2em;	
 }
-.stats_1 {
-	background:#C6131E;
-	color:#ffffff!;
-	width:33%;
-	/*align-items: center;*/
-	height:100%;
-	padding:15px;
+
+.stats_1 h2 {
+	color:#ffffff!important;
+	text-align: center;
+	line-height: 1.3em;
+}
+.stats_1 h2 span {
+	font-weight: bold;
+	text-decoration: underline;
 }
 .stats_2 h2 {
 	color:#C6131E;
 }
 .stats_2 {
 	background:#ffffff;
-	width:33%;
-	padding:15px;
 	border:1px solid black;
 	height:100%;
-	/*align-items: center;*/
 }
-
+.stats_2 img {
+/*	margin:0px;
+	object-fit: cover!important;
+	width:100%;
+	height:100%;*/
+}
 
 /* --- vision section @ discover page ---------------*/
 
