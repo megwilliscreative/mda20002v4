@@ -24,7 +24,7 @@ title: Engage
 <section class="engage_intro">
   <div class="container">
     <h2 style="color:#000000;font-weight: 600;font-size: 50px;">The Movement Team are here to support you and see the work in your city flourish</h2>
-    <div class="engage_intro_grid"> <!-- container for 3 boxes -->
+    <div class="engage_intro_grid replace_w_contentful"> <!-- container for 3 boxes -->
       <div class="engage_intro_grid_white"> <!-- box -->
         <h3>Engage</h3>
         <h2>Come to a Movement Day Gathering in your city</h2>
@@ -52,18 +52,19 @@ title: Engage
 <!-- links to all australian local movements connected -->
 <section class="engage_locally ">
   <div class="container">
-    <div class="staff_profiles_row">
-      <div class="staff_member">
+      <a name="engage_cities "><h3>Cities / Towns</h3></a>
+    <div class="city_grid replace_w_contentful"> <!-- container for grid of cities and towns fb and web -->
+      <div class="city_grid_item">
         <h2>Pittsworth</h2>
-          <div class="team_socials">
+        <div class="team_socials">          
           <ul>
             <li><a href="https://www.facebook.com/MDayAus/"><i class="fab fa-facebook-f fa-2x"></i></a></li>
-            <li><a href="mailto:hello@movemnetday.com.au"><i class="fas fa-link fa-2x"></i></a></li>
-          </ul>  
-        </div><!-- socials end -->
+            <li><a href="mailto:hello@movemnetday.com.au"><i class="fas fa-link fa-2x"></i></a></li>          
+          </ul>          
+        </div>
       </div>
-      <div class="staff_member">
-        <h2>Ryde</h2>
+
+      <div class="city_grid_item"><h2>Ryde</h2>
           <div class="team_socials">  
           <ul>
             <li><a href="https://www.facebook.com/MDayAus/"><i class="fab fa-facebook-f fa-2x"></i></a></li>
@@ -71,16 +72,16 @@ title: Engage
           </ul>  
         </div><!-- socials end -->
       </div>
-      <div class="staff_member">
-        <h2>Wollongong</h2>
+
+      <div class="city_grid_item"><h2>Wollongong</h2>
         <div class="team_socials">
           <ul>
             <li><a href="https://www.facebook.com/MDayAus/"><i class="fab fa-facebook-f fa-2x"></i></a></li>
             <li><a href="mailto:hello@movemnetday.com.au"><i class="fas fa-link fa-2x"></i></a></li>
           </ul>  
-        </div><!-- socials end -->
-      </div>
-      <div class="staff_member">
+        </div><!-- socials end --></div>
+
+      <div class="city_grid_item">
         <h2>Toowoomba</h2>
         <div class="team_socials">
           <ul>
@@ -89,27 +90,7 @@ title: Engage
           </ul>  
         </div><!-- socials end -->
       </div>
-    </div>
-    <div class="staff_profiles_row">
-      <div class="staff_member">
-        <h2>Toowoomba</h2>
-        <div class="team_socials">
-          <ul>
-            <li><a href="https://www.facebook.com/MDayAus/"><i class="fab fa-facebook-f fa-2x"></i></a></li>
-            <li><a href="mailto:hello@movemnetday.com.au"><i class="fas fa-link fa-2x"></i></a></li>
-          </ul>  
-        </div><!-- socials end -->
-      </div>
-      <div class="staff_member">
-        <h2>Toowoomba</h2>
-        <div class="team_socials">
-          <ul>
-            <li><a href="https://www.facebook.com/MDayAus/"><i class="fab fa-facebook-f fa-2x"></i></a></li>
-            <li><a href="mailto:hello@movemnetday.com.au"><i class="fas fa-link fa-2x"></i></a></li>
-          </ul>  
-        </div><!-- socials end -->
-      </div>
-      <div class="staff_member">
+      <div class="city_grid_item">
         <h2>Perth</h2>
         <div class="team_socials">
           <ul>
@@ -118,7 +99,7 @@ title: Engage
           </ul>  
         </div><!-- socials end -->
       </div>
-      <div class="staff_member">
+      <div class="city_grid_item">
         <h2>Newcastle</h2>
         <div class="team_socials">
           <ul>
@@ -126,8 +107,28 @@ title: Engage
             <li><a href="mailto:hello@movemnetday.com.au"><i class="fas fa-link fa-2x"></i></a></li>
           </ul>  
         </div><!-- socials end -->
-      </div> <!-- staff member end -->
-    </div> <!-- grid row ends -->
+      </div>
+      <div class="city_grid_item">
+        <h2>Newcastle</h2>
+        <div class="team_socials">
+          <ul>
+            <li><a href="https://www.facebook.com/MDayAus/"><i class="fab fa-facebook-f fa-2x"></i></a></li>
+            <li><a href="mailto:hello@movemnetday.com.au"><i class="fas fa-link fa-2x"></i></a></li>
+          </ul>  
+        </div><!-- socials end -->
+      </div>
+      <div class="city_grid_item">
+        <h2>Newcastle</h2>
+        <div class="team_socials">
+          <ul>
+            <li><a href="https://www.facebook.com/MDayAus/"><i class="fab fa-facebook-f fa-2x"></i></a></li>
+            <li><a href="mailto:hello@movemnetday.com.au"><i class="fas fa-link fa-2x"></i></a></li>
+          </ul>  
+        </div><!-- socials end -->
+      </div>
+
+
+    </div>
   </div> <!-- staff container ends -->
 </section>
 
@@ -138,15 +139,27 @@ title: Engage
     <div class="engage_share_content border_box">
       <h2>Tell us whats happening in  your city!</h2>
       <div class="engage_share_form">
-         <form id="" target="" action="#" accept-charset="UTF-8" method="post">
-           <!-- <form id="ema_signup_form" target="_blank" action="https://madmimi.com/signups/subscribe/60023" accept-charset="UTF-8" method="post"> -->
-          <div class="field_container"><input type="name" name="Fname" value="First Name"></div>
-          <div class="field_container"><input type="name" name="lname" value="Last Name"></div>
-          <div class="field_container"><input type="email" name="email" value="Email"></div>
-          <div class="field_container"><input type="text" name="city" value="City"></div>
-          <div class="field_container"><p>Message</p><textarea rows="5" name="message"></textarea></div>
-          <button type="submit"> Send <i class="fas fa-chevron-right"></i></button>
-        </form>
+
+          <form id="mda_engage" action="/test-page.html" data-netlify="true">
+            <input type="text" id="fname" name="First Name" placeholder="First Name">
+            <input type="text" id="lname" name="Last Name" placeholder="Last Name"><br><br>
+            <input type="email" id="email" name="Email" placeholder="Email"><br><br>
+            <label for="message">Message</label><br>
+            <textarea id="message" name="Message" rows="4"></textarea>
+            <br><br>
+            <div>
+              <div data-netlify-recaptcha="true"></div>
+            </div>
+            <button type="submit" value="Submit" 
+              class="g-recaptcha" 
+              data-sitekey="6LdOQqgZAAAAALCX1ER_gJy9OVUKJob7x290LNIC" 
+              data-callback='onSubmit' 
+              data-action='submit'>
+              Send <i class="fas fa-chevron-right"></i></button>
+
+          </form>
+
+
       </div>
     </div>
   </div>
@@ -159,7 +172,7 @@ title: Engage
 <section class="engage_updates">
   <div class="replace_w_contentful container">
     
-    <img src="/imgs/girl-window-1280px.jpg">
+    <img src="https://source.unsplash.com/random/900×700/?response"/>
     <h3>Engage</h3>
     <h2>Pray & Act - A Response To Covid 19</h2>
     <p>Nibh praesent tristique magna sit. Facilisi nullam vehicula ipsum a arcu cursus vitae. Quis imperdiet massa tincidunt nunc pulvinar sapien. Id eu nisl nunc mi ipsum faucibus vitae. Id volutpat lacus laoreet non curabitur. Volutpat maecenas volutpat blandit aliquam etiam. Tempus iaculis urna id volutpat lacus laoreet. Massa sed elementum tempus egestas sed sed risus. Cras semper auctor neque vitae tempus quam pellentesque nec nam. Orci eu lobortis elementum nibh tellus molestie nunc. Enim tortor at auctor urna nunc id cursus metus. Sed vulputate mi sit amet mauris commodo.</p>

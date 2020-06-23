@@ -649,9 +649,40 @@ section {
 .engage_share h2 {
 	color: #000000;
 }
-.engage_share_content {
+.engage_share_form {
 	padding:35px 0px;	
+	/*width: 66%;*/
 }
+
+
+.engage_share_form input{
+	width:100%;
+	background:none;
+	border:0px;
+	border-bottom: 1px solid #000000;
+	padding: 6px 10px;
+	margin: 15px 0px;
+	font-size:14px;
+	color: #000000;
+	text-transform: uppercase;
+}
+.engage_share_form label {
+	font-size:14px;
+	color: #000000;
+	text-transform: uppercase;
+}
+
+.engage_share_form textarea {
+	width:100%;
+	background:none;
+	border:0px;
+	border-bottom: 1px solid #000000;
+	padding: 6px 10px;
+	margin: 15px 0px;
+}
+
+
+
 .field_container input {
 	border:0px;
 	border-bottom:1px #000000 solid;
@@ -710,12 +741,32 @@ section {
 
 .engage_share_form {
 	padding:15px 0px;
+	width:100%;
 }
 .engage_media h2 {
 	color:#000000;
 }
 
+.city_grid {
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	justify-content: space-between;
+	grid-gap: .8em;
+	padding:15px 0;
+	margin:0px;
+}
+.city_grid_item {
+	/*background:pink;*/
+	text-align: center;
+}
+.city_grid_item h2 {
+	color:#C6131E!important;
+}
+.city_grid_item ul li{
+	display:inline;
+	padding: 0px 5px;
 
+}
 
 /* ---- @team page -------------------------------- */
 
