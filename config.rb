@@ -55,7 +55,7 @@ activate :livereload
 # require "lib/content_block_helpers"
 # require "lib/speaker_helpers"
 # require "lib/event_helpers"
-require "lib/post_helpers"
+# require "lib/post_helpers"
 # require "lib/podcast_helpers"
 require "lib/people_helpers"
 # require "lib/value_helpers"
@@ -65,7 +65,7 @@ require "lib/people_helpers"
 # helpers ContentBlockHelpers
 # helpers SpeakerHelpers
 # helpers EventHelpers
-helpers PostHelpers
+# helpers PostHelpers
 # helpers PodcastHelpers
 helpers PeopleHelpers
 # helpers ValueHelpers

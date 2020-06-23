@@ -211,19 +211,20 @@ title: Engage
 
 <!-- grid of logos from SUPPORTED BY -->
 <section class="engage_supporters">
-  <div class="replace_w_contentful container">
+  <div class="container">
     <div class="border_box">
-      <h3>Supported By</h3>
-        <div class="support_grid">
-          <div class="support_grid_box"> box </div>
-          <div class="support_grid_box"> box </div>
-          <div class="support_grid_box"> box </div>
-          <div class="support_grid_box"> box </div>
-          <div class="support_grid_box"> box </div>
-          <div class="support_grid_box"> box </div>
-          <div class="support_grid_box"> box </div>
-          <div class="support_grid_box"> box </div>
-          <div class="support_grid_box"> box </div>
+       <h3>Supported By</h3>
+       <div class="support_grid">
+          
+          <!-- <ul> -->
+          <% data.website.supporter.sort_by{ |id, e| e['_meta']['created_at'] }.each do |id, supporter| %>
+            <div class="support_grid_box">
+              <a href="<%= supporter.url %>" target="_blank">
+                <%= image_tag supporter.logo.url, alt: supporter.name %>
+              </a>
+            </div>
+          <% end %>                  
+          <!-- </ul> -->
         </div>
       </div>
   </div>

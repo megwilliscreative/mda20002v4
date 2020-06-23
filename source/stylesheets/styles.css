@@ -635,24 +635,32 @@ section {
 	padding: 15px 10px 0px 10px;
 }
 
-.media_grid, .support_grid {
+.media_grid {
 	display: grid;
 	justify-content: space-between;
 	grid-template-columns: repeat(3, 1fr);
-	grid-column-gap: 1em;
-	grid-row-gap: 1em;
+	grid-column-gap: 1.5em;
+	grid-row-gap: 1.5em;
 	grid-auto-rows: minmax(100px, auto);
 	/*align-items: */
 }
 
 .support_grid {
 	grid-template-columns: repeat(4, 1fr);
+
+	display: grid;
+	justify-content: space-between;
+	grid-column-gap: 2em;
+	/*grid-row-gap: .5em;*/
+	/*grid-auto-rows: minmax(100px, auto);*/
 }
 
 .media_grid_box, .support_grid_box {
 	/*min-width: 32%;*/
 	background:#ffffff;
-	padding:15px 5px;
+	padding:0px 5px;
+
+
 }
 
 .engage_share_form {
@@ -661,6 +669,7 @@ section {
 .engage_media h2 {
 	color:#000000;
 }
+
 
 
 /* ---- @team page -------------------------------- */
