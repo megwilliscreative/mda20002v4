@@ -46,36 +46,19 @@ BUILD HOME CONTENTS
   <div class="replace_w_contentful container">
     <div class="border_box">
       <h3>Engage</h3>
-      <div class="blog_posts">
-        <!-- individual post -->
-        <div class="blog_post">
-            <div class="blog_words">
-            <h3>Category Tag</h3>
-            <h2>Prayer & fasting changes the world & impacts cities</h2>
-            <p>“All these with ONE ACCORD were devoting themselves to prayer, together with the women and Mary the mother of Jesus, and his brothers.” Acts 1:14.</p></div>
-            <div class="blog_image"><img src="/imgs/2.jpg"/></div>
+      <% posts = all_posts %>
+      <div>
+          <% posts.take(3).each do |index, post| %>
+            <div><!--  class="home_engage_posts"> -->
+              <%= partial "partials/post_list_item", :locals => { :post => post, :include_excerpt => true } %>
+            </div>
+          <% end %>
         </div>
-        <!-- individual post -->
-        <div class="blog_post">
-            <div class="blog_words">
-            <h3>Category Tag</h3>
-            <h2>Prayer & fasting changes the world & impacts cities</h2>
-            <p>“All these with ONE ACCORD were devoting themselves to prayer, together with the women and Mary the mother of Jesus, and his brothers.” Acts 1:14.</p></div>
-            <div class="blog_image"><img src="/imgs/1.jpg"/></div>
-        </div>        
-        <!-- individual post -->
-        <div class="blog_post">
-            <div class="blog_words">
-            <h3>Category Tag</h3>
-            <h2>Prayer & fasting changes the world & impacts cities</h2>
-            <p>“All these with ONE ACCORD were devoting themselves to prayer, together with the women and Mary the mother of Jesus, and his brothers.” Acts 1:14.</p></div>
-            <div class="blog_image"><img src="/imgs/2.jpg"/></div>
-        </div> 
-    </div> <!-- div containing 3 posts -->
+      </div>
 
 
 
-
+    </div>
   </div>
 </section>
 

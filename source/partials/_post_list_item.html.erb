@@ -1,18 +1,30 @@
 
-<div class="post">
-  <% if (!post.tags.nil? && post.tags.include?("Story")) %>
-  <span class="type">Story</span>
+<div class="blog_post">
+
+  
+
+  <div class="blog_text">
+      <% if (!post.tags.nil? && post.tags.include?("Story")) %>
+  <h3 class="type">Story</h3>
   <% end %>
 
-  <a href="/learn/<%= post.slug %>.html">
-  <%= image_tag post.hero_image.url + "?w=700&h=460&fit=thumb" %>
-  </a>
+    <h2><a href="/learn/<%= post.slug %>.html"><%= post.title %></a></h2>
+    <p class="date"><%= post.post_date.day %> <%= Date::MONTHNAMES[post.post_date.month] %> <%= post.post_date.year %></p>
 
-  <div class="overview">
-  <h4><a href="/learn/<%= post.slug %>.html"><%= post.title %></a></h4>
-  <p class="date"><%= post.post_date.day %> <%= Date::MONTHNAMES[post.post_date.month] %> <%= post.post_date.year %></p>
-
-  <!-- removed some of tims content pulling in EXCERPTS -->
+    <!-- tims content pulling in EXCERPTS -->
+    <% if include_excerpt %>
+    <%= Markdown.new(!post.excerpt.nil? ? post.excerpt : "").to_html %>
+    <% end %>
+    <a href="/learn/<%= post.slug %>.html"><button>Read More <i class="fas fa-chevron-right"></i></button></a>
   </div>  <!-- end overview -->
+
+
+  <div class="blog_image">
+    <a href="/learn/<%= post.slug %>.html">
+    <%= image_tag post.hero_image.url + "?w=700&h=460&fit=thumb" %>
+    </a>
+  </div>
+  
+  
 
 </div> <!-- end post -->

@@ -127,6 +127,11 @@ button i:hover {
 	margin: 25px 0;
 	border-radius: 2px; 
 }
+.border_box {
+	border-top:10px solid #C6131E;
+	border-bottom:10px solid #C6131E;
+	padding:35px 0px;
+}
 
 
 /* ---------- END GLOBAL STYLES ---------- */
@@ -257,41 +262,62 @@ section {
 	}
 }
 
-/* ------ BLOG POST SECTION ------------------------------- */
+/* ------ @ home 
 
-.blog_fullwidth h3 {
-	padding: 15px 0;
+BLOG POST SECTION ------------------------------- */
+
+
+
+.blog_post {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	grid-gap: 1em;
+	/*line-height: 1.5em;*/
+}
+.blog_post h2 a {
+	color:#000000;
+	font-size: 1.2em;
+	line-height: 1em;
+}
+.blog_post h3 {
+	padding-bottom: 0px;
 }
 
-.blog_post h2{
-	/*color:#000000;*/
+.whats_happening .blog_post {
+	grid-template-columns: 1fr;
+}
+.blog_image {
+	/*min-width:66%;*/
+	/*padding:0px 35px;*/
+	object-fit: cover;
+}
+.blog_text p {
+	padding-bottom:15px;
+}
+
+
+
+
+
+/*.blog_post h2{
+	/*color:#000000;
 	line-height: 1em;
 	padding-bottom: 15px;
 }
 .blog_post h3{
 	font-size: 16px;
 	padding-bottom: 15px;
-}
-.blog_post {
+}*/
+/*.blog_post {
 	display:flex;
 	width:100%;
 	justify-content: space-between;
 	margin:35px 0;
-	/*overflow: hidden;*/
-}
-.blog_image {
-	min-width:66%;
-	padding:0px 35px;
-	object-fit: cover;
-}
-.blog_words {
-	/*padding:15px 35px;*/
-}
-.border_box {
-	border-top:10px solid #C6131E;
-	border-bottom:10px solid #C6131E;
-	padding:35px 0px;
-}
+	/*overflow: hidden;
+}*/
+/*.home_engage_posts {*/
+
+
 
 
 /*  email sign up slim @home ---------------*/
