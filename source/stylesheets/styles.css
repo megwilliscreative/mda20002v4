@@ -286,6 +286,9 @@ BLOG POST SECTION ------------------------------- */
 .whats_happening .blog_post {
 	grid-template-columns: 1fr;
 }
+.download_wallpaper .blog_post {
+	grid-template-columns: 1fr;
+}
 .blog_image {
 	/*min-width:66%;*/
 	/*padding:0px 35px;*/

@@ -34,7 +34,7 @@ BUILD HOME CONTENTS
     <div class="recent_posts">
       <% posts.take(1).each do |index, post| %>
         <div class="post">
-          <%= partial "partials/post_list_item", :locals => { :post => post, :include_excerpt => true } %>
+          <%= partial "partials/download_list_item", :locals => { :post => post, :include_excerpt => true } %>
         </div> <!-- end post -->
       <% end %>
     </div> <!-- end recent posts -->
@@ -86,7 +86,15 @@ BUILD HOME CONTENTS
 <!-- downloads section -->
 <section class="download_wallpaper">
   <div class="replace_w_contentful container">
-<img src="/imgs/wallpaper-is58v12-1280px.jpg">
+<!-- <img src="/imgs/wallpaper-is58v12-1280px.jpg"> -->
+    <% posts = all_posts %>
+    <div class="recent_posts">
+      <% posts.take(1).each do |index, post| %>
+        <div class="post">
+          <%= partial "partials/download_list_item", :locals => { :post => post, :include_excerpt => true } %>
+        </div> <!-- end post -->
+      <% end %>
+    </div> <!-- end recent posts -->
   </div>
 </section>
 
