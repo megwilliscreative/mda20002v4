@@ -21,27 +21,27 @@ title: Videos
 </section>
 
 <!-- RECENT POSTS -->
-<section>
+<section id="video_section">
   <div class="container">
-    <div class="blog_page_title">
-      <h2>Recent Videos</h2>
+    <div class="video_content">
+      <% fetch_videos.each do |year, videos| %>
+        <div class="video_year">
+          <h2><%= year %></h2>
+          <div class="video_item">
+            <% videos.each do |id, video| %>
+              <div>
+                <iframe src="<%= video.video_url %>?title=0&byline=0&portrait=0" width="640" height="320" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                <h4><%= video.title %></h4>
+                <%# Markdown.new(!video.description.nil? ? video.description : "").to_html %>
+              </div>
+            <% end %>
+          </div>
+        </div>
+      <% end %>
     </div>
-      <div class="replace_w_contentful stories_grid">
-        <div class="story_item">
-          
-          <div class="story_item_image">
-            <img src="https://source.unsplash.com/random/900×700/?"/>
-          </div> <!-- end image -->
-
-          <div class="story_item_text">
-            <p class="replace_w_supplied">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat.</p>
-            <button>More <i class="fas fa-chevron-right"></i></button>
-          </div> <!-- end text -->
-        </div> <!-- end story item -->
-      </div> <!-- end story grid -->
-    </div> <!-- end container -->
+   </div> <!-- end container -->
 </section>
+
 
 
 

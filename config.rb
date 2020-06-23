@@ -51,7 +51,7 @@ activate :livereload
 
 # helpers
 # require "lib/common_helpers"
-# require "lib/video_helpers"
+require "lib/video_helpers"
 # require "lib/content_block_helpers"
 # require "lib/speaker_helpers"
 # require "lib/event_helpers"
@@ -61,7 +61,7 @@ require "lib/people_helpers"
 # require "lib/value_helpers"
 # require "lib/announcement_helpers"
 # helpers CommonHelpers
-# helpers VideoHelpers
+helpers VideoHelpers
 # helpers ContentBlockHelpers
 # helpers SpeakerHelpers
 # helpers EventHelpers
