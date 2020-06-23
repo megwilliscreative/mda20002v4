@@ -21,7 +21,14 @@ title: Contact
 </section>
 
 
-<!-- 2 rows x 4 columns grid of staff profiles -->
+<!-- contact form with recaptcha -->
+
+ <script src="https://www.google.com/recaptcha/api.js"></script>
+ <script>
+   function onSubmit(token) {
+     document.getElementById("demo-form").submit();
+   }
+ </script>
 
 <section class="contact_section">
   <div class="container">
@@ -31,14 +38,21 @@ title: Contact
       <div class="leave_message">
 
           <form action="/test-page.html" data-netlify="true">
-            <input type="text" id="fname_ID" name="fname_NAME" placeholder="First Name"><br><br>
-            <input type="text" id="lname" name="lname" placeholder="Last Name"><br><br>
-            <input type="email" id="email" name="email" placeholder="Email"><br><br>
-            <input type="textarea" id="message" name="message" placeholder="Message"><br><br>
+            <input type="text" id="fname" name="First Name" placeholder="First Name"><br><br>
+            <input type="text" id="lname" name="Last Name" placeholder="Last Name"><br><br>
+            <input type="email" id="email" name="Email" placeholder="Email"><br><br>
+            <label for="message">Message</label><br>
+            <textarea id="message" name="Message" rows="4"></textarea>
+            <br><br>
             <div>
               <div data-netlify-recaptcha="true"></div>
             </div>
-            <button type="submit" value="Submit">Submit <i class="fas fa-chevron-right"></i></button>
+            <button type="submit" value="Submit" 
+              class="g-recaptcha" 
+              data-sitekey="reCAPTCHA_site_key" 
+              data-callback='onSubmit' 
+              data-action='submit'>
+              Submit <i class="fas fa-chevron-right"></i></button>
 
           </form>
       </div>
