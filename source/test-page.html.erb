@@ -1,4 +1,7 @@
-<section><div class="container hero"><h1>Test Page</h1></div></section>
+<section class="hero"><div class="container">
+  <h1>Test Page</h1>
+</div></section>
+
 <section><div class="container">
 <!----------------------------- TEST *BELOW* THIS LINE ------------------------>
 <div class="replace_w_contentful" style="padding:35px;">
@@ -15,63 +18,36 @@
 
 <div>
 <!-- insert contentful code from tims site -->
+
+
+
+
 </div>
 
 <hr> <!-- --------------------------------------------- -->
 
 
-<div>
-      <div class="leave_message">
-
-          <form id="mda_engage" action="/test-page.html" data-netlify="true">
-            <input type="text" id="fname" name="First Name" placeholder="First Name"><br><br>
-            <input type="text" id="lname" name="Last Name" placeholder="Last Name"><br><br>
-            <input type="email" id="email" name="Email" placeholder="Email"><br><br>
-            <label for="message">Message</label><br>
-            <textarea id="message" name="Message" rows="4"></textarea>
-            <br><br>
-            <div>
-              <div data-netlify-recaptcha="true"></div>
-            </div>
-            <button type="submit" value="Submit" 
-              class="g-recaptcha" 
-              data-sitekey="6LdOQqgZAAAAALCX1ER_gJy9OVUKJob7x290LNIC" 
-              data-callback='onSubmit' 
-              data-action='submit'>
-              Send <i class="fas fa-chevron-right"></i></button>
-
-          </form>
-
-      </div>
-
-
-</div> <!-- end contact form -->
-
-<!-- PREVIOUS FORM ON ENGAGE -->
-
-.leave_message {
-	width:50%;
-	padding:0 35px;
-}
-
-
-
-<form id="" target="" action="#" accept-charset="UTF-8" method="post">
-           <!-- <form id="ema_signup_form" target="_blank" action="https://madmimi.com/signups/subscribe/60023" accept-charset="UTF-8" method="post"> -->
-          <div class="field_container"><input type="name" name="Fname" value="First Name"></div>
-          <div class="field_container"><input type="name" name="lname" value="Last Name"></div>
-          <div class="field_container"><input type="email" name="email" value="Email"></div>
-          <div class="field_container"><input type="text" name="city" value="City"></div>
-          <div class="field_container"><p>Message</p><textarea rows="5" name="message"></textarea></div>
-          <button type="submit"> Send <i class="fas fa-chevron-right"></i></button>
-        </form>
-
-
-
-
-
-
-
 
 <!----------------------------- TEST *ABOVE* THIS LINE ------------------------>
 </div></section>
+
+<section id="video_resources" class="content_section resources video">
+  <div class="content">
+    <ul>
+      <% fetch_videos.each do |year, videos| %>
+        <li>
+          <h3><%= year %></h3>
+          <ul>
+            <% videos.each do |id, video| %>
+              <li>
+                <iframe src="<%= video.video_url %>?title=0&byline=0&portrait=0" width="640" height="320" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                <h4><%= video.title %></h4>
+                <%# Markdown.new(!video.description.nil? ? video.description : "").to_html %>
+              </li>
+            <% end %>
+          </ul>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+</section>
