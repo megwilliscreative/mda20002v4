@@ -406,21 +406,23 @@ section {
 	background: #C6131E;
 	padding:75px 55px;
 	min-width:66%;
+
 }
-/*.signup-large h2, h3 {
-	color:#ffffff;
-}*/
+.signup_large h2 {
+	color:#ffffff!important;
+}
 .signup_large h3 {
 	font-size: 16px;
 	line-height: 1em;
 	padding-bottom:15px;
+	color:#ffffff;
 }
-
 .signuplrg_image{
 	grid-column: 4/7;
   	grid-row:1;
   	padding-left:115px;
-  	border:1px black dotted;
+  	/*border:1px black dotted;*/
+  	margin-top:-75px;
 }
 .signup_large input{
 	width:100%;
