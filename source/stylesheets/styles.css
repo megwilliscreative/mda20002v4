@@ -33,7 +33,7 @@ ul {
 }
 img {
 	width:100%;
-	padding:35px 0;
+	/*padding:35px 0;*/
 }
 
 h1 {
@@ -150,7 +150,9 @@ header a {
 	width:100%;
 	max-width:1280px;
 	margin: 0 auto;
-	padding: 35px 0px;
+	padding: 10px 0px;
+	/*position: relative;*/
+
 }
 nav {
 	width:100%;
@@ -203,6 +205,8 @@ nav {
 .replace_w_contentful {
 	background:rgba(35, 175, 186, 0.10);
 	z-index: 99999;
+	/*position: absolute;*/
+
 }
 .replace_w_supplied {
 	background: yellow;
@@ -220,11 +224,13 @@ body {
 section {
 	background: #ffffff;
 	/*padding:75px 0px;*/
+	margin:0;
 }
 .hero {
 	background: #C6131E;
 	padding:0 0 75px 0px;
 	max-height:100vh;
+	margin-bottom:35px;
 }
 .hero a {
 	color:#ffffff;
@@ -337,26 +343,26 @@ section {
 	grid-template-columns: repeat(3, 1fr);
 	grid-gap: 1em;
 	justify-content: space-between;
+	
+	/*overflow: hidden!important;*/
 
 }
 .stats_1 { /*grid boxes*/
 	background:#C6131E;
 	height:100%;
-
 	display: grid;
 	grid-template-columns: 1fr;
 	align-items: center;
+
+	
 }
 .stats_x3 img {
 	padding:0!important;
 }
 
-
-
-
 .stats_x3 h2 {
-	font-size: 4em;
-	line-height: .9em;
+	font-size: 3em;
+	/*line-height: 1.3em;*/
 }
 .stats_x3 h3 {
 	font-size:2em;	
@@ -365,11 +371,13 @@ section {
 .stats_1 h2 {
 	color:#ffffff!important;
 	text-align: center;
-	line-height: 1.3em;
+	line-height: 1.5em;
+	padding:35px 15px;
+	font-weight: bold;
 }
 .stats_1 h2 span {
-	font-weight: bold;
 	text-decoration: underline;
+	font-size: 125px;
 }
 .stats_2 h2 {
 	color:#C6131E;
@@ -377,13 +385,13 @@ section {
 .stats_2 {
 	background:#ffffff;
 	border:1px solid black;
-	height:100%;
+	object-fit: contain;
 }
 .stats_2 img {
-/*	margin:0px;
-	object-fit: cover!important;
 	width:100%;
-	height:100%;*/
+	height:100%;
+	max-height: 310px;
+	overflow: hidden;
 }
 
 /* --- vision section @ discover page ---------------*/
