@@ -1,53 +1,11 @@
-<section class="hero"><div class="container">
-  <h1>Test Page</h1>
-</div></section>
-
-<section><div class="container">
-<!----------------------------- TEST *BELOW* THIS LINE ------------------------>
-<div class="replace_w_contentful" style="padding:35px;">
-  <h3>TRYING TO ACHIEVE:</h3>
-  <h4>METHOD</h4>
-  <p>Use rails, and middleman to pull in data from data.website.supporter</p>
-  <ol style="padding:5px 15px;"><li>copy contenful code from tim</li>
-    <li>create partial</li>
-    <li>create helper</li>
-    <li>turn on module required in config</li>
-  </ol>
-</div>
-
-
-<div>
-<!-- insert contentful code from tims site -->
-
-
-
-
-</div>
-
-<hr> <!-- --------------------------------------------- -->
-
-
-
-<!----------------------------- TEST *ABOVE* THIS LINE ------------------------>
-</div></section>
-
-<section id="video_resources" class="content_section resources video">
-  <div class="content">
-    <ul>
-      <% fetch_videos.each do |year, videos| %>
-        <li>
-          <h3><%= year %></h3>
-          <ul>
-            <% videos.each do |id, video| %>
-              <li>
-                <iframe src="<%= video.video_url %>?title=0&byline=0&portrait=0" width="640" height="320" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-                <h4><%= video.title %></h4>
-                <%# Markdown.new(!video.description.nil? ? video.description : "").to_html %>
-              </li>
-            <% end %>
-          </ul>
-        </li>
-      <% end %>
-    </ul>
-  </div>
-</section>
+<% posts = all_posts %>
+<div class="content container">
+      <h2>Recent Posts</h2>
+        <div class="recent_posts">
+          <% posts.take(3).each do |index, post| %>
+            <div class="post">
+              <%= partial "partials/post_list_item", :locals => { :post => post, :include_excerpt => true } %>
+            </div>
+          <% end %>
+        </div>
+      </div>

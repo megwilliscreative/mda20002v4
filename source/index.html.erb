@@ -28,7 +28,16 @@ BUILD HOME CONTENTS
 <section id="whats-happening" class="whats_happening">
   <div class=" replace_w_contentful container">
     <h3>What's Happening</h3>
-    <img src="/imgs/girl-window-1280px.jpg">
+    <!-- <img src="/imgs/girl-window-1280px.jpg"> -->
+
+    <% posts = all_posts %>
+    <div class="recent_posts">
+      <% posts.take(1).each do |index, post| %>
+        <div class="post">
+          <%= partial "partials/post_list_item", :locals => { :post => post, :include_excerpt => true } %>
+        </div> <!-- end post -->
+      <% end %>
+    </div> <!-- end recent posts -->
   </div>
 </section>
 

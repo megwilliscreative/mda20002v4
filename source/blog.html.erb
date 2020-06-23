@@ -1,7 +1,7 @@
 ---
-title: Blog
+title: Blog | Resources
+description: Blog
 ---
-
 
 <!DOCTYPE html>
 <html>
@@ -19,6 +19,58 @@ title: Blog
     </div>
   </div>
 </section>
+
+
+<!-- INSERT CONTENFUL  BLOG POSTS -->
+
+<% posts = all_posts %>
+<% if (posts.size > 0) %>
+  <% first_post = posts.shift %>
+
+  <% if (posts.size > 0) %>
+    <section id="recent_posts" class="content_section">
+
+      <div class="content container">
+      <h2>Recent Posts</h2>
+        <div class="recent_posts">
+          <% posts.each do |index, post| %>
+            <div class="post">
+              <%= partial "partials/post_list_item", :locals => { :post => post, :include_excerpt => true } %>
+            </div>
+          <% end %>
+        </div>
+      </div>
+    </section>
+  <% end %>
+<% else %>
+<% end %>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <!-- RECENT POSTS -->
 <section>

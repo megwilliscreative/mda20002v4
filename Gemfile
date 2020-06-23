@@ -14,4 +14,4 @@ gem 'contentful_middleman', '>= 4.0.0'
 
 
 # redcarpet for markdown
-# gem 'redcarpet'
+gem 'redcarpet'
