@@ -3,11 +3,6 @@
     margin:0 auto;
     border: 5px dotted orange;
 }
-/*@media only (max-width:767px){
-    .container {
-        max-width:767px;
-    }
-}*/
 
 .mobile_menu {
     display: grid;
@@ -27,7 +22,6 @@
 }
 
 .nav_list {
-    /*text-align: center;*/
     margin:0;
     padding:35px 0;
     border: 5px dotted teal;
@@ -49,11 +43,6 @@
 h2 {
     font-family: adobe-garamond-pro, serif;
     font-weight: 700;
-    /*font-style: normal;*/
-    font-size: 45px;
-    /*color: #000000!important;*/
-    /*line-height: .9em;*/
-    /*padding:15px 0;*/
 }
 h3 {
     font-family: Avenir, Nunito, sans serif;
