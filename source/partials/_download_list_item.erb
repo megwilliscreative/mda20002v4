@@ -1,13 +1,13 @@
 
-<div class="blog_post">
+<div class="blog_post_dl">
 
-  <div class="blog_image">
+  <div class="blog_image_dl">
     <a href="/learn/<%= post.slug %>.html">
     <%= image_tag post.hero_image.url + "?w=700&h=460&fit=thumb" %>
     </a>
   </div>  
 
-  <div class="blog_text">
+  <div class="blog_text_dl">
   	<% if (!post.tags.nil? && post.tags.include?("Story")) %>
   		<h3 class="type">Story</h3>
   	<% end %>

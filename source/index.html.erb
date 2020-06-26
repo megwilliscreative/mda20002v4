@@ -26,14 +26,13 @@ BUILD HOME CONTENTS
 
 <!-- whats happening -->
 <section id="whats-happening" class="whats_happening">
-  <div class=" replace_w_contentful container">
+  <div class="replace_w_contentful container">
     <h3>What's Happening</h3>
-    <!-- <img src="/imgs/girl-window-1280px.jpg"> -->
 
     <% posts = all_posts %>
-    <div class="recent_posts">
+    <div><!--  class="recent_posts"> -->
       <% posts.take(1).each do |index, post| %>
-        <div class="post">
+        <div><!--  class="post"> -->
           <%= partial "partials/download_list_item", :locals => { :post => post, :include_excerpt => true } %>
         </div> <!-- end post -->
       <% end %>
@@ -49,7 +48,7 @@ BUILD HOME CONTENTS
       <% posts = all_posts %>
       <div>
           <% posts.take(3).each do |index, post| %>
-            <div><!--  class="home_engage_posts"> -->
+            <div>
               <%= partial "partials/post_list_item", :locals => { :post => post, :include_excerpt => true } %>
             </div>
           <% end %>
@@ -88,9 +87,9 @@ BUILD HOME CONTENTS
   <div class="replace_w_contentful container">
 <!-- <img src="/imgs/wallpaper-is58v12-1280px.jpg"> -->
     <% posts = all_posts %>
-    <div class="recent_posts">
+    <div class="">
       <% posts.take(1).each do |index, post| %>
-        <div class="post">
+        <div class="">
           <%= partial "partials/download_list_item", :locals => { :post => post, :include_excerpt => true } %>
         </div> <!-- end post -->
       <% end %>

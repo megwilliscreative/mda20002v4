@@ -1,11 +1,39 @@
-<% posts = all_posts %>
-<div class="content container">
-      <h2>Recent Posts</h2>
-        <div class="recent_posts">
-          <% posts.take(3).each do |index, post| %>
-            <div class="post">
-              <%= partial "partials/post_list_item", :locals => { :post => post, :include_excerpt => true } %>
-            </div>
-          <% end %>
-        </div>
-      </div>
+---
+layout: test
+---
+
+
+<div id="mobile_menu">
+	<div class="container">
+		<div class="mobile_menu">
+			
+
+			<div class="logo">
+				<a href="/index.html"><img src="/imgs/logo-red.svg"></a>
+			</div>
+
+			<div class="close_x">
+				<h3>close <i class="fas fa-times"></i></h3>
+			</div>
+			
+
+			<div class="nav_list">
+				<nav>
+					<ul>
+						<li><h2>Discover</h2></li>
+						<li><h2>Learn</h2></li>
+						<li><h2>Engage</h2></li>
+						<li><h2>Team</h2></li>
+						<li><h2>Contact</h2></li>
+					</ul>
+				</nav>
+			</div>
+			
+
+		</div>
+	</div>
+</div>
+
+
+
+

@@ -12,6 +12,25 @@
 /*==================================================================================
 GLOBAL STYLES*/
 
+/*--- NOTES TO SELF ---*/
+
+.replace_w_contentful {
+	background:rgba(35, 175, 186, 0.10);
+	z-index: 99999;
+	/*position: absolute;*/
+
+}
+.replace_w_supplied {
+	background: yellow;
+	color:#000000;
+}
+.meg_to_edit{
+	background: rgba(255, 181, 28, 0.50);
+	color:#000000;
+}
+/*END*/
+
+
 *,
 *::before, 
 *::after {
@@ -96,17 +115,12 @@ button i:hover {
 
 .site-notice {
 	position: fixed;
-	/*top: auto;
-	left: 0;
-	right:0;
-	bottom:0!important;*/
 
 	top: 25%;
 	left: auto;
 	right: 0;
 	bottom: auto !important;
 
-	/*margin:35px;*/
 	width:25vw;
 	font-size: 14px;
 	padding: 2em;
@@ -207,20 +221,8 @@ nav {
 
 /*============== MAIN SECTION STYLES ========================================*/
 
-.replace_w_contentful {
-	background:rgba(35, 175, 186, 0.10);
-	z-index: 99999;
-	/*position: absolute;*/
 
-}
-.replace_w_supplied {
-	background: yellow;
-	color:#000000;
-}
-.meg_to_edit{
-	background: rgba(255, 181, 28, 0.50);
-	color:#000000;
-}
+
 
 
 body {
@@ -267,59 +269,65 @@ section {
 BLOG POST SECTION ------------------------------- */
 
 
-
 .blog_post {
-	display: grid;
-	grid-template-columns: 1fr 2fr;
-	grid-gap: 35px;
-	/*line-height: 1.5em;*/
-}
-.blog_post h2 a {
-	color:#000000;
-	font-size: 1.2em;
-	line-height: 1em;
-}
-.blog_post h3 {
-	/*padding-bottom: 0px;*/
-}
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 35px;
 
-.whats_happening .blog_post {
-	grid-template-columns: 1fr;
-}
-.download_wallpaper .blog_post {
-	grid-template-columns: 1fr;
+    height: 325px;
+    overflow: hidden;
+    /*padding-bottom: 15px 0px;*/
+    margin:38px 0px;
 }
 .blog_image {
-	/*min-width:66%;*/
-	/*padding:0px 35px;*/
-	object-fit: cover;
+    display: inline-block;
+    position: relative;
+    right: -50%;
 }
-.blog_text p {
-	padding-bottom:15px;
+.blog_image img {
+    position: relative;
+    left: -50%;
+    width:105%;
+    height:105%;
+
+    object-fit: cover;
+}
+
+
+/*trying to get 16x9 image 1x1 grid*/
+.blog_post_dl {
+	/*display: grid;*/
+    /*grid-template-columns: 1fr;*/
+    grid-gap: 35px;
+    width:100%;
+    height: 50%;
+    /*overflow: hidden;*/
+
+    margin:38px 0px;
+}
+.blog_image_dl {
+	display: inline-block;
+    position: relative;
+    right: -50%;
+}
+.blog_image_dl img {
+	/*grid-template-columns: 1fr;*/
+	padding:35px 0px;
+
+    position: relative;
+    left: -50%;
+    width:105%;
+    height:105%;
+
+    /*object-fit: cover;	*/
 }
 
 
 
 
-
-/*.blog_post h2{
-	/*color:#000000;
-	line-height: 1em;
-	padding-bottom: 15px;
+.download_wallpaper .blog_text {
+	padding:35px 0px;
 }
-.blog_post h3{
-	font-size: 16px;
-	padding-bottom: 15px;
-}*/
-/*.blog_post {
-	display:flex;
-	width:100%;
-	justify-content: space-between;
-	margin:35px 0;
-	/*overflow: hidden;
-}*/
-/*.home_engage_posts {*/
-
 
 
 

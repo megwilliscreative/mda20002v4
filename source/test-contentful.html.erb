@@ -1,0 +1,11 @@
+<% posts = all_posts %>
+<div class="content container">
+      <h2>Recent Posts</h2>
+        <div class="recent_posts">
+          <% posts.take(3).each do |index, post| %>
+            <div class="post">
+              <%= partial "partials/post_list_item", :locals => { :post => post, :include_excerpt => true } %>
+            </div>
+          <% end %>
+        </div>
+      </div>
