@@ -114,6 +114,8 @@ button i:hover {
 }
 
 .site-notice {
+	display: none;
+
 	position: fixed;
 
 	top: 25%;
@@ -148,56 +150,98 @@ button i:hover {
 }
 
 /* --- POPUP STYLES ----------------------------------------------------- */
-#email_popup {
-	display: none;
-}
 
-.popup_frame {
-    max-width: 550px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: space-between;
-    /*position: absolute;*/
+.modal_overlay {
+	background-color: rgba(0, 0, 0, 0.5);
+	/*opacity: 0;*/
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	transition: all 0.3s ease-in-out;
+	/*z-index: -1;*/
 }
-/*.popup_frame h2,h3 {
-    color: #C6131E;
-    font-size: 3em;
-}*/
-.popup_form input {
+.modal {
+	background-color: #fff;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+	position: relative;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 580px;
+	max-width: 75%;
+}
+.modal-header {
+	display: grid;
+	grid-template-columns: 3fr 2fr;
+	grid-gap: 1em;
+	padding-left:35px;
+	align-items: center;
+}
+.modal-header a {
+	color: #C6131E!important;
+	text-align: right;
+	position:absolute;
+	padding:15px;
+	top:0;
+	right:0;
+}
+.modal-header a span {
+	font-size:3em;
+}
+.modal-header h2 {
+	text-align: left;
+	color: #C6131E!important;
+	padding-top: 35px;
+	font-weight: bold;
+	margin:0;
+}
+.modal_image {
+	/*max-width:150px;*/
+	/*padding:15px 0 15px 15px;*/
+}
+.modal_form input {
     width:100%;
     background:none;
     border:0px;
     border-bottom: 1px solid white;
-    padding: 6px 10px;
+    padding: 6px 0;
     margin: 15px 0px;
     font-size:18px;
     color: #ffffff !important;
     text-transform: uppercase;
-    opacity: 1;
+    /*opacity: 1;*/
+    
 }
-.popup_text {
-    /*border: 5px dotted black;*/
-    min-width: 550px;
+.modal-body {
+	background:#C6131E;
+	padding:35px 35px 75px 35px;
 }
-.popup_image {
-    min-width: 300px;
+.modal_close{
+	color:#C6131E;
+	position: absolute;
+	top:0;
+	right:0;
+	padding-right:15px;
+	margin:0px;
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	grid-gap:0px;
+	justify-items: end;
+	align-items: center;
+	
 }
-.popup_image img {
-    /*border: 5px dotted #f0f;*/
-    max-width: 250px;
-    margin: 0px 0px 0px auto;
-    padding:0px;
-}
-
-.popup_form {
-    background:#C6131E;
-    padding:35px 75px;
-
+.close h3 {
+	font-size: 1.2em;
+	padding:0px;
+	margin:0px;
 }
 .close_x h3 {
-    text-align: right;
-    position: relative;
-    z-index: 10;
+	line-height: 0.9;
+	font-size: 4em;
+	padding:5px;
+	margin:0px;
 }
 /*END POPUP STYLES*/
 
