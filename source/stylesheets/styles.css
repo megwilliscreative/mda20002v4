@@ -42,6 +42,7 @@ html {
 	font-family: Avenir, Nunito, sans serif;
 	font-size:16px;
 	box-sizing: border-box;
+	width:100%;
 }
 a {
 	text-decoration: none;
@@ -282,15 +283,17 @@ nav {
 	padding:35px 0;
 	border: 2px solid yellow;
 }
-.nav-brand {	
+/*.nav-brand {	
 	width:100px;
 	padding:5px;
-}
+}*/
 
 
  /*--- menu header nav --- */
 
-
+.menu .nav-brand {
+	display: none;
+}
 
 .nav-list {
     border-bottom: 1px solid #EAEAEB;
@@ -306,11 +309,12 @@ nav {
     clear: right;
     text-decoration: none;
     color: #ffffff;
+    background: #ff00ff;
     margin: 0 10px;
 	text-transform: uppercase;
 	/*border: 2px solid purple;*/
 }
-/*THIS IS THE HAMBURGER. SHOULD SHOW ON <500PX*/
+/*THIS IS THE HAMBURGER. SHOULD _ONLY_ SHOW ON <500PX*/
 label {
     margin: 0 40px 0 0;
     font-size: 26px;
@@ -327,9 +331,6 @@ label {
 
 
 @media only screen and (max-width: 500px) {
-/*  .container {
-    	width: 100%;
-    }*/
     .nav-brand {
     	margin-bottom:125px;
     }
