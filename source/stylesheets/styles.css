@@ -293,7 +293,7 @@ nav {
 
 
 .nav-list {
-    /*border-bottom: 1px solid #EAEAEB;*/
+    border-bottom: 1px solid #EAEAEB;
     text-align: right;
     height: 70px;
     line-height: 70px;
@@ -308,9 +308,9 @@ nav {
     color: #ffffff;
     margin: 0 10px;
 	text-transform: uppercase;
-	/*border: 2px solid yellow;*/
+	/*border: 2px solid purple;*/
 }
-
+/*THIS IS THE HAMBURGER. SHOULD SHOW ON <500PX*/
 label {
     margin: 0 40px 0 0;
     font-size: 26px;
@@ -319,7 +319,7 @@ label {
     width: 26px;
     float: right;
     color: #ffffff;
-    border: 3px solid yellow;
+    /*border: 3px solid yellow;*/
 }
 #toggle {
     display: none;
@@ -334,15 +334,19 @@ label {
     	margin-bottom:125px;
     }
     label {
-        display: block;
+        display: inline;
         cursor: pointer;
-        /*z-index: 9999;*/
+        color: #C6131E;
+        text-transform: uppercase;
+    }
+    label i {
+    	font-size:45px;
     }
     .menu {
         background: #ffffff;
         text-align: left;
         width: 100%;
-        /*display: none;*/
+        display: none;
         position: fixed;
 		top: 0;
 		left: 0;
@@ -357,7 +361,7 @@ label {
         display: block;
         /*border-bottom: 1px solid #EAEAEB;*/
         margin: 0;
-        line-height: 1.3em;
+        line-height: 1.5em;
 	    font-family: adobe-garamond-pro, serif;
 		font-weight: 600;
 		/*font-style: normal;*/
@@ -366,8 +370,13 @@ label {
      
     }
     #toggle:checked + .menu {
-        display: block;
+        display: inline;
         background:white;
+    }
+    .menu_header {
+    	display: grid;
+    	grid-template-columns: repeat(2,1fr);
+    	width:100%;
     }
     
     
