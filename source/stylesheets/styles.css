@@ -283,6 +283,7 @@ nav {
 }
 .nav-brand {	
 	width:100px;
+	padding:5px;
 }
 
 /*.menu-icons i {
@@ -317,10 +318,25 @@ nav {
 	padding:6px 10px;
 }
 
+ /*--- mobile @ nav -----------------------------------------------------*/
+@media screen and only (max-width: 767px) {
+	nav {
+		width:100%;
+		display: flex;
+		/*align-items: center;*/
+		justify-content: space-between;
+		padding:35px 0;
+	}
+	.nav-brand {	
+		width:70px;
+		padding:5px;
+	}
+}
+
 
 /* ---- mobile navigation ----------------------------------------------------- */
 .mobile_menu {
-	/*display:none;*/
+	display:none!important;
 
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -352,8 +368,13 @@ nav {
     margin:0;
     padding:35px 0;
     /*border: 5px dotted teal;*/
-
 }
+.mobile_menu .nav-link  {
+	text-transform: none;
+	font-size:45px;
+	color:#C6131E!important;
+}
+
 .nav_list h2 {
 	font-weight: bold;
 	color:#C6131E!important;
@@ -369,6 +390,7 @@ nav {
 .nav_list i {
 	font-size: 4em;
 }
+
 
 /*============== MAIN SECTION STYLES ========================================*/
 
@@ -1151,6 +1173,9 @@ footer a {
 	color:#ffffff;
 	font-size: 14px;
 }
+footer div {
+	padding-bottom:35px;
+}
 .footer_layout {
 	display: flex;
 	align-items: flex-start;
@@ -1181,17 +1206,21 @@ footer a {
 	color: #ffffff;
 	text-transform: uppercase;
 }
+footer .nav_brand {
+	padding:0 35px 0 0;
+}
 .footer_socials ul li {
 	display:inline;
 }
 .footer_socials a:hover {
-	color:red;
+	color:#C6131E;
 }
 
 @media only screen and (max-width: 767px) {
 	.footer_layout {
 		display: grid;
-		grid-template-columns: repeat(3, 1fr);
+		grid-template-columns: repeat(2, 1fr);
+		/*align-items: center;*/
 		
 	}
 }
