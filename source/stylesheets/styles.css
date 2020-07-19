@@ -280,6 +280,7 @@ nav {
 	align-items: center;
 	justify-content: space-between;
 	padding:35px 0;
+	border: 2px solid yellow;
 }
 .nav-brand {	
 	width:100px;
@@ -292,10 +293,11 @@ nav {
 
 
 .nav-list {
-    border-bottom: 1px solid #EAEAEB;
+    /*border-bottom: 1px solid #EAEAEB;*/
     text-align: right;
     height: 70px;
     line-height: 70px;
+    border: 2px solid green;
 }
 .menu {
     margin: 0 30px 0 0;
@@ -303,13 +305,10 @@ nav {
 .menu a {
     clear: right;
     text-decoration: none;
-    color: gray;
+    color: #ffffff;
     margin: 0 10px;
-    line-height: 70px;
-}
-
-span {
-    color: #54D17A;
+	text-transform: uppercase;
+	/*border: 2px solid yellow;*/
 }
 
 label {
@@ -319,6 +318,8 @@ label {
     display: none;
     width: 26px;
     float: right;
+    color: #ffffff;
+    border: 3px solid yellow;
 }
 #toggle {
     display: none;
@@ -326,46 +327,51 @@ label {
 
 
 @media only screen and (max-width: 500px) {
+/*  .container {
+    	width: 100%;
+    }*/
+    .nav-brand {
+    	margin-bottom:125px;
+    }
     label {
         display: block;
         cursor: pointer;
+        /*z-index: 9999;*/
     }
     .menu {
-        text-align: center;
+        background: #ffffff;
+        text-align: left;
         width: 100%;
-        display: none;
+        /*display: none;*/
+        position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		transition: all 0.3s ease-in-out;
+		padding: 35px 35px;
+		/*z-index: 9900;*/
     }
     .menu a {
+        color: #C6131E;
         display: block;
-        border-bottom: 1px solid #EAEAEB;
+        /*border-bottom: 1px solid #EAEAEB;*/
         margin: 0;
+        line-height: 1.3em;
+	    font-family: adobe-garamond-pro, serif;
+		font-weight: 600;
+		/*font-style: normal;*/
+		font-size: 45px;
+		text-transform: none;
      
     }
     #toggle:checked + .menu {
         display: block;
+        background:white;
     }
     
     
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* ---- mobile navigation ----------------------------------------------------- */
