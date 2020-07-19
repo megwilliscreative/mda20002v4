@@ -5,7 +5,7 @@
 
  /*TEST ZONE ---------------------------------------------------- */
 
- /* - END TEST ZONE -------- */
+ 	/* - END TEST ZONE -------- */
 
 
 
@@ -14,21 +14,21 @@ GLOBAL STYLES*/
 
 /*--- NOTES TO SELF ---*/
 
-.replace_w_contentful {
-	background:rgba(35, 175, 186, 0.10);
-	z-index: 99999;
-	/*position: absolute;*/
+	/*.replace_w_contentful {
+		background:rgba(35, 175, 186, 0.10);
+		z-index: 99999;
+		
 
-}
-.replace_w_supplied {
-	background: yellow;
-	color:#000000;
-}
-.meg_to_edit{
-	background: rgba(255, 181, 28, 0.50);
-	color:#000000;
-}
-/* ---- END ------------------ */
+	}
+	.replace_w_supplied {
+		background: yellow;
+		color:#000000;
+	}
+	.meg_to_edit{
+		background: rgba(255, 181, 28, 0.50);
+		color:#000000;
+	}*/
+	/* ---- END ------------------ */
 
 
 *,
@@ -42,11 +42,9 @@ html {
 	font-family: Avenir, Nunito, sans serif;
 	font-size:16px;
 	box-sizing: border-box;
-	width:100%;
 }
 a {
 	text-decoration: none;
-
 }
 ul {
 	list-style:none;
@@ -132,18 +130,18 @@ button i:hover {
 	color:#000000;
 	z-index: 9999;
 	box-shadow: 0 1px 1em rgba(0, 0, 0, 0.2);
-}
-.site-notice li {
-	padding-bottom: 15px;
-}
-.site-notice a {
-	color:#fff;
-	text-transform: uppercase;
-	background: #ff00ff;
-	padding: 6px 15px;
-	margin: 25px 0;
-	border-radius: 2px; 
-}
+	}
+	.site-notice li {
+		padding-bottom: 15px;
+	}
+	.site-notice a {
+		color:#fff;
+		text-transform: uppercase;
+		background: #ff00ff;
+		padding: 6px 15px;
+		margin: 25px 0;
+		border-radius: 2px; 
+	}
 .border_box {
 	border-top:10px solid #C6131E;
 	border-bottom:10px solid #C6131E;
@@ -152,103 +150,103 @@ button i:hover {
 
 /* --- POPUP STYLES ----------------------------------------------------- */
 
-.modal_overlay {
-	background-color: rgba(0, 0, 0, 0.5);
-	opacity: 0;
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	transition: all 0.3s ease-in-out;
-	z-index: -1;
-}
-.modal {
-	background-color: #fff;
-	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
-	position: relative;
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%, -50%);
-	width: 580px;
-	max-width: 75%;
-}
-.modal.open {
-	opacity: 1;
-	z-index: 999;
-}
-.modal-header {
-	display: grid;
-	grid-template-columns: 3fr 2fr;
-	grid-gap: 1em;
-	padding-left:35px;
-	align-items: center;
-}
-.modal-header a {
-	color: #C6131E!important;
-	text-align: right;
-	position:absolute;
-	padding:15px;
-	top:0;
-	right:0;
-}
-.modal-header a span {
-	font-size:3em;
-}
-.modal-header h2 {
-	text-align: left;
-	color: #C6131E!important;
-	padding-top: 35px;
-	font-weight: bold;
-	margin:0;
-}
-.modal_image {
-	/*max-width:150px;*/
-	/*padding:15px 0 15px 15px;*/
-}
-.modal_form input {
-    width:100%;
-    background:none;
-    border:0px;
-    border-bottom: 1px solid white;
-    padding: 6px 0;
-    margin: 15px 0px;
-    font-size:18px;
-    color: #ffffff !important;
-    text-transform: uppercase;
-    /*opacity: 1;*/
-    
-}
-.modal-body {
-	background:#C6131E;
-	padding:35px 35px 75px 35px;
-}
-.modal_close{
-	color:#C6131E;
-	position: absolute;
-	top:0;
-	right:0;
-	padding-right:15px;
-	margin:0px;
-	display: grid;
-	grid-template-columns: 2fr 1fr;
-	grid-gap:0px;
-	/*justify-items: end;*/
-	align-items: center;
-	
-}
-.close h3 {
-	font-size: 1.2em;
-	padding:0px;
-	margin:0px;
-}
-.close_x h3 {
-	line-height: 0.9;
-	font-size: 4em;
-	padding:5px;
-	margin:0px;
-}
-/*END POPUP STYLES*/
+	.modal_overlay {
+		background-color: rgba(0, 0, 0, 0.5);
+		opacity: 0;
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		transition: all 0.3s ease-in-out;
+		z-index: -1;
+	}
+	.modal {
+		background-color: #fff;
+		box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+		position: relative;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		width: 580px;
+		max-width: 75%;
+	}
+	.modal.open {
+		opacity: 1;
+		z-index: 999;
+	}
+	.modal-header {
+		display: grid;
+		grid-template-columns: 3fr 2fr;
+		grid-gap: 1em;
+		padding-left:35px;
+		align-items: center;
+	}
+	.modal-header a {
+		color: #C6131E!important;
+		text-align: right;
+		position:absolute;
+		padding:15px;
+		top:0;
+		right:0;
+	}
+	.modal-header a span {
+		font-size:3em;
+	}
+	.modal-header h2 {
+		text-align: left;
+		color: #C6131E!important;
+		padding-top: 35px;
+		font-weight: bold;
+		margin:0;
+	}
+	.modal_image {
+		/*max-width:150px;*/
+		/*padding:15px 0 15px 15px;*/
+	}
+	.modal_form input {
+	    width:100%;
+	    background:none;
+	    border:0px;
+	    border-bottom: 1px solid white;
+	    padding: 6px 0;
+	    margin: 15px 0px;
+	    font-size:18px;
+	    color: #ffffff !important;
+	    text-transform: uppercase;
+	    /*opacity: 1;*/
+	    
+	}
+	.modal-body {
+		background:#C6131E;
+		padding:35px 35px 75px 35px;
+	}
+	.modal_close{
+		color:#C6131E;
+		position: absolute;
+		top:0;
+		right:0;
+		padding-right:15px;
+		margin:0px;
+		display: grid;
+		grid-template-columns: 2fr 1fr;
+		grid-gap:0px;
+		/*justify-items: end;*/
+		align-items: center;
+		
+	}
+	.close h3 {
+		font-size: 1.2em;
+		padding:0px;
+		margin:0px;
+	}
+	.close_x h3 {
+		line-height: 0.9;
+		font-size: 4em;
+		padding:5px;
+		margin:0px;
+	}
+	/*END POPUP STYLES*/
 
 /* ---------- END GLOBAL STYLES -------------------------------------------------- */
 
@@ -281,12 +279,12 @@ nav {
 	align-items: center;
 	justify-content: space-between;
 	padding:35px 0;
-	border: 2px solid yellow;
+	/*border: 2px solid yellow;*/
 }
-/*.nav-brand {	
+.nav-brand {	
 	width:100px;
 	padding:5px;
-}*/
+}
 
 
  /*--- menu header nav --- */
@@ -302,15 +300,13 @@ nav {
     line-height: 70px;
     border: 2px solid green;
 }
-.menu {
-    margin: 0 30px 0 0;
-}
+
 .menu a {
     clear: right;
     text-decoration: none;
     color: #ffffff;
-    background: #ff00ff;
-    margin: 0 10px;
+    /*background: #ff00ff;*/
+    margin: 0 0 0 10px;
 	text-transform: uppercase;
 	/*border: 2px solid purple;*/
 }
@@ -331,6 +327,7 @@ label {
 
 
 @media only screen and (max-width: 500px) {
+
     .nav-brand {
     	margin-bottom:125px;
     }
@@ -342,7 +339,11 @@ label {
     }
     label i {
     	font-size:45px;
+    	padding-top: 35px;
     }
+    .menu .nav-brand {
+		display: inline;
+	}
     .menu {
         background: #ffffff;
         text-align: left;
