@@ -13,7 +13,7 @@ GLOBAL STYLES*/
 
 /*--- NOTES TO SELF ---*/
 
-	/*.replace_w_contentful {
+	.replace_w_contentful {
 		background:rgba(35, 175, 186, 0.10);
 		z-index: 99999;
 		
@@ -26,7 +26,7 @@ GLOBAL STYLES*/
 	.meg_to_edit{
 		background: rgba(255, 181, 28, 0.50);
 		color:#000000;
-	}*/
+	}
 	/* ---- END ------------------ */
 
 
@@ -95,6 +95,7 @@ button {
 	text-transform: uppercase;
 	border:0px;
 	cursor: pointer;
+
 }
 button i {
 	color:#ffffff;
@@ -102,6 +103,7 @@ button i {
 }
 button i:hover {
 	padding-left: 25px;
+	transition: all 0.1s ease-in-out;
 }
 .btn-white {
 	background: white;
@@ -120,6 +122,7 @@ button i:hover {
 }
 .btn-white i:hover {
 	padding-left: 25px;
+	transition: all 0.1s ease-in-out;
 }
 
 .site-notice {
@@ -1255,7 +1258,11 @@ BLOG POST SECTION ------------------------------- */
 	margin: 15px 0px;
 	font-size:14px;
 	color: #000000;
+	
+}
+.leave_message ::placeholder {
 	text-transform: uppercase;
+	opacity:1;
 }
 .leave_message label {
 	font-size:14px;
