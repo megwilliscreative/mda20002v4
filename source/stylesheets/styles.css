@@ -288,7 +288,15 @@ nav {
 
 
  /*--- menu header nav --- */
-
+.menu {
+/*	position: fixed;
+	top:0;
+	bottom:0;
+	right:0;
+	left:0;*/
+	background:#ffffff;
+	z-index: 9999;
+}
 .menu .nav-brand {
 	display: none;
 }
@@ -297,7 +305,7 @@ nav {
     text-align: right;
     height: 70px;
     line-height: 70px;
-    border: 2px solid green;
+    /*border: 2px solid green;*/
 }
 
 .menu a {
@@ -339,7 +347,8 @@ label {
     }
     label i {
     	font-size:45px;
-    	padding-top: 35px;
+    	padding: 35px 0;
+    	margin:0px;
     }
     .nav-brand {
 		display: inline;
@@ -373,7 +382,6 @@ label {
         line-height: 1.5em;
 	    font-family: adobe-garamond-pro, serif;
 		font-weight: 600;
-		/*font-style: normal;*/
 		font-size: 45px;
 		text-transform: none;
      
