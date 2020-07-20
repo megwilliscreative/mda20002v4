@@ -610,10 +610,10 @@ BLOG POST SECTION ------------------------------- */
 	grid-gap: 1em;
 	justify-content: center;
 }
-.email_slim input[type="email" ] {
+.email_slim_form input[type="email" ] {
   	padding:10px;
 }
-.email_slim input{
+.email_slim_form input{
 	width:100%;
 	background:none;
 	border:0px;
@@ -622,7 +622,7 @@ BLOG POST SECTION ------------------------------- */
 	/*margin: 0 15px;*/
 	font-size:18px;
 	color: #ffffff;
-	text-transform: uppercase;
+	
 	/*font-weight: 600;*/
 }
 .email_slim button {
@@ -632,6 +632,19 @@ BLOG POST SECTION ------------------------------- */
 	color:#ffffff!important;
 	padding:.3em;
 	font-size: 2em;
+}
+.email_slim_form ::placeholder {
+	text-transform: uppercase;
+	color:white;
+	opacity: 1;
+}
+.email_slim_form input:focus {
+  background-color: white;
+  color:#C6131E;
+  border:0px!important;
+}
+.email_slim_form button:focus{
+	/*border:0px;*/
 }
 
 
@@ -766,6 +779,7 @@ BLOG POST SECTION ------------------------------- */
   	/*border:1px black dotted;*/
   	margin-top:-75px;
 }
+
 .signup_large input{
 	width:100%;
 	background:none;
@@ -775,11 +789,23 @@ BLOG POST SECTION ------------------------------- */
 	margin: 15px 0px;
 	font-size:18px;
 	color: #ffffff;
-	text-transform: uppercase;
+	
 	opacity:	1;
 	/*font-weight: 600;*/
 }
-
+.signup_large ::placeholder {
+	text-transform: uppercase;
+	color:white;
+	opacity: 1;
+}
+.signup_large input:focus {
+  background-color: white;
+  color:#C6131E;
+  border:0px;
+}
+.signup_large button:focus{
+	border:0px;
+}
 
 /*-------- @ Learn page --------------------------------*/
 
