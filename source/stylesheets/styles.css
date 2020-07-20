@@ -1265,6 +1265,12 @@ BLOG POST SECTION ------------------------------- */
 	}
 
 }
+#thanks {
+	height:50vh;
+	margin:auto 0;
+	padding:75px 0;
+	text-align: center;
+}
 
 /* === END MAIN SECTION STYLES ======================================  */
 
