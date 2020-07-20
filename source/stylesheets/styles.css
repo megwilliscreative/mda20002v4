@@ -1354,6 +1354,9 @@ footer div {
 	margin: 15px 0px;
 	font-size:14px;
 	color: #ffffff;
+	
+}
+.footer_form ::placeholder {
 	text-transform: uppercase;
 }
 footer .nav_brand {
@@ -1364,6 +1367,13 @@ footer .nav_brand {
 }
 .footer_socials a:hover {
 	color:#C6131E;
+}
+.footer_icons li {
+	display: inline-block;
+}
+.footer_icons li i {
+	font-size:18px;
+	padding:.3em;
 }
 
 @media only screen and (max-width: 767px) {
