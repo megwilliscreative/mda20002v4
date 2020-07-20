@@ -1,6 +1,5 @@
 /*QUICK REFERENCE*/
-
-/* #C6131E MDA red */
+	/* #C6131E MDA red */
 
 
  /*TEST ZONE ---------------------------------------------------- */
@@ -272,6 +271,11 @@ header a {
 	padding: 10px 0px;
 	/*position: relative;*/
 
+}
+@media only screen and (max-width: 767px) {
+	.container {
+		padding:35px;
+	}
 }
 nav {
 	width:100%;
@@ -1031,15 +1035,18 @@ BLOG POST SECTION ------------------------------- */
 }
 
 .support_grid {
-	grid-template-columns: repeat(4, 1fr);
-
 	display: grid;
+	grid-template-columns: repeat(4, 1fr);
 	justify-content: space-between;
 	grid-column-gap: 2em;
-	/*grid-row-gap: .5em;*/
-	/*grid-auto-rows: minmax(100px, auto);*/
 }
-
+@media only screen and (max-width: 767px) {
+	.support_grid {
+		grid-template-columns: repeat(3,1fr);
+		grid-gap: 1em;
+		padding:35px;
+	}
+}
 .media_grid_box, .support_grid_box {
 	/*min-width: 32%;*/
 	background:#ffffff;
@@ -1190,6 +1197,7 @@ BLOG POST SECTION ------------------------------- */
 }
 .contact_form {
 	display: flex;
+	/*grid-template-columns: repeat(2,1fr);*/
 	width:100%;
 	justify-content: space-between;
 	padding:0px;
@@ -1217,14 +1225,32 @@ BLOG POST SECTION ------------------------------- */
 
 .leave_message textarea {
 	width:100%;
-	background:none;
+	/*height:100%;*/
+	background:#f7f7f7;
 	border:0px;
 	border-bottom: 1px solid #000000;
 	padding: 6px 10px;
 	margin: 15px 0px;
+	text-transform: uppercase;
+	font-family: avenir, sans-serif;
+	font-size:14px;
 }
 
 
+@media only screen and (max-width: 767px) {
+	.contact_form {
+		display: block;
+	}
+	.leave_message {
+		width:100%;
+		padding:0;
+		margin:0px;
+	}
+	.leave_message label {
+		display:none;
+	}
+
+}
 
 /* === END MAIN SECTION STYLES ======================================  */
 
