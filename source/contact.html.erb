@@ -31,7 +31,14 @@ title: Contact
     <div class="contact_form">
       <div class="leave_message">
 
-          <form id="mda_contact" action="/test-page.html" data-netlify="true">
+
+
+<!-- 
+TRYING TO ACHIEVE:
+= SEND EMAIL ON SUBMIT
+ -->
+
+          <form id="mda_contact" method="POST" data-netlify="true">
             <input type="text" id="fname" name="First Name" placeholder="First Name"><br><br>
             <input type="text" id="lname" name="Last Name" placeholder="Last Name"><br><br>
             <input type="email" id="email" name="Email" placeholder="Email">
@@ -49,9 +56,17 @@ title: Contact
               Send <i class="fas fa-chevron-right"></i></button>
 
           </form>
+
+
+
+
+
+
+
       </div>
       <div class="contact_address">
         <h2>PO Box 2216, <br>Toowoomba QLD 4350 <br>Ph. 07 4637 8244</h2>
+        <a href="mailto:admin@movement.org.au"><h2>admin@movement.org.au</h2></a>
       </div>
     </div> <!-- end contact form -->
   </div><!-- end container -->
