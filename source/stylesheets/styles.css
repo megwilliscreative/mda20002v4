@@ -54,14 +54,15 @@ img {
 }
 
 h1 {
-	font-size: 105px;
+	font-size: 100px;
 	font-weight: 900;
+	line-height: 1em;
 }
 h2 {
 	font-family: adobe-garamond-pro, serif;
 	font-weight: 400;
 	/*font-style: normal;*/
-	font-size: 45px;
+	font-size: 50px;
 	color: #000000!important;
 	line-height: .9em;
 	padding:15px 0;
@@ -71,7 +72,17 @@ h3 {
 	font-size: 25px;
 	line-height: 1.3em;
 }
-
+@media only screen and (max-width: 767px) {
+	h1 {
+		font-size: 80px;
+	}
+	h2 {
+		font-size: 40px;
+	}
+	h3 {
+		font-size: 20px;
+	}
+}
 button {
 	color:#ffffff;
 	background: #C6131E;
@@ -325,7 +336,7 @@ nav {
 }
 /*THIS IS THE HAMBURGER. SHOULD _ONLY_ SHOW ON <500PX*/
 label {
-    margin: 0 40px 0 0;
+    /*margin: 0 40px 0 0;*/
     font-size: 75px;
     line-height: 70px;
     display: none;
@@ -340,7 +351,7 @@ label {
 
 @media only screen and (max-width: 500px) {
 
-    .nav-brand {
+    .menu .nav-brand {
     	margin-bottom:125px;
     }
     label {
@@ -356,8 +367,8 @@ label {
     }
     .nav-brand {
 		display: inline;
-		padding-left:35px;
-		width:125px;
+		/*padding-left:35px;*/
+		width:100px;
 	}
 	.menu .nav-brand {
 		display: inline;
@@ -500,15 +511,18 @@ section {
 
 @media only screen and (max-width: 767px) {
 	.hero {
-	background: #C6131E;
-	padding:0 30px;
-	max-height:100vh;
+		background: #C6131E;
+		/*padding:0 30px;*/
+		max-height:100vh;
 	}
 	.hero a {
-	color:#ffffff;
+		color:#ffffff;
 	}
 	.hero h1 {
-	font-size: 4em;
+		font-size: 4em;
+	}
+	.hero h2 br {
+		display: none;
 	}
 }
 
