@@ -79,7 +79,8 @@ activate :contentful do |f|
   f.space         = { website: ENV['MD_CONTENTFUL_SPACE_ID'] }
   f.access_token  = ENV['MD_CONTENTFUL_API_KEY']
   f.cda_query     = { include: 1, order: 'sys.createdAt' }
-  f.all_entries = true
+
+    f.all_entries = true
   f.content_types = { 
     book: 'book', 
     video: 'video',
