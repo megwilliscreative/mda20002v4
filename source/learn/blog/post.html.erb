@@ -1,0 +1,28 @@
+<section id="md_welcome" style="background-image: url('<%= post.hero_image.url %>')">
+  <header>
+    <h1><%= post.title %></h1>
+    <p class="dates"><%= post.post_date.day %>  <%= Date::MONTHNAMES[post.post_date.month] %> <%= post.post_date.year %></p>
+  </header>
+</section>
+
+<section id="post_content" class="content_section shorter">
+  <div class="content">
+    <%= Markdown.new(!post.content.nil? ? post.content : "").to_html %>
+  </div>
+</section>
+
+<section id="recent_posts" class="content_section shorter">
+  <header>
+    <h3>Recent Posts</h3>
+  </header>
+  <div class="content">
+    <ul class="recent_posts">
+      <% all_posts.take(3).each do |index, post| %>
+        <li class="post">
+          <%= partial "partials/post_list_item", :locals => { :post => post, :include_excerpt => true } %>
+        </li>
+      <% end %>
+    </ul>
+    <p style="margin-top: 2em;"><a href="/learn/blog.html" class="button smaller dark">View all posts</a></p>
+  </div>
+</section>

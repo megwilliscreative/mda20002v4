@@ -99,24 +99,24 @@ end
 
 if Dir.exist?(config.data_dir + "/website")
   # events
-  if Dir.exist?(config.data_dir + "/website/event")
-    data.website.event.each do |id, event|
-      proxy "/events/#{event.year}/#{event.slug}.html", '/events/event.html', locals: { event: event }, data: { :title => event.seo_title, :description => event.seo_description, :keywords => event.seo_keywords, :header_class => "", :append_js => [], :append_css => ['event'] }, :ignore => true
-    end
-  end
+  # if Dir.exist?(config.data_dir + "/website/event")
+  #   data.website.event.each do |id, event|
+  #     proxy "/events/#{event.year}/#{event.slug}.html", '/events/event.html', locals: { event: event }, data: { :title => event.seo_title, :description => event.seo_description, :keywords => event.seo_keywords, :header_class => "", :append_js => [], :append_css => ['event'] }, :ignore => true
+  #   end
+  # end
 
   # posts
   if Dir.exist?(config.data_dir + "/website/post")
     data.website.post.each do |id, post|
-      proxy "/resources/blog/#{post.slug}.html", '/resources/blog/post.html', locals: { post: post }, data: { :title => post.title + " | Blog | ", :header_class => "", :append_js => [], :append_css => ['posts'] }, :ignore => true
+      proxy "/learn/blog/#{post.slug}.html", '/learn/blog/post.html', locals: { post: post }, data: { :title => post.title + " | Blog | ", :header_class => "", :append_js => [], :append_css => ['posts'] }, :ignore => true
     end
   end
 
   # posts
   if Dir.exist?(config.data_dir + "/website/podcastEpisode")
     data.website.podcastEpisode.each do |id, podcast|
-      proxy "/resources/podcast/#{podcast.slug}.html", 
-        '/resources/podcast/podcast.html', 
+      proxy "/learn/podcast/#{podcast.slug}.html", 
+        '/learn/podcast/podcast.html', 
         locals: { podcast: podcast }, 
         data: { 
           :title => podcast.title + " | Love Your City Podcast | ", 
