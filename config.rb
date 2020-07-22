@@ -97,34 +97,34 @@ activate :contentful do |f|
   f.use_preview_api = !ENV['MD_CONTENTFUL_USE_PREVIEW'].nil? && ENV['MD_CONTENTFUL_USE_PREVIEW'] == "true"
 end
 
-# if Dir.exist?(config.data_dir + "/website")
-#   # events
-#   if Dir.exist?(config.data_dir + "/website/event")
-#     data.website.event.each do |id, event|
-#       proxy "/events/#{event.year}/#{event.slug}.html", '/events/event.html', locals: { event: event }, data: { :title => event.seo_title, :description => event.seo_description, :keywords => event.seo_keywords, :header_class => "", :append_js => [], :append_css => ['event'] }, :ignore => true
-#     end
-#   end
+if Dir.exist?(config.data_dir + "/website")
+  # events
+  if Dir.exist?(config.data_dir + "/website/event")
+    data.website.event.each do |id, event|
+      proxy "/events/#{event.year}/#{event.slug}.html", '/events/event.html', locals: { event: event }, data: { :title => event.seo_title, :description => event.seo_description, :keywords => event.seo_keywords, :header_class => "", :append_js => [], :append_css => ['event'] }, :ignore => true
+    end
+  end
 
-#   # posts
-#   if Dir.exist?(config.data_dir + "/website/post")
-#     data.website.post.each do |id, post|
-#       proxy "/resources/blog/#{post.slug}.html", '/resources/blog/post.html', locals: { post: post }, data: { :title => post.title + " | Blog | ", :header_class => "", :append_js => [], :append_css => ['posts'] }, :ignore => true
-#     end
-#   end
+  # posts
+  if Dir.exist?(config.data_dir + "/website/post")
+    data.website.post.each do |id, post|
+      proxy "/resources/blog/#{post.slug}.html", '/resources/blog/post.html', locals: { post: post }, data: { :title => post.title + " | Blog | ", :header_class => "", :append_js => [], :append_css => ['posts'] }, :ignore => true
+    end
+  end
 
-#   # posts
-#   if Dir.exist?(config.data_dir + "/website/podcastEpisode")
-#     data.website.podcastEpisode.each do |id, podcast|
-#       proxy "/resources/podcast/#{podcast.slug}.html", 
-#         '/resources/podcast/podcast.html', 
-#         locals: { podcast: podcast }, 
-#         data: { 
-#           :title => podcast.title + " | Love Your City Podcast | ", 
-#           :header_class => "", 
-#           :append_js => ['vendor/media-element/mediaelement-and-player.min.js'], 
-#           :append_css => ['podcasts', 'vendor/media-element/mediaelementplayer.min.css'] 
-#         }, 
-#         :ignore => true
-#     end
-#   end
-# end
+  # posts
+  if Dir.exist?(config.data_dir + "/website/podcastEpisode")
+    data.website.podcastEpisode.each do |id, podcast|
+      proxy "/resources/podcast/#{podcast.slug}.html", 
+        '/resources/podcast/podcast.html', 
+        locals: { podcast: podcast }, 
+        data: { 
+          :title => podcast.title + " | Love Your City Podcast | ", 
+          :header_class => "", 
+          :append_js => ['vendor/media-element/mediaelement-and-player.min.js'], 
+          :append_css => ['podcasts', 'vendor/media-element/mediaelementplayer.min.css'] 
+        }, 
+        :ignore => true
+    end
+  end
+end
