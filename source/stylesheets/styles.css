@@ -4,6 +4,10 @@
 
  /*TEST ZONE ---------------------------------------------------- */
 
+
+
+
+
  	/* - END TEST ZONE -------- */
 
 
@@ -90,6 +94,10 @@ p {
 	padding-bottom: 15px;
 	font-family: adobe-garamond-pro, serif;
 
+}
+code {
+	background:#f0f;
+	color:#ffffff;
 }
 @media only screen and (max-width: 767px) {
 	h1 {
@@ -580,6 +588,21 @@ BLOG POST SECTION ------------------------------- */
     object-fit: cover;
 }
 
+.post_img {
+	width:100%;
+	height:350px;
+ 	background-image: url(https://source.unsplash.com/random/?people);
+	background-size: cover;
+	overflow: hidden;
+	border:5px solid pink;
+	margin:15px 0 35px 0;
+}
+/* ----- added from tut */
+.bg-center-center {
+	-ms-background-position-x: center;
+	-ms-background-position-y: center;
+	background-position: center center; 
+}
 
 /*trying to get 16x9 image 1x1 grid*/
 .blog_post_dl {
@@ -941,7 +964,7 @@ BLOG POST SECTION ------------------------------- */
  	padding:15px;
  	margin:10px;
  	text-align: center;
-
+ 	max-width: 7%;
  	position: fixed;
  	top:30%;
  	left:0;
