@@ -936,6 +936,25 @@ BLOG POST SECTION ------------------------------- */
 
 
  /*--- @ learn / blog ------------------------------ */
+ .post_share {
+ 	background: #C6131E;
+ 	padding:15px;
+ 	margin:10px;
+ 	text-align: center;
+
+ 	position: fixed;
+ 	top:30%;
+ 	left:0;
+ }
+ .post_share h3 {
+ 	color:white;
+ }
+ .post_share i {
+ 	color: #ffffff;
+ 	font-size: 20px;
+ 	padding:5px;
+
+ }
  
  .post_content {
  	/*position: relative;*/
