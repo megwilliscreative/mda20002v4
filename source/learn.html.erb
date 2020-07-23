@@ -15,7 +15,7 @@ title: Learn
 <section class="hero">
   <div class="container">
     <div class="main-message">
-      <h1> Learn <i class="fas fa-arrow-down"></i></h1>
+      <h1> test <i class="fas fa-arrow-down"></i></h1>
     </div>
   </div>
 </section>
@@ -24,8 +24,8 @@ title: Learn
 <section id="intro_overview">
   <div class="container">
     <div class="learn_intro">
-      <h3>Learn</h3>
-      <img src="/imgs/gold-coast-1280px.jpg"/>
+      <!-- <h3>Learn</h3> -->
+      <img style="padding-bottom:35px;" src="/imgs/gold-coast-1280px.jpg"/>
       <h2>In this together</h2>
       <p>In this section you will find resources to inspire you to create or continue a Movement in your own community. We endeavour to connect you with theologians and practitioners from all over the world where Movement is taking place. New content will be added regularly.</p>
       <div class="learn_overview">
@@ -89,51 +89,25 @@ title: Learn
 <!-- BROWSE ARTICLES = 3 X BLOGS, READ MORE -->
 <section id="learn_browse">
   <div class="container">
-    
     <div class="learn_browse">
       <h2>Browse</h2>
-      <div class="replace_w_contentful learn_browse_latest">
-        
-        <div class="learn_browse_items">
-          <div class="learn_browse_words">
-            <h3>Podcast</h3>
-            <h2>Prayer & fasting changes the world & impacts cities</h2>
-            <p>“All these with ONE ACCORD were devoting themselves to prayer, together with the women and Mary the mother of Jesus, and his brothers.” Acts 1:14.</p>
-            <button>More <i class="fas fa-chevron-right"></i></button>
-          </div>
-          <div class="learn_browse_image">
-            <img src="https://source.unsplash.com/random/900×700/?people"/>
-          </div>
+
+
+
+    <!-- INSERT CONTENT FROM CONTENTFUL -->
+    <% posts = all_posts %>
+    <% first_post = posts.shift %>
+
+
+      <div>
+          <% posts.take(3).each do |index, post| %>
+            <div>
+              <%= partial "partials/learn_list_item", :locals => { :post => post, :include_excerpt => true } %>
+            </div>
+          <% end %>
         </div>
-
-
-       <div class="learn_browse_items">
-          <div class="learn_browse_words">
-            <h3>Blog</h3>
-            <h2>Prayer & fasting changes the world & impacts cities</h2>
-            <p>“All these with ONE ACCORD were devoting themselves to prayer, together with the women and Mary the mother of Jesus, and his brothers.” Acts 1:14.</p>
-            <button>More <i class="fas fa-chevron-right"></i></button>
-          </div>
-          <div class="learn_browse_image">
-            <img src="https://source.unsplash.com/random/900×700/?prayer"/>
-          </div>
-        </div>
-
-
-       <div class="learn_browse_items">
-          <div class="learn_browse_words">
-            <h3>Podcast</h3>
-            <h2>Prayer & fasting changes the world & impacts cities</h2>
-            <p>“All these with ONE ACCORD were devoting themselves to prayer, together with the women and Mary the mother of Jesus, and his brothers.” Acts 1:14.</p>
-            <button>More <i class="fas fa-chevron-right"></i></button>
-          </div>
-          <div class="learn_browse_image">
-            <img src="https://source.unsplash.com/random/900×700/?churches"/>
-          </div>
-        </div>
-
-      </div> <!-- end learn_browse_latest -->
     </div>
+
   </div> <!-- end container -->
 </section>
 
