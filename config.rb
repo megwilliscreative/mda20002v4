@@ -80,7 +80,7 @@ activate :contentful do |f|
   f.access_token  = ENV['MD_CONTENTFUL_API_KEY']
   f.cda_query     = { include: 1, order: 'sys.createdAt' }
 
-    f.all_entries = true
+  f.all_entries = true
   f.content_types = { 
     book: 'book', 
     video: 'video',
@@ -97,7 +97,7 @@ activate :contentful do |f|
   f.use_preview_api = !ENV['MD_CONTENTFUL_USE_PREVIEW'].nil? && ENV['MD_CONTENTFUL_USE_PREVIEW'] == "true"
 end
 
-if Dir.exist?(config.data_dir + "/website")
+# if Dir.exist?(config.data_dir + "/website")
   # events
   # if Dir.exist?(config.data_dir + "/website/event")
   #   data.website.event.each do |id, event|
@@ -106,25 +106,25 @@ if Dir.exist?(config.data_dir + "/website")
   # end
 
   # posts
-  if Dir.exist?(config.data_dir + "/website/post")
-    data.website.post.each do |id, post|
-      proxy "/learn/blog/#{post.slug}.html", '/learn/blog/post.html', locals: { post: post }, data: { :title => post.title + " | Blog | ", :header_class => "", :append_js => [], :append_css => ['posts'] }, :ignore => true
-    end
-  end
+  # if Dir.exist?(config.data_dir + "/website/post")
+  #   data.website.post.each do |id, post|
+  #     proxy "/learn/blog/#{post.slug}.html", '/learn/blog/post.html', locals: { post: post }, data: { :title => post.title + " | Blog | ", :header_class => "", :append_js => [], :append_css => ['posts'] }, :ignore => true
+  #   end
+  # end
 
   # posts
-  if Dir.exist?(config.data_dir + "/website/podcastEpisode")
-    data.website.podcastEpisode.each do |id, podcast|
-      proxy "/learn/podcast/#{podcast.slug}.html", 
-        '/learn/podcast/podcast.html', 
-        locals: { podcast: podcast }, 
-        data: { 
-          :title => podcast.title + " | Love Your City Podcast | ", 
-          :header_class => "", 
-          :append_js => ['vendor/media-element/mediaelement-and-player.min.js'], 
-          :append_css => ['podcasts', 'vendor/media-element/mediaelementplayer.min.css'] 
-        }, 
-        :ignore => true
-    end
-  end
-end
+  # if Dir.exist?(config.data_dir + "/website/podcastEpisode")
+  #   data.website.podcastEpisode.each do |id, podcast|
+  #     proxy "/learn/podcast/#{podcast.slug}.html", 
+  #       '/learn/podcast/podcast.html', 
+  #       locals: { podcast: podcast }, 
+  #       data: { 
+  #         :title => podcast.title + " | Love Your City Podcast | ", 
+  #         :header_class => "", 
+  #         :append_js => ['vendor/media-element/mediaelement-and-player.min.js'], 
+  #         :append_css => ['podcasts', 'vendor/media-element/mediaelementplayer.min.css'] 
+  #       }, 
+  #       :ignore => true
+  #   end
+  # end
+# end
