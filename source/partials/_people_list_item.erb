@@ -4,9 +4,18 @@
   </div>
   
   <div class="overview">
-    <h4><%= person.name %></h4>
+    
     <% if !person.location.blank? %>
       <span class="city"><%= person.location %></span>
     <% end %>
+    <h4><%= person.name %></h4>
+    <p><%= person.short_biography %></p>
+    <ul class="team_socials">
+    	<li><a href="<%= person.facebook %>"><i class="fab fa-facebook"></i></a></li>
+    	<li><a href="<%= person.website %>"><i class="fas fa-link"></i></a></li>
+    	<li><a href="mailto:<%= person.email %>"><i class="fas fa-envelope"></i></a> REMOVE EMPTY EMAIL LINKS</li>
+    </ul>
   </div>  
 </div>
+
+

@@ -539,7 +539,7 @@ BLOG POST SECTION ------------------------------- */
     grid-template-columns: 1fr 2fr;
     grid-gap: 35px;
 
-    height: 325px;
+    /*height: 325px;*/
     overflow: hidden;
     /*padding-bottom: 15px 0px;*/
     margin:38px 0px;
@@ -1134,13 +1134,13 @@ BLOG POST SECTION ------------------------------- */
 	display: grid;
 	justify-content: space-between;
 	grid-template-columns: repeat(4, 1fr);
-	border: 2px dotted #ff00ff;
+	/*border: 2px dotted #ff00ff;*/
+	grid-gap: 2em;
+	/*margin*/
 }
-/*.staff_profiles_row {
-	display: flex;
-	justify-content: space-between;
-	padding:35px 0px;
-}*/
+#staff_grid .photo {
+	margin:35px 0;
+}
 .staff_member {
 	min-width:25%;
 	padding:0px 18px;
@@ -1171,10 +1171,16 @@ BLOG POST SECTION ------------------------------- */
 	/*line-height: .7em;*/
 }
 
-/*.team_socials {	padding:15px 0px;}
-.team_socials ul li {	display:inline;	padding:5px;}
-.team_socials a {	color: #C6131E;}
-.team_socials a:hover {	color:red;}*/
+.team_socials {	
+	padding:15px 0px;}
+.team_socials li {
+	display:inline!important;	
+	padding:10px 10px 10px 0px;
+font-size:2em;}
+.team_socials a {
+	color: #000000;}
+.team_socials a:hover {	
+	color:#C6131E;}
 
 @media only screen and (max-width: 767px) {
 		.staff_grid {
@@ -1191,7 +1197,7 @@ BLOG POST SECTION ------------------------------- */
 	}*/
 	.staff_grid .photo { /*not working*/
 		padding:0;
-		margin:0;
+		margin:20;
 	}
 	.staff_member {
 		min-width:50%;

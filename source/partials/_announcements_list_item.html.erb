@@ -1,0 +1,22 @@
+
+<div class="">
+  <div id="home_announcement" class="">
+    
+    <div class="announcement_img">
+      <a href="/learn/<%= post.slug %>.html">
+        <%= image_tag post.hero_image.url + "?w=700&h=460&fit=thumb" %>
+      </a>
+    </div>
+    
+    <%= post.tag %>
+    <h2><a href="/learn/<%= post.slug %>.html"><%= post.title %></a></h2>
+
+    <!-- tims content pulling in EXCERPTS -->
+    <% if include_excerpt %>
+      <%= Markdown.new(!post.excerpt.nil? ? post.excerpt : "").to_html %>
+    <% end %>
+
+    <a href="/learn/<%= post.slug %>.html"><button>Read More <i class="fas fa-chevron-right"></i></button></a>
+
+  </div>  <!-- end home_announcement -->
+</div>

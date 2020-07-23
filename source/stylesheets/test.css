@@ -535,7 +535,9 @@ section {
 /* ------ @ home 
 
 BLOG POST SECTION ------------------------------- */
-
+.whats_happening h3 {
+	padding:35px 0;
+}
 
 .blog_post {
     display: grid;
