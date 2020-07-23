@@ -594,7 +594,7 @@ BLOG POST SECTION ------------------------------- */
  	background-image: url(https://source.unsplash.com/random/?people);
 	background-size: cover;
 	overflow: hidden;
-	border:5px solid pink;
+	border:5px solid #ff00ff;
 	margin:15px 0 35px 0;
 }
 /* ----- added from tut */
@@ -855,7 +855,7 @@ BLOG POST SECTION ------------------------------- */
 	border:0px;
 }
 
-/*-------- @ Learn page --------------------------------*/
+/*-------- @Learn page --------------------------------*/
 
 .learn_overview {
 	display: grid;
