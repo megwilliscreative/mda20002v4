@@ -72,6 +72,25 @@ h3 {
 	font-size: 25px;
 	line-height: 1.3em;
 }
+h4 {
+	text-transform: uppercase;
+	font-size: 18px;
+	line-height: 1.3em;
+	padding-top:10px;
+	padding-bottom:15px;
+}
+h5 {
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 1.3em;
+	padding-top:10px;
+	/*padding-bottom:15px;*/
+}
+p {
+	padding-bottom: 15px;
+	font-family: adobe-garamond-pro, serif;
+
+}
 @media only screen and (max-width: 767px) {
 	h1 {
 		font-size: 80px;
@@ -112,7 +131,7 @@ button i:hover {
 	padding:8px 0;
 	width:125px;
 	border-radius: 6px;
-	margin:0 auto;
+	margin:10 auto;
 	/*max-width:125px;*/
 	font-size: 16px;
 }
@@ -226,9 +245,12 @@ button i:hover {
 	    margin: 15px 0px;
 	    font-size:18px;
 	    color: #ffffff !important;
-	    text-transform: uppercase;
+	    
 	    /*opacity: 1;*/
 	    
+	}
+	.modal_form ::placeholder {
+		text-transform: uppercase;
 	}
 	.modal-body {
 		background:#C6131E;
@@ -912,6 +934,38 @@ BLOG POST SECTION ------------------------------- */
 	padding: 5px 15px;
 }
 
+
+ /*--- @ learn / blog ------------------------------ */
+ 
+ .post_content {
+ 	/*position: relative;*/
+ }
+ .post_subscribe {
+ 	background: #C6131E;
+ 	width: 25%;
+ 	float: right;
+ 	margin-left:35px;
+ 	padding:25px;
+ }
+.post_subscribe h2 {
+	color: #ffffff!important;
+	font-size: 55px;
+	line-height: .8em!important;
+}
+.post_subscribe input {
+	    width:98%;
+	    background:none;
+	    border:0px;
+	    border-bottom: 1px solid white;
+	    padding: 6px 0;
+	    margin: 15px 0px;
+	    font-size:18px;
+	    color: #ffffff !important;    
+	}
+	.post_subscribe ::placeholder {
+		text-transform: uppercase;
+		opacity: 1;
+	}
 
 /*----- @ learn / stories ------------------------------*/
 
