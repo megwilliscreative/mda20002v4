@@ -1232,6 +1232,7 @@ BLOG POST SECTION ------------------------------- */
 	color: #000000!important;
 	line-height: .9em;
 	padding:15px 0;
+	text-transform: none;
 }
 .staff_grid h2 {
 	font-size: 50px;
@@ -1401,6 +1402,9 @@ footer {
 footer a {
 	color:#ffffff;
 	font-size: 14px;
+}
+footer p {
+	font-family: Avenir, Nunito, sans serif;
 }
 footer div {
 	padding-bottom:35px;
