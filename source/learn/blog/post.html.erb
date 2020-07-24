@@ -72,10 +72,10 @@
       		get 4 of the most recent posts tagged with current category.
       	</code>
     	<h2>Related</h2>
-    	<div class="learn_cat_items">
+    	<div class="post_related_items">
           <% posts.take(3).each do |index, post| %>
-            <div class="learn_cat_item">
-              <%= partial "partials/post_list_item", :locals => { :post => post, :include_excerpt => true } %>
+            <div class="post_related_item">
+              <%= partial "partials/post_list_item_related", :locals => { :post => post, :include_excerpt => false } %>
             </div>
           <% end %>
         </div>
