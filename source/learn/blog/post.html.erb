@@ -67,13 +67,11 @@
 <section id="post_related">
   <div class="container">
     <div class="post_related">
-      	<code>
-      		TRYING TO ACHIEVE:<br>
-      		get 4 of the most recent posts tagged with current category.
+      	<code>	tagged with current category.
       	</code>
     	<h2>Related</h2>
     	<div class="post_related_items">
-          <% posts.take(3).each do |index, post| %>
+          <% posts.take(4).each do |index, post| %>
             <div class="post_related_item">
               <%= partial "partials/post_list_item_related", :locals => { :post => post, :include_excerpt => false } %>
             </div>
