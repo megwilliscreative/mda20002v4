@@ -97,7 +97,7 @@ activate :contentful do |f|
   f.use_preview_api = !ENV['MD_CONTENTFUL_USE_PREVIEW'].nil? && ENV['MD_CONTENTFUL_USE_PREVIEW'] == "true"
 end
 
-# if Dir.exist?(config.data_dir + "/website")
+if Dir.exist?(config.data_dir + "/website")
   # events
   # if Dir.exist?(config.data_dir + "/website/event")
   #   data.website.event.each do |id, event|
@@ -106,11 +106,11 @@ end
   # end
 
   # posts
-  # if Dir.exist?(config.data_dir + "/website/post")
-  #   data.website.post.each do |id, post|
-  #     proxy "/learn/blog/#{post.slug}.html", '/learn/blog/post.html', locals: { post: post }, data: { :title => post.title + " | Blog | ", :header_class => "", :append_js => [], :append_css => ['posts'] }, :ignore => true
-  #   end
-  # end
+  if Dir.exist?(config.data_dir + "/website/post")
+    data.website.post.each do |id, post|
+      proxy "/learn/blog/#{post.slug}.html", '/learn/blog/post.html', locals: { post: post }, data: { :title => post.title + " | Blog | ", :header_class => "", :append_js => [], :append_css => ['posts'] }, :ignore => true
+    end
+  end
 
   # posts
   # if Dir.exist?(config.data_dir + "/website/podcastEpisode")
@@ -127,4 +127,4 @@ end
   #       :ignore => true
   #   end
   # end
-# end
+end

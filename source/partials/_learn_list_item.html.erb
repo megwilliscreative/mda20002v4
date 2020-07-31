@@ -3,7 +3,19 @@
 
   <div class="blog_text" >
 
-    <h3><%= post.tags %></h3><code>[1] post.tags code is bringing unwanted characters</code><br><code>[2] post.tags is only bringing through 'Story'</code>
+<% if (!post.tags.nil?) %> 
+    <h3>
+      <% post.tags.each do |tag| %>
+        <span><%= tag %></span>
+      <% end %>
+    </h3>
+<% end %>
+
+
+
+
+
+    <code>[1] post.tags code is bringing unwanted characters</code><br><code>[2] post.tags is only bringing through 'Story'</code>
 
     <h2><a href="/learn/<%= post.slug %>.html"><%= post.title %></a></h2>
     

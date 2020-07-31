@@ -7,6 +7,8 @@
   </div>
 </section>
 <% posts = all_posts %>
+
+
 <section>
   <div class="post_share">
     <ul><code>remove on mobile</code>
@@ -24,8 +26,10 @@
       </div>
         
       <h3><code>post.tags</code></h3>
-      <h2><code>post title</code></h2>
-      <p><code>post.excerpt</code></p>
+      
+      <h2><%= post.title %></h2>
+      
+      <p><%= post.excerpt %></p>
       <h4><code>post author</code></h4>
       <div class="border_box post_content">
         <code>move red box down, words to wrap above and below</code>
