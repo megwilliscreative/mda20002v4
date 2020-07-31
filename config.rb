@@ -105,7 +105,7 @@ if Dir.exist?(config.data_dir + "/website")
   #   end
   # end
 
-  # posts
+  # posts - Middleman docs @ https://middlemanapp.com/advanced/dynamic-pages/
   if Dir.exist?(config.data_dir + "/website/post")
     data.website.post.each do |id, post|
       proxy "/learn/blog/#{post.slug}.html", '/learn/blog/post.html', locals: { post: post }, data: { :title => post.title + " | Blog | ", :header_class => "", :append_js => [], :append_css => ['posts'] }, :ignore => true
