@@ -201,7 +201,7 @@ button i:hover {
 }
 
 .site-notice {
-	display: none;
+	/*display: none;*/
 
 	position: fixed;
 
