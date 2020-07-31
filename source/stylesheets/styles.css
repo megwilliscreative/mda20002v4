@@ -681,7 +681,9 @@ BLOG POST SECTION ------------------------------- */
 }
 
 
-
+.download_wallpaper {
+	display: none;
+}
 
 .download_wallpaper .blog_text {
 	padding:35px 0px;
@@ -1381,6 +1383,7 @@ font-size:2em;}
 /* --- @CONTACT PAGE ------------------------- */
 .contact_section {
 	padding:75px;
+	
 }
 .contact_section h2 {
 	line-height: 1.3em;
@@ -1395,10 +1398,11 @@ font-size:2em;}
 	width:100%;
 	justify-content: space-between;
 	padding:0px;
+	margin:0;
 }
 .leave_message {
 	width:50%;
-	padding:0 35px;
+	/*padding:0 35px;*/
 }
 .leave_message input{
 	width:100%;

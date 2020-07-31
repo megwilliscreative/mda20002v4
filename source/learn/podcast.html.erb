@@ -20,29 +20,50 @@ title: Podcast
   </div>
 </section>
 
-<!-- RECENT POSTS -->
+<!-- FEATURED POST X 1 -->
 <section>
   <div class="container">
     <div class="blog_page_title">
-      <h2>Recent Podcast</h2>
+      <h2>Featured</h2>
     </div>
-      <div class="replace_w_contentful stories_grid">
-        <div class="story_item">
-          
-          <div class="story_item_image">
-            <img src="https://source.unsplash.com/random/900×700/?"/>
-          </div> <!-- end image -->
 
-          <div class="story_item_text">
-            <p class="replace_w_supplied">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat.</p>
-            <button>More <i class="fas fa-chevron-right"></i></button>
-          </div> <!-- end text -->
-        </div> <!-- end story item -->
-      </div> <!-- end story grid -->
-    </div> <!-- end container -->
+
+    <div class="post_related">
+      <% posts = all_posts %>
+      <% first_post = posts.shift %>
+      
+      <code> [1] Contentful posts with tag: Podcast <br> [2] layout: 1 x feature; grid @ 3 columns
+        </code>
+      
+      <div class="post_related_items">
+          <% posts.take(1).each do |index, post| %>
+            <div class="post_related_item">
+              <%= partial "partials/post_list_item_related", :locals => { :post => post, :include_excerpt => false } %>
+            </div>
+          <% end %>
+      </div>
+
+    </div>
+  </div> <!-- end container -->
 </section>
 
+<!-- ALL POSTS 3/ROW -->
+<section>
+  <div class="container">
+    <div class="post_related">
+      <CODE>[1] layout 3 posts per row <br> [2] exclude featured post above?</CODE>
+      
+      <div class="post_related_items">
+          <% posts.each do |index, post| %>
+            <div class="post_related_item">
+              <%= partial "partials/post_list_item_related", :locals => { :post => post, :include_excerpt => false } %>
+            </div>
+          <% end %>
+      </div>
+
+    </div>
+  </div> <!-- end container -->
+</section>
 
 
 </body>

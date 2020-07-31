@@ -26,9 +26,10 @@ BUILD HOME CONTENTS
 
 <!-- whats happening -->
 <section id="whats-happening" class="whats_happening">
+
   <div class="replace_w_contentful container">
     <h3>What's Happening</h3>
-
+<code>this first image is supposed to be fullwidth, but 16x9 ratio</code>
     <% posts = all_posts %>
     <div><!--  class="recent_posts"> -->
       <% posts.take(1).each do |index, post| %>
@@ -45,6 +46,7 @@ BUILD HOME CONTENTS
   <div class="container">
     <div class="border_box">
       <h3>Engage</h3>
+      
       <% posts = all_posts %>
       <div>
           <% posts.take(3).each do |index, post| %>
@@ -75,8 +77,8 @@ BUILD HOME CONTENTS
             <br>Towns & Cities</h2>
         </div></a> 
         
-        <div class="stats_2"><img src="https://source.unsplash.com/random/700x500/?community"/></div>
-        <div class="stats_2"><img src="https://source.unsplash.com/random/900×700/?volunteer"/></div>
+        <div class="stats_2"><code>image fit issues</code><img src="https://source.unsplash.com/random/700x500/?community"/></div>
+        <div class="stats_2"><code>image fit issues</code><img src="https://source.unsplash.com/random/900×700/?volunteer"/></div>
       </div>
     </div>
   </div>
@@ -85,15 +87,14 @@ BUILD HOME CONTENTS
 <!-- downloads section -->
 <section class="download_wallpaper">
   <div class="replace_w_contentful container">
-<!-- <img src="/imgs/wallpaper-is58v12-1280px.jpg"> -->
     <% posts = all_posts %>
     <div class="">
       <% posts.take(1).each do |index, post| %>
         <div class="">
           <%= partial "partials/download_list_item", :locals => { :post => post, :include_excerpt => true } %>
-        </div> <!-- end post -->
+        </div> 
       <% end %>
-    </div> <!-- end recent posts -->
+    </div> 
   </div>
 </section>
 

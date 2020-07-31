@@ -58,6 +58,7 @@ title: Learn
 <!-- SEARCH BY CATEGORY -->
 <section id="search_slim">
   <div class="container">
+    <code>Is this possible with Contentful?</code>
     <div class="learn_search">
       <!-- <div class="learn_form"> -->
           <form><!--  action="/action_page.php"> -->
@@ -108,16 +109,53 @@ title: Learn
         </div>
     </div>
 
+<code>DESIGNS SHOW A 'READ MORE' STYLE PAGINATION<br> [1] what page will this link show?</code>
   </div> <!-- end container -->
 </section>
+
+
+
 
 <!-- BY CATEGORY -->
 <section id="learn_category">
   <div class="container">
     <div class="border_box learn_category " style="border-bottom:0px;"></div>
-      <h2>By Category</h2>
       
-      <div class="learn_cat_items replace_w_contentful"> <!-- START GRID OF 1 X 4 COL -->
+
+        <section id="learn_cat_items">
+          <div class="container">
+            <div class="post_related">
+                
+              <h2>By Category</h2>
+              <code>  THE POSTS BELOW = EACH CATEGORY<br> post titles are to be black ≠ blue or purple
+                </code>
+              <div class="post_related_items">
+                  <% posts.take(4).each do |index, post| %>
+                    <div class="post_related_item">
+                      <%= partial "partials/post_list_item_related", :locals => { :post => post, :include_excerpt => false } %>
+                    </div>
+                  <% end %>
+                </div>
+
+            </div>
+          </div>
+        </section>
+
+
+
+
+
+
+
+
+
+<!-- **** IMPORTANT *** -->
+ <!-- ---- the style sheet still has this code in it! ---- -->
+<!-- **** IMPORTANT *** -->
+
+
+
+     <!--  <div class="learn_cat_items replace_w_contentful">
         <div class="learn_cat_item">
           <div class="learn_cat_item_img"><img src="https://source.unsplash.com/random/900×700/?books"></div>
           <div class="learn_cat_item_words">
@@ -152,7 +190,7 @@ title: Learn
             <h2>Prayer and fasting changes the world</h2>
             <button>More <i class="fas fa-chevron-right"></i></button>
           </div>
-        </div>
+        </div> -->
 
         
 
