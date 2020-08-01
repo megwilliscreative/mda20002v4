@@ -4,25 +4,29 @@
   
 
   <div class="blog_text">
-      <% if (!post.tags.nil? && post.tags.include?("Story")) %>
-  <h3 class="type" style="background:#f0f;">Story</h3>
-  <% end %>
-<code>show category here. ie. story, theology, blog</code>
-    <h2><a href="/learn/<%= post.slug %>.html"><%= post.title %></a></h2>
+    <% if (!post.tags.nil?) %> 
+      <h3>
+        <% post.tags.take(1).each do |tag| %>
+          <span><%= tag %></span>
+        <% end %>
+      </h3>
+    <% end %>
+
+
+    <h2><a href="/learn/blog/<%= post.slug %>.html"><%= post.title %></a></h2>
     <p class="date"><%= post.post_date.day %> <%= Date::MONTHNAMES[post.post_date.month] %> <%= post.post_date.year %></p>
 
     <!-- tims content pulling in EXCERPTS -->
     <% if include_excerpt %>
     <%= Markdown.new(!post.excerpt.nil? ? post.excerpt : "").to_html %>
     <% end %>
-    <a href="/learn/<%= post.slug %>.html"><button>Read More <i class="fas fa-chevron-right"></i></button></a>
+    <a href="/learn/blog/<%= post.slug %>.html"><button>Read More <i class="fas fa-chevron-right"></i></button></a>
   </div>  <!-- end overview -->
 
 
-  <div class="blog_image">
-    <code>image to 16x9</code>
-    <a href="/learn/<%= post.slug %>.html">
-    <%= image_tag post.hero_image.url + "?w=700&h=460&fit=thumb" %>
+  <div class="post_img bg-center-center" style="background-image: url('<%= post.hero_image.url %>')">
+    <a href="/learn/blog/<%= post.slug %>.html">
+    
     </a>
   </div>
   

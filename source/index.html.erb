@@ -34,7 +34,7 @@ BUILD HOME CONTENTS
     <div><!--  class="recent_posts"> -->
       <% posts.take(1).each do |index, post| %>
         <div><!--  class="post"> -->
-          <%= partial "partials/download_list_item", :locals => { :post => post, :include_excerpt => true } %>
+          <%= partial "partials/post_list_item", :locals => { :post => post, :include_excerpt => true } %>
         </div> <!-- end post -->
       <% end %>
     </div> <!-- end recent posts -->

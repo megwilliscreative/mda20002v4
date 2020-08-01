@@ -1,15 +1,12 @@
 ---
 title: Engage
 ---
-
-
 <!DOCTYPE html>
 <html>
 <head>
   <title> Movement - Engage</title>
 </head>
 <body>
-
 
 <!-- NAME & ARROW W RED BG -->
 <section class="hero">
@@ -44,10 +41,8 @@ title: Engage
   </div>
 </section>
 
-
 <!-- slim email signup -->
 <%= partial "partials/_e_signup_slim" %>
-
 
 <!-- links to all australian local movements connected -->
 <section class="engage_locally ">
@@ -133,7 +128,6 @@ title: Engage
   </div> <!-- staff container ends -->
 </section>
 
-
 <!-- invite to share story from your city -->
 <section class="engage_share">
   <div class=" container">
@@ -166,18 +160,48 @@ title: Engage
   </div>
 </section>
 
-
-
-
 <!-- pull in latest Engage article from contenful -->
 <section class="engage_updates">
   <div class="replace_w_contentful container">
-    <code>[1] pull from contentful on ENGAGE tag? <br> [2] image to 16x9</code>
-    <img src="https://source.unsplash.com/random/900×700/?response"/>
+    <code>
+      <!-- [1] pull from contentful on ENGAGE tag? <br>  -->
+      [2] image to 16x9
+    </code>
+
+
+
+
+    <div class="post_related">
+      <% posts = posts_by_tag("Theology") %>
+      <% first_post = posts.shift %>
+      
+      <code> 
+        <!-- [x] Contentful posts with tag: Theology <br>  -->
+        [2] page layout: 1 x feature; grid @ 3 columns
+        </code>
+      
+      <div class="">
+          <% posts.take(1).each do |index, post| %>
+            <div class="post_related_item">
+              <%= partial "partials/post_list_item", :locals => { :post => post, :include_excerpt => false } %>
+            </div>
+          <% end %>
+      </div>
+
+
+
+
+
+
+
+
+
+
+    <!-- <img src="https://source.unsplash.com/random/900×700/?response"/>
     <h3>Engage</h3>
     <h2>Pray & Act - A Response To Covid 19</h2>
     <p>Nibh praesent tristique magna sit. Facilisi nullam vehicula ipsum a arcu cursus vitae. Quis imperdiet massa tincidunt nunc pulvinar sapien. Id eu nisl nunc mi ipsum faucibus vitae. Id volutpat lacus laoreet non curabitur. Volutpat maecenas volutpat blandit aliquam etiam. Tempus iaculis urna id volutpat lacus laoreet. Massa sed elementum tempus egestas sed sed risus. Cras semper auctor neque vitae tempus quam pellentesque nec nam. Orci eu lobortis elementum nibh tellus molestie nunc. Enim tortor at auctor urna nunc id cursus metus. Sed vulputate mi sit amet mauris commodo.</p>
-    <button>More <i class="fas fa-chevron-right"></i></button>
+    <button>More <i class="fas fa-chevron-right"></i></button> -->
   </div>
 </section>
 
