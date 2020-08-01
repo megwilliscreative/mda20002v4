@@ -15,22 +15,23 @@
 
 
 
-    <code>[1] post.tags code is bringing unwanted characters</code><br><code>[2] post.tags is only bringing through 'Story'</code>
+    <code>[x] post.tags code is bringing unwanted characters</code><br>
+    <code>[2] post.tags is only bringing through 'Story'</code>
 
-    <h2><a href="/learn/<%= post.slug %>.html"><%= post.title %></a></h2>
+    <h2><a href="/learn/blog/<%= post.slug %>.html"><%= post.title %></a></h2>
     
 
     <!-- tims content pulling in EXCERPTS -->
     <% if include_excerpt %>
     <%= Markdown.new(!post.excerpt.nil? ? post.excerpt : "").to_html %>
     <% end %>
-    <a href="/learn/<%= post.slug %>.html"><button>Read More <i class="fas fa-chevron-right"></i></button></a>
+    <a href="/learn/blog/<%= post.slug %>.html"><button>Read More <i class="fas fa-chevron-right"></i></button></a>
   </div>  <!-- end overview -->
 
 
   <div class="blog_image">
     <code>image to 16x9</code>
-    <a href="/learn/<%= post.slug %>.html">
+    <a href="/learn/blog/<%= post.slug %>.html">
     <%= image_tag post.hero_image.url + "?w=700&h=460&fit=thumb" %>
     </a>
   </div>
