@@ -1,170 +1,87 @@
----
-title: Learn
----
 
-
-<!DOCTYPE html>
-<html>
-<head>
-  <title> Movement - Learn</title>
-</head>
-<body>
-
-
-<!-- NAME & ARROW W RED BG -->
-<section class="hero">
+  <section class="hero">
   <div class="container">
     <div class="main-message">
-      <h1> test <i class="fas fa-arrow-down"></i></h1>
+      <h1> Learn <i class="fas fa-arrow-down"></i></h1>
     </div>
   </div>
 </section>
+<% post = all_posts %>
 
-<!-- engage intro + overview 'In this together'-->
-<section id="intro_overview">
+
+<section>
+  <div class="post_share">
+    <ul><code>remove on mobile</code>
+      <li><h3>Share</h3></li>
+      <li><i class="fab fa-facebook"></i></li>
+      <li><i class="fas fa-envelope"></i></li>
+      <li><i class="fab fa-linkedin-in"></i></li>
+    </ul>
+  </div>
   <div class="container">
-    <div class="learn_intro">
-      <!-- <h3>Learn</h3> -->
-      <img style="padding-bottom:35px;" src="/imgs/gold-coast-1280px.jpg"/>
-      <h2>In this together</h2>
-      <p>In this section you will find resources to inspire you to create or continue a Movement in your own community. We endeavour to connect you with theologians and practitioners from all over the world where Movement is taking place. New content will be added regularly.</p>
-      <div class="learn_overview">
-        <div class="learn_item">
-          <h3>Theology</h3>
-          <p>Christians are becoming increasingly aware of the role the church in the city. Culture is formed in cities, they are centres of education, literature, the arts, music, film, television, other media and so much more. Learn more about a metanarrative that embraces a kingdom based theology</p>
-          <a href="/learn/theology.html"><button>More <i class="fas fa-chevron-right"></i></button></a>
-        </div>
-        <div class="learn_item">
-          <h3>Podcast</h3>
-          <p>In the Love Your City Podcast presenters Sam Jackson and Letitia Shelton discuss the importance of gospel movements in towns and cities around the world.</p>
-          <a href="/learn/podcast.html"><button>More <i class="fas fa-chevron-right"></i></button></a>
-        </div>
-        <div class="learn_item">
-          <h3>Stories</h3>
-          <p>When Christians come together in humility and take responsibility God moves. Amazing stories are developing all around Australia</p>
-          <a href="/learn/stories.html"><button>More <i class="fas fa-chevron-right"></i></button></a>
-        </div>
-        <div class="learn_item">
-          <h3>Blog</h3>
-          <p>Be encouraged as you refresh yourself in the word. Below are some short blogs that will challenge and inspire you.</p>
-          <a href="/learn/blog.html"><button>More <i class="fas fa-chevron-right"></i></button></a>
-        </div>
+    <div class="post_content">
+      <h3>Learn/<code>post.tags</code></h3>
+      <div class="post_img bg-center-center">
       </div>
-    </div>
-  </div>
-</section>
-
-
-<!-- SEARCH BY CATEGORY -->
-<section id="search_slim">
-  <div class="container">
-    <div class="learn_search">
-      <!-- <div class="learn_form"> -->
-          <form><!--  action="/action_page.php"> -->
-            <div class="learn_form">
-                <div>
-                  <input name="text" type="text" value="Search">
-                </div>
-                <div>
-                  <select id="learn_search" name="search_content">
-                    <option value="theology">Theology</option>
-                    <option value="stories">Stories</option>
-                    <option value="podcast">Podcast</option>
-                    <option value="video">Video</option>
-                    <option value="blog">Blog</option>
-                  </select>
-                </div>
-                <div>
-                  <button type="submit" value="Submit" class="btn-white">Search <i class="fas fa-chevron-right"></i></button>
-                </div>
-              </div>
-          </form>
+      </div>
+        
+      <h3><code>post.tags</code></h3>
+      
+      <h2><%= post.title %></h2>
+      
+      <p><%= post.excerpt %></p>
+      <h4><code>post author</code></h4>
+      <div class="border_box post_content">
+        <code>move red box down, words to wrap above and below</code>
+        <div class="post_subscribe">
+          <h2>Download our vision book</h2>
+          <div>
+            <form>
+              <code>set up form action</code>
+              <input type="text" name="eame" placeholder="First Name">
+              <input type="Email" name="email" placeholder="Email">
+              <button class="btn-white" name="subscribe">Subscribe</button>
+            </form>
+          </div>
+        </div>
+        <div>
+          <code>posts.content</code><br><br><br>
+                    <h3>heading</h3>
+          <h5>subheading</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo reprehenderit in voluptate velit essecillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat nonproident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <h5>subheading</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo reprehenderit in voluptate velit essecillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat nonproident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo reprehenderit in voluptate velit essecillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat nonproident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <h3>heading</h3>
+          <h5>subheading</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo reprehenderit in voluptate velit essecillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat nonproident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <h5>subheading</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo reprehenderit in voluptate velit essecillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat nonproident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo reprehenderit in voluptate velit essecillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat nonproident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        
       </div>
 
 
+
     </div>
   </div>
 </section>
 
-<!-- BROWSE ARTICLES = 3 X BLOGS, READ MORE -->
-<section id="learn_browse">
+<section id="post_related">
   <div class="container">
-    <div class="learn_browse">
-    	<h2>Browse</h2>
-
-
-
-    <!-- INSERT CONTENT FROM CONTENTFUL -->
-		<% posts = all_posts %>
-		<% first_post = posts.shift %>
-
-
-      <div>
-          <% posts.take(3).each do |index, post| %>
-            <div>
-              <%= partial "partials/learn_list_item", :locals => { :post => post, :include_excerpt => true } %>
+    <div class="post_related">
+        <code>  tagged with current category.
+        </code>
+      <h2>Related</h2>
+      <div class="post_related_items">
+          <% posts.take(4).each do |index, post| %>
+            <div class="post_related_item">
+              <%= partial "partials/post_list_item_related", :locals => { :post => post, :include_excerpt => false } %>
             </div>
           <% end %>
         </div>
-    </div>
-
-  </div> <!-- end container -->
-</section>
-
-<!-- BY CATEGORY -->
-<section id="learn_category">
-  <div class="container">
-    <div class="border_box learn_category " style="border-bottom:0px;"></div>
-      <h2>By Category</h2>
-      
-      <div class="learn_cat_items replace_w_contentful"> <!-- START GRID OF 1 X 4 COL -->
-        <div class="learn_cat_item">
-          <div class="learn_cat_item_img"><img src="https://source.unsplash.com/random/900×700/?books"></div>
-          <div class="learn_cat_item_words">
-            <div class="learn_cat_item_meta">
-            <div><h4><i class="fas fa-calendar-alt"></i> 10 Feb 2018</h4></div>
-            <div><h4><i class="fas fa-user-tag"></i> Nick Scott</h4></div>
-            </div>
-            <h2>Prayer and fasting changes the world</h2>
-            <button>More <i class="fas fa-chevron-right"></i></button>
-          </div>
-        </div>
-
-        <div class="learn_cat_item">
-          <div class="learn_cat_item_img"><img src="https://source.unsplash.com/random/900×700/?talking"></div>
-          <div class="learn_cat_item_words">
-            <div class="learn_cat_item_meta">
-            <div><h4><i class="fas fa-calendar-alt"></i> 10 Feb 2018</h4></div>
-            <div><h4><i class="fas fa-user-tag"></i> Greigory Whittaker</h4></div>
-            </div>
-            <h2>Prayer and fasting changes the world</h2>
-            <button>More <i class="fas fa-chevron-right"></i></button>
-          </div>
-        </div>
-
-        <div class="learn_cat_item">
-          <div class="learn_cat_item_img"><img src="https://source.unsplash.com/random/900×700/?feast"></div>
-          <div class="learn_cat_item_words">
-            <div class="learn_cat_item_meta">
-            <div><h4><i class="fas fa-calendar-alt"></i> 10 Feb 2018</h4></div>
-            <div><h4><i class="fas fa-user-tag"></i> Letitia Shelton</h4></div>
-            </div>
-            <h2>Prayer and fasting changes the world</h2>
-            <button>More <i class="fas fa-chevron-right"></i></button>
-          </div>
-        </div>
-
-        
-
-      </div>
 
     </div>
   </div>
 </section>
-
-
-
-
-
-</body>
-</html>

@@ -5,7 +5,7 @@
 
 <% if (!post.tags.nil?) %> 
     <h3>
-      <% post.tags.each do |tag| %>
+      <% post.tags.take(1).each do |tag| %>
         <span><%= tag %></span>
       <% end %>
     </h3>
