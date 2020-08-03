@@ -1241,7 +1241,8 @@ BLOG POST SECTION ------------------------------- */
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	justify-content: space-between;
-	grid-column-gap: 2em;
+	grid-gap: 5em;
+
 }
 @media only screen and (max-width: 767px) {
 	.support_grid {
@@ -1254,6 +1255,7 @@ BLOG POST SECTION ------------------------------- */
 	/*min-width: 32%;*/
 	background:#ffffff;
 	padding:0px 5px;
+	/*padding:35px;*/
 
 
 }
@@ -1286,7 +1288,14 @@ BLOG POST SECTION ------------------------------- */
 	padding: 0px 5px;
 
 }
-
+/*.engage_updates.post_img {
+	width:100%!important;
+	height:60vh !important;
+ 	background-size: cover;
+	overflow: hidden;
+	
+	margin:15px 0 35px 0;
+}*/
 /* ---- @team page -------------------------------- */
 
 .staff_grid {
