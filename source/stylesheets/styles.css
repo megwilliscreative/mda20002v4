@@ -766,17 +766,14 @@ BLOG POST SECTION ------------------------------- */
 
 /* stats section @home --------------------------------*/
 
-.stats_x3 {
-	display:grid; /*grid container*/
+/*.stats_x3 {
+	display:grid; 
 	grid-template-columns: repeat(3, 1fr);
 	grid-gap: 1em;
 	justify-content: space-between;
-	
-	/*overflow: hidden!important;*/
-
-}
-.stats_1 { /*grid boxes*/
-	background:#C6131E;
+}*/
+.stats_1 {
+	/*background:#C6131E;*/
 	height:100%;
 	display: grid;
 	grid-template-columns: 1fr;
@@ -795,7 +792,7 @@ BLOG POST SECTION ------------------------------- */
 }
 
 .stats_1 h2 {
-	color:#ffffff!important;
+	color:#C6131E!important;
 	text-align: center;
 	line-height: 1.5em;
 	padding:35px 15px;
