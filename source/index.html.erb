@@ -26,18 +26,20 @@ BUILD HOME CONTENTS
 
 <!-- whats happening -->
 <section id="whats-happening" class="whats_happening">
+  <div class="replace_w_supplied container">
 
-  <div class="replace_w_contentful container">
     <h3>What's Happening</h3>
-<code>this first image is supposed to be fullwidth, but 16x9 ratio</code>
+
+    <!-- <code>this first image is supposed to be fullwidth, but 16x9 ratio</code> -->
     <% posts = all_posts %>
     <div><!--  class="recent_posts"> -->
       <% posts.take(1).each do |index, post| %>
         <div><!--  class="post"> -->
-          <%= partial "partials/post_list_item", :locals => { :post => post, :include_excerpt => true } %>
+          <%= partial "partials/download_list_item", :locals => { :post => post, :include_excerpt => true } %>
         </div> <!-- end post -->
       <% end %>
     </div> <!-- end recent posts -->
+
   </div>
 </section>
 
@@ -77,8 +79,16 @@ BUILD HOME CONTENTS
             <br>Towns & Cities</h2>
         </div></a> 
         
-        <div class="stats_2"><code>image fit issues</code><img src="https://source.unsplash.com/random/700x500/?community"/></div>
-        <div class="stats_2"><code>image fit issues</code><img src="https://source.unsplash.com/random/900×700/?volunteer"/></div>
+        <div class="stats_2 frame">
+          
+          <!-- <img src="https://source.unsplash.com/random/700x500/?community"/> -->
+        </div>
+
+        <div class="stats_2 frame">
+          
+          <img src="https://source.unsplash.com/random/900×700/?volunteer"/>
+        </div>
+
       </div>
     </div>
   </div>
