@@ -1,0 +1,67 @@
+<div class="container">
+    <div class="post_related_items"><!--  class="post_by_cat"> -->
+
+
+
+          <!-- BRING THROUGH 1 POST FROM EACH CAT -->
+          <div class="post_cat_item">
+            <h3>Story</h3>
+            <div class="">
+              <code> each of these cateogry cards is</code>
+                <% posts = posts_by_tag("Story") %>
+                <% first_post = posts.shift %>
+                <% posts.take(1).each do |index, post| %>
+                    <div class="">
+                      <%= partial "partials/download_list_item", :locals => { :post => post, :include_excerpt => false } %>
+                    </div>
+                <% end %>
+            </div>
+
+
+          </div>
+
+          <div class="post_cat_item">
+            <h3>Theology</h3>
+            <div class="">
+                <% posts = posts_by_tag("Theology") %>
+                <% first_post = posts.shift %>
+                <% posts.take(1).each do |index, post| %>
+                    <div class="">
+                      <%= partial "partials/download_list_item", :locals => { :post => post, :include_excerpt => false } %>
+                    </div>
+                <% end %>
+            </div>
+          </div>
+
+          <div class="post_cat_item">
+            <h3>Podcast</h3><br>
+              <div class="">
+                <code>this would have to be pulled from VIdeo data folder ≠ not posts data folder </code>
+                <% posts = posts_by_tag("Podcast") %>
+                <% first_post = posts.shift %>
+                <% posts.take(1).each do |index, post| %>
+                    <div class="">
+                      <%= partial "partials/download_list_item", :locals => { :post => post, :include_excerpt => false } %>
+                    </div>
+                <% end %>
+              </div>
+          </div>
+
+          <div class="post_cat_item">
+            <h3>Video</h3>
+            <div class="">
+              <code>this would have to be pulled from VIdeo data folder ≠ not posts data folder </code>
+                <% posts = posts_by_tag("Video") %>
+                <% first_post = posts.shift %>
+                <% posts.take(1).each do |index, post| %>
+                    <div class="">
+                      <%= partial "partials/download_list_item", :locals => { :post => post, :include_excerpt => false } %>
+                    </div>
+                <% end %>
+              </div>
+          </div>
+
+
+
+    </div>
+</div>

@@ -1037,7 +1037,7 @@ BLOG POST SECTION ------------------------------- */
 	padding: 5px 15px;
 }
 .post_cat_item .post_img2 {
-	/*height:auto;*/
+	height:100%;
 }
  /*--- @ learn / blog ------------------------------ */
  .post_share {

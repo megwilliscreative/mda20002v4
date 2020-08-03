@@ -87,72 +87,32 @@ title: Learn
   <div class="container">
     <div class="learn_category" style="border-bottom:0px;">
 
-      <div class="post_related">
+      <div class="">
         <h2>By Category</h2>
-        <code>[2] make the 4 cards below, into html iamge links to each section. ie Theology, Videos, Stories, Blog.
-          </code>
-          <code> 
-            [1] Contentful posts with tag: Theology <br> 
-            [2] layout: 1 x feature; grid @ 3 columns
-          </code>
-        <div class="post_related_items"><!--  class="post_by_cat"> -->
-
-          <!-- BRING THROUGH 1 POST FROM EACH CAT -->
-          <div class="post_cat_item">
-            <h3> Theology</h3>
+        <code>these images are random unsplash. replace with ? </code>
+        <div class="stories_grid">
+          <div>
+            
+            <img src="https://source.unsplash.com/random/700x500?theology"/>
+            <h3>Theology</h3>
           </div>
-
-          <div class="post_cat_item">
-            <h3>LStory</h3>
-            <div class="">
-                <% posts = posts_by_tag("Story") %>
-                <% first_post = posts.shift %>
-                <% posts.take(1).each do |index, post| %>
-                    <div class="">
-                      <%= partial "partials/download_list_item", :locals => { :post => post, :include_excerpt => false } %>
-                    </div>
-                <% end %>
-            </div>
+          <div>
+            
+            <img src="https://source.unsplash.com/random/700x500?friends"/>
+            <h3>Stories</h3>
           </div>
-
-          <div class="post_cat_item">
-            <h3>Podcast</h3><br>
-              <div class="">
-                <% posts = posts_by_tag("Podcast") %>
-                <% first_post = posts.shift %>
-                <% posts.take(1).each do |index, post| %>
-                    <div class="">
-                      <%= partial "partials/download_list_item", :locals => { :post => post, :include_excerpt => false } %>
-                    </div>
-                <% end %>
-              </div>
+          <div>
+            
+            <img src="https://source.unsplash.com/random/700x500?microphone"/>
+            <h3>Podcast</h3>
           </div>
-
-          <div class="post_cat_item">
-            <h3>Video</h3>
-            <div class="">
-                <% posts = posts_by_tag("Story") %>
-                <% first_post = posts.shift %>
-                <% posts.take(1).each do |index, post| %>
-                    <div class="">
-                      <%= partial "partials/download_list_item", :locals => { :post => post, :include_excerpt => false } %>
-                    </div>
-                <% end %>
-              </div>
+          <div>
+            
+            <img src="https://source.unsplash.com/random/700x500?video"/>
+            <h3>Videos</h3>
           </div>
-
-      </div>
-
-<!-- THIS BRINGS THROUGH 4 X CONSECUATIVE POSTS.  -->
-    <br><br><br><br><br><br><br><br><br>
-    <div class="post_related_items">
-        <% posts.take(4).each do |index, post| %>
-          <div class="post_related_item">
-            <%= partial "partials/post_list_item_related", :locals => { :post => post, :include_excerpt => false } %>
-          </div>
-        <% end %>
+        </div>  
     </div>
-
   </div>
 </section>
 

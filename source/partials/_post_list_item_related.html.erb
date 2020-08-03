@@ -2,7 +2,7 @@
 <div class="">
 
   <div class="">
-    <a href="/learn/<%= post.slug %>.html">
+    <a href="/learn/blog/<%= post.slug %>.html">
     <%= image_tag post.hero_image.url + "?w=700&h=460&fit=thumb" %>
     </a>
   </div>
@@ -12,7 +12,7 @@
     
     <h6><i class="far fa-user"></i> </h6>
     
-    <h2><a href="/learn/<%= post.slug %>.html"><%= post.title %></a></h2>
+    <h2><a href="/learn/blog/<%= post.slug %>.html"><%= post.title %></a></h2>
   
 
   <div>
@@ -21,7 +21,7 @@
     <%= Markdown.new(!post.excerpt.nil? ? post.excerpt : "").to_html %>
     <% end %>
     
-    <a href="/learn/<%= post.slug %>.html"><button>Read More <i class="fas fa-chevron-right"></i></button></a>
+    <a href="/learn/blog/<%= post.slug %>.html"><button>Read More <i class="fas fa-chevron-right"></i></button></a>
   
   </div>  <!-- end overview -->
 </div>
