@@ -1,0 +1,28 @@
+
+<div class="">
+
+  <div class="">
+    <a href="/learn/blog/<%= post.slug %>.html">
+    <%= image_tag post.hero_image.url + "?w=700&h=460&fit=thumb" %>
+    </a>
+  </div>
+
+  <div id="post_text">
+    <h6><i class="far fa-calendar-alt"></i> <%= post.post_date.day %> <%= Date::MONTHNAMES[post.post_date.month] %> <%= post.post_date.year %></h6>
+    
+    <h6><i class="far fa-user"></i> </h6>
+    
+    <h2><a href="/learn/blog/<%= post.slug %>.html"><%= post.title %></a></h2>
+  
+
+  <div>
+    <!-- tims content pulling in EXCERPTS -->
+    <% if include_excerpt %>
+    <%= Markdown.new(!post.excerpt.nil? ? post.excerpt : "").to_html %>
+    <% end %>
+    
+    <a href="/learn/blog/<%= post.slug %>.html"><button>Read More <i class="fas fa-chevron-right"></i></button></a>
+  
+  </div>  <!-- end overview -->
+</div>
+</div> <!-- end post -->
