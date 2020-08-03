@@ -28,25 +28,17 @@ title: Stories
 <section>
   <div class="container">
     <div class="blog_page_title">
-      <h3>Featured</h3>
-      <div class="post_img bg-center-center" style="background-image: url('https://source.unsplash.com/random/?people')"></div>
-      <h2>The Title of The Featured Article</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      
-    </div>
 
-  <% posts = posts_by_tag("Featured Story") %>
+      <h3>Featured</h3>
+
+
+      <% posts = posts_by_tag("Story") %>
       <% first_post = posts.shift %>
       
-      <div class="post_related_items">
+      <div class="">
           <% posts.take(1).each do |index, post| %>
-            <div class="post_related_item">
-              <%= partial "partials/feature_list_item", :locals => { :post => post, :include_excerpt => false } %>
+            <div class="">
+              <%= partial "partials/feature_list_item", :locals => { :post => post, :include_excerpt => true } %>
             </div>
           <% end %>
       </div>
@@ -54,25 +46,19 @@ title: Stories
 
 
 
-    <code> 
-      [1] Contentful posts with tag: Story <br>
-      [2] layout: 1 x feature; grid @ 3 columns
-        </code>
+    
   </div> <!-- end container -->
 </section>
 
 <!-- ALL POSTS 3/ROW -->
 <section>
   <div class="container">
-    <div class="post_related border_box">
+    <div class=" border_box">
 
-    <div class="post_related">
-      <% posts = posts_by_tag("Story") %>
-      <% first_post = posts.shift %>
-      
-      <div class="post_related_items">
+    <div class="">
+      <div class="blog_grid">
           <% posts.each do |index, post| %>
-            <div class="post_related_item">
+            <div class="blog_grid_item">
               <%= partial "partials/post_grid_item", :locals => { :post => post, :include_excerpt => false } %>
             </div>
           <% end %>

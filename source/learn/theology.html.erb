@@ -9,7 +9,7 @@ title: Theology
   <title> Movement - Theology</title>
 </head>
 <body>
-      <% posts = posts_by_tag("Story") %>
+      <% posts = posts_by_tag("Theology") %>
       <% first_post = posts.shift %>
 
 <!-- NAME & ARROW W RED BG -->
@@ -25,23 +25,20 @@ title: Theology
 <section>
   <div class="container">
     <div class="blog_page_title">
-      <h3>Featured</h3>
-</div>
-      <div><!--  class="recent_posts"> -->
-        <% posts.take(1).each do |index, post| %>
-          <div><!--  class="post"> -->
-            <%= partial "partials/feature_list_item", :locals => { :post => post, :include_excerpt => true } %>
-          </div> <!-- end post -->
-        <% end %>
-      </div> <!-- end recent posts -->
-
-
-
-      <code> 
-      [x] Contentful posts with tag: Theology <br>
-      [x] layout: 1 x feature; grid @ 3 columns <br>
+            <code> 
+      <!-- [x] Contentful posts with tag: Theology <br> -->
+      <!-- [x] layout: 1 x feature; grid @ 3 columns <br> -->
       [3] Tagged content ≠ showing below.
         </code>
+      <h3>Featured</h3>
+    </div>  
+    <div><!--  posts -->
+      <% posts.take(1).each do |index, post| %>
+        <div><!--  class="post"> -->
+          <%= partial "partials/feature_list_item", :locals => { :post => post, :include_excerpt => true } %>
+        </div> <!-- end post -->
+      <% end %>
+    </div> <!-- end posts -->
   </div> <!-- end container -->
 </section>
 

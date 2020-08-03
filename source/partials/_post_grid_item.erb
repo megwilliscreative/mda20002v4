@@ -1,7 +1,7 @@
 
 <div class="">
 
-  <div class="post_img2 bg-center-center" style="background-image: url('<%= post.hero_image.url %>')">  
+  <div class="post_img3 bg-center-center" style="background-image: url('<%= post.hero_image.url %>')">  
     <a href="/learn/blog/<%= post.slug %>.html"></a>
   </div> 
 
@@ -19,7 +19,7 @@
     <%= Markdown.new(!post.excerpt.nil? ? post.excerpt : "").to_html %>
     <% end %>
     
-    <a href="/learn/blog/<%= post.slug %>.html"><button>Read More <i class="fas fa-chevron-right"></i></button></a>
+    <a href="/learn/blog/<%= post.slug %>.html"><button class="btn-white">Read More <i class="fas fa-chevron-right"></i></button></a>
   
   </div>  <!-- end overview -->
 

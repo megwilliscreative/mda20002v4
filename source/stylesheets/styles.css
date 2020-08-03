@@ -30,7 +30,7 @@
     /*margin-bottom: 15px;*/
 }
 #post_text {
-	padding:15px 15px 35px 15px;
+	padding:15px;
 	font-family: Avenir, sans-serif !important;
 }
 
@@ -664,20 +664,25 @@ BLOG POST SECTION ------------------------------- */
  	background-size: cover;
 	overflow: hidden;
 	
-	border: solid blue 5px;
+	border: solid red 5px;
 
 	margin:15px 0 35px 0;
 }
 .post_img2 {
 	width:100%;
-	height:15vh;
+	height:450px;
  	background-size: cover;
 	overflow: hidden;
-
-	border: solid red 5px;
-	
-	margin:15px 0 35px 0;
+	/*border: solid blue 5px;*/	
 }
+.post_img3 {
+	width:100%;
+	height:250px;
+ 	background-size: cover;
+	overflow: hidden;
+	border: solid #f0f 5px;	
+}
+
 /* ----- added from tut */
 .bg-center-center {
 	-ms-background-position-x: center;
@@ -1096,7 +1101,9 @@ BLOG POST SECTION ------------------------------- */
 	}
 
 /*----- @ learn / stories ------------------------------*/
+.blog_fullwidth {
 
+}
 .blog_grid {
     display: grid;
     justify-content: space-between;
