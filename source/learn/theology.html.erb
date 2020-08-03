@@ -9,7 +9,8 @@ title: Theology
   <title> Movement - Theology</title>
 </head>
 <body>
-
+      <% posts = posts_by_tag("Story") %>
+      <% first_post = posts.shift %>
 
 <!-- NAME & ARROW W RED BG -->
 <section class="hero">
@@ -35,9 +36,21 @@ title: Theology
       proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       
     </div>
+
+<div><!--  class="recent_posts"> -->
+      <% posts.take(1).each do |index, post| %>
+        <div><!--  class="post"> -->
+          <%= partial "partials/post_grid_item", :locals => { :post => post, :include_excerpt => true } %>
+        </div> <!-- end post -->
+      <% end %>
+    </div> <!-- end recent posts -->
+
+
+
     <code> 
-      [1] Contentful posts with tag: Theology <br>
-      [2] layout: 1 x feature; grid @ 3 columns
+      [x] Contentful posts with tag: Theology <br>
+      [x] layout: 1 x feature; grid @ 3 columns
+      [3] Tagged content ≠ showing below.
         </code>
   </div> <!-- end container -->
 </section>
@@ -46,18 +59,16 @@ title: Theology
 <section>
   <div class="container">
     <div class="post_related border_box">
-
-    <div class="post_related">
-      <% posts = posts_by_tag("Theology") %>
-      <% first_post = posts.shift %>
-      
-      <div class="blog_grid">
-          <% posts.each do |index, post| %>
-            <div class="blog_grid_item">
-              <%= partial "partials/post_grid_item", :locals => { :post => post, :include_excerpt => false } %>
-            </div>
-          <% end %>
-      </div>
+      <h3>Articles</h3>
+      <div class="post_related">
+        
+        <div class="blog_grid">
+            <% posts.each do |index, post| %>
+              <div class="blog_grid_item">
+                <%= partial "partials/post_grid_item", :locals => { :post => post, :include_excerpt => false } %>
+              </div>
+            <% end %>
+        </div>
 
     </div>
   </div> <!-- end container -->
