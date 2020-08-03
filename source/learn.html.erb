@@ -20,6 +20,7 @@ title: Learn
   </div>
 </section>
 
+
 <!-- engage intro + overview 'In this together'-->
 <section id="intro_overview">
   <div class="container">
@@ -55,64 +56,105 @@ title: Learn
 </section>
 
 
-
 <!-- BROWSE ARTICLES = 3 X BLOGS, READ MORE -->
 <section id="learn_browse">
   <div class="container border_box">
     <div class="learn_browse">
       <h2>Browse</h2>
+          <!-- INSERT CONTENT FROM CONTENTFUL -->
+          <% posts = all_posts %>
+          <% first_post = posts.shift %>
 
 
-
-    <!-- INSERT CONTENT FROM CONTENTFUL -->
-    <% posts = all_posts %>
-    <% first_post = posts.shift %>
-
-
-      <div>
-          <% posts.take(3).each do |index, post| %>
             <div>
-              <%= partial "partials/learn_list_item", :locals => { :post => post, :include_excerpt => true } %>
-            </div>
-          <% end %>
+                <% posts.take(3).each do |index, post| %>
+                  <div>
+                    <%= partial "partials/learn_list_item", :locals => { :post => post, :include_excerpt => true } %>
+                  </div>
+                <% end %>
+              </div>
+          </div>
+
+        <div style="text-align: center;">
+          <code >DESIGNS SHOW A 'READ MORE' STYLE PAGINATION<br> [1] what page will this link show?</code>
         </div>
-    </div>
-
-<div style="text-align: center;">
-  <code >DESIGNS SHOW A 'READ MORE' STYLE PAGINATION<br> [1] what page will this link show?</code>
-</div>
-  </div> <!-- end container -->
+    </div> <!-- end container -->
 </section>
-
-
 
 
 <!-- BY CATEGORY -->
 <section id="learn_category">
   <div class="container">
-    <div class=" learn_category " style="border-bottom:0px;"></div>
-      
+    <div class="learn_category" style="border-bottom:0px;">
 
-        <section id="learn_cat_items">
-          <div class="container">
-            <div class="post_related">
-                
-              <h2>By Category</h2>
-              <code>
-                [1] style links on titles. ≠ blue or purple.<br>
-                [2] make the 4 cards below, into html iamge links to each section. ie Theology, Videos, Stories, Blog.
-                </code>
-              <div class="post_related_items">
-                  <% posts.take(4).each do |index, post| %>
-                    <div class="post_related_item">
-                      <%= partial "partials/post_list_item_related", :locals => { :post => post, :include_excerpt => false } %>
+      <div class="post_related">
+        <h2>By Category</h2>
+        <code>[2] make the 4 cards below, into html iamge links to each section. ie Theology, Videos, Stories, Blog.
+          </code>
+          <code> 
+            [1] Contentful posts with tag: Theology <br> 
+            [2] layout: 1 x feature; grid @ 3 columns
+          </code>
+        <div class="post_related_items"><!--  class="post_by_cat"> -->
+
+          <!-- BRING THROUGH 1 POST FROM EACH CAT -->
+          <div class="post_cat_item">
+            <h3> Theology</h3>
+          </div>
+
+          <div class="post_cat_item">
+            <h3>LStory</h3>
+            <div class="">
+                <% posts = posts_by_tag("Story") %>
+                <% first_post = posts.shift %>
+                <% posts.take(1).each do |index, post| %>
+                    <div class="">
+                      <%= partial "partials/download_list_item", :locals => { :post => post, :include_excerpt => false } %>
                     </div>
-                  <% end %>
-                </div>
-
+                <% end %>
             </div>
           </div>
-        </section>
+
+          <div class="post_cat_item">
+            <h3>Podcast</h3><br>
+              <div class="">
+                <% posts = posts_by_tag("Podcast") %>
+                <% first_post = posts.shift %>
+                <% posts.take(1).each do |index, post| %>
+                    <div class="">
+                      <%= partial "partials/download_list_item", :locals => { :post => post, :include_excerpt => false } %>
+                    </div>
+                <% end %>
+              </div>
+          </div>
+
+          <div class="post_cat_item">
+            <h3>Video</h3>
+            <div class="">
+                <% posts = posts_by_tag("Story") %>
+                <% first_post = posts.shift %>
+                <% posts.take(1).each do |index, post| %>
+                    <div class="">
+                      <%= partial "partials/download_list_item", :locals => { :post => post, :include_excerpt => false } %>
+                    </div>
+                <% end %>
+              </div>
+          </div>
+
+      </div>
+
+<!-- THIS BRINGS THROUGH 4 X CONSECUATIVE POSTS.  -->
+    <br><br><br><br><br><br><br><br><br>
+    <div class="post_related_items">
+        <% posts.take(4).each do |index, post| %>
+          <div class="post_related_item">
+            <%= partial "partials/post_list_item_related", :locals => { :post => post, :include_excerpt => false } %>
+          </div>
+        <% end %>
+    </div>
+
+  </div>
+</section>
 
 
 

@@ -119,13 +119,23 @@ h2 {
 	line-height: .9em;
 	padding:15px 0;
 }
-h2 a {
+footer a {
+	color:#ffffff;
+}
+footer a:visited {
+	color:#ffffff;
+}
+footer a:hover {
+	color:#C6131E;
+}
+
+a {
 	color:#000000;
 }
-h2 a:visited {
+a:visited {
 	color:#000000;
 }
-h2 a:hover {
+a:hover {
 	color:#C6131E;
 }
 h3 {
@@ -1026,8 +1036,9 @@ BLOG POST SECTION ------------------------------- */
 .learn_cat_item_words {
 	padding: 5px 15px;
 }
-
-
+.post_cat_item .post_img2 {
+	/*height:auto;*/
+}
  /*--- @ learn / blog ------------------------------ */
  .post_share {
  	background: #C6131E;
