@@ -641,10 +641,7 @@ BLOG POST SECTION ------------------------------- */
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-gap: 35px;
-
-    /*height: 325px;*/
     overflow: hidden;
-    /*padding-bottom: 15px 0px;*/
     margin:38px 0px;
 }
 .blog_image {
@@ -667,13 +664,17 @@ BLOG POST SECTION ------------------------------- */
  	background-size: cover;
 	overflow: hidden;
 	
+	border: solid blue 5px;
+
 	margin:15px 0 35px 0;
 }
 .post_img2 {
 	width:100%;
-	height:60vh;
+	height:15vh;
  	background-size: cover;
 	overflow: hidden;
+
+	border: solid red 5px;
 	
 	margin:15px 0 35px 0;
 }

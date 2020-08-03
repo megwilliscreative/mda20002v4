@@ -32,6 +32,7 @@ BUILD HOME CONTENTS
 
     <!-- <code>this first image is supposed to be fullwidth, but 16x9 ratio</code> -->
     <% posts = all_posts %>
+    
     <div><!--  class="recent_posts"> -->
       <% posts.take(1).each do |index, post| %>
         <div><!--  class="post"> -->
@@ -48,8 +49,7 @@ BUILD HOME CONTENTS
   <div class="container">
     <div class="border_box">
       <h3>Engage</h3>
-      
-      <% posts = all_posts %>
+    
       <div>
           <% posts.take(3).each do |index, post| %>
             <div>

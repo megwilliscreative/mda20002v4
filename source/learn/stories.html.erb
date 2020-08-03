@@ -46,7 +46,7 @@ title: Stories
       <div class="post_related_items">
           <% posts.take(1).each do |index, post| %>
             <div class="post_related_item">
-              <%= partial "partials/post_list_item", :locals => { :post => post, :include_excerpt => false } %>
+              <%= partial "partials/feature_list_item", :locals => { :post => post, :include_excerpt => false } %>
             </div>
           <% end %>
       </div>

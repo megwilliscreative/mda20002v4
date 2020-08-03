@@ -1,0 +1,29 @@
+
+<div class="blog_fullwidth">
+
+  <div class="post_img bg-center-center" style="background-image: url('<%= post.hero_image.url %>')">  
+    <a href="/learn/blog/<%= post.slug %>.html"></a>
+  </div>  
+
+  <div class="blog_text_dl">
+    <% if (!post.tags.nil?) %> 
+      <h3>
+        <% post.tags.take(1).each do |tag| %>
+          <span><%= tag %></span>
+        <% end %>
+      </h3>
+    <% end %>
+
+    <h2><a href="/learn/blog/<%= post.slug %>.html"><%= post.title %></a></h2>
+
+    <!-- tims content pulling in EXCERPTS -->
+    <% if include_excerpt %>
+       <%= Markdown.new(!post.excerpt.nil? ? post.excerpt : "").to_html %>
+    <% end %>
+
+    <a href="/learn/blog/<%= post.slug %>.html">
+        <button>Read More <i class="fas fa-chevron-right"></i></button>
+    </a>
+  </div>  <!-- end overview -->
+
+</div> <!-- end post -->
