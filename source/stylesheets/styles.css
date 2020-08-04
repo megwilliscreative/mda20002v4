@@ -190,15 +190,15 @@ button {
 	border:0px;
 	cursor: pointer;
 
-}
-button i {
-	color:#ffffff;
-	padding: 2px 0px 2px 15px;
-}
-button i:hover {
-	padding-left: 25px;
-	transition: all 0.1s ease-in-out;
-}
+	}
+	button i {
+		color:#ffffff;
+		padding: 2px 0px 2px 15px;
+	}
+	button i:hover {
+		padding-left: 25px;
+		transition: all 0.1s ease-in-out;
+	}
 .btn-white {
 	background: white;
 	color:black;
@@ -209,25 +209,26 @@ button i:hover {
 	margin:10 auto;
 	/*max-width:125px;*/
 	font-size: 16px;
-}
-.btn-white i {
-	color:#000000;
-	padding: 2px 0px 2px 15px;
-}
-.btn-white i:hover {
-	padding-left: 25px;
-	transition: all 0.1s ease-in-out;
-}
+	}
+	.btn-white i {
+		color:#000000;
+		padding: 2px 0px 2px 15px;
+	}
+	.btn-white i:hover {
+		padding-left: 25px;
+		transition: all 0.1s ease-in-out;
+	}
+	
 
 .site-notice {
 	/*display: none;*/
 
 	position: fixed;
 
-	top: 5px;
+	top: auto;
 	left: auto;
 	right: 5px;
-	bottom: auto !important;
+	bottom: 5px;
 
 	width:100%;
 	/*max-height:75px;*/
@@ -252,6 +253,7 @@ button i:hover {
 		padding: 6px 15px;
 		margin: 25px 0;
 		border-radius: 2px; 
+		font-size: 22px;
 	}
 
 .border_box {
@@ -369,166 +371,166 @@ button i:hover {
 
 
 /*========= HEADER STYLES =======================================================*/
-header {
-	background: #C6131E;
-	width:100%;
-	/*height: 5rem;*/
-	/*	position:absolute;
-	top:0;
-	left:0;
-	z-index:1;*/
+	header {
+		background: #C6131E;
+		width:100%;
+		/*height: 5rem;*/
+		/*	position:absolute;
+		top:0;
+		left:0;
+		z-index:1;*/
+		}
+	header a {
+		color:#ffffff;
+		}
+
+	.container {
+		width:100%;
+		max-width:1280px;
+		margin: 0 auto;
+		padding: 10px 0px;
+		/*position: relative;*/
+		}
+		.hero .container {
+			padding:35px;
+		}	
+		@media only screen and (max-width: 767px) {
+			.container {
+				/*padding:35px;*/
+				margin:0;
+				min-width:100%;
+			}
+		}
+
+	nav {
+		width:100%;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding:35px 0;
+		/*border: 2px solid yellow;*/
 	}
-header a {
-	color:#ffffff;
+	.nav-brand {	
+		width:100px;
+		padding:5px;
 	}
 
-.container {
-	width:100%;
-	max-width:1280px;
-	margin: 0 auto;
-	padding: 10px 0px;
-	/*position: relative;*/
+
+	 /*--- menu header nav --- */
+	.menu {
+		z-index: 9999;
 	}
+	.menu .nav-brand {
+		display: none;
+	}
+
+	.nav-list {
+	    text-align: right;
+	    height: 70px;
+	    line-height: 70px;
+	    /*border: 2px solid green;*/
+	}
+
+	.menu a {
+	    clear: right;
+	    text-decoration: none;
+	    color: #ffffff;
+	    /*background: #ff00ff;*/
+	    margin: 0 0 0 35px;
+		text-transform: uppercase;
+		font-size: 25px;
+		font-weight: bold;
+		/*border: 2px solid purple;*/
+	}
+
+
+	/* ---- mobile navigation ----------------------------------------------------- */
+
+	/*THIS IS THE HAMBURGER. SHOULD _ONLY_ SHOW ON <500PX*/
+	label {
+	    /*margin: 0 40px 0 0;*/
+	    font-size: 75px;
+	    line-height: 70px;
+	    display: none;
+	    width: 26px;
+	    float: right;
+	    color: #ffffff!important;
+	    /*border: 3px solid yellow;*/
+	}
+	#toggle {
+	    display: none;
+	}
+
 	@media only screen and (max-width: 767px) {
-		.container {
-			padding:35px;
-			margin:0;
+
+	    .menu .nav-brand {
+	    	margin-bottom:125px;
+	    }
+	    label {
+	        display: inline;
+	        cursor: pointer;
+	        color: #C6131E;
+	        text-transform: uppercase;
+	    }
+	    label i {
+	    	font-size:45px;
+	    	padding: 35px 0;
+	    	margin:0px;
+	    }
+	    .nav-brand {
+			display: inline;
+			width:100px;
+		}
+		.menu .nav-brand {
+			display: inline;
+			padding-left:0px;
+			width:100px;
+		}
+	    .menu {
+	        background: #ffffff;
+	        text-align: left;
+	        width: 100%;
+	        display: none;
+	        position: fixed;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			transition: all 0.3s ease-in-out;
+			padding: 35px 35px;
+	    }
+	    .menu a {
+	        color: #C6131E;
+	        display: block;
+	        margin: 0;
+	        line-height: 1.5em;
+		    font-family: adobe-garamond-pro, serif;
+			font-weight: 600;
+			font-size: 45px;
+			text-transform: none;
+	     
+	    }
+	    #toggle:checked + .menu {
+	        display: inline;
+	        background:#ffffff;
+	    }
+	    #toggle:checked + .menu i{
+	        color: #C6131E;
+	    }
+	    .menu_header {
+	    	display: grid;
+	    	grid-template-columns: repeat(2,1fr);
+	    	width:100%;
+	    }
+	    .nav-list {
+	    	margin: 10px 35px 0 0;
+	    }
+	    nav {
+	    	align-items: start;
 		}
 	}
 
-nav {
-	width:100%;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	padding:35px 0;
-	/*border: 2px solid yellow;*/
-}
-.nav-brand {	
-	width:100px;
-	padding:5px;
-}
-
-
- /*--- menu header nav --- */
-.menu {
-	z-index: 9999;
-}
-.menu .nav-brand {
-	display: none;
-}
-
-.nav-list {
-    text-align: right;
-    height: 70px;
-    line-height: 70px;
-    /*border: 2px solid green;*/
-}
-
-.menu a {
-    clear: right;
-    text-decoration: none;
-    color: #ffffff;
-    /*background: #ff00ff;*/
-    margin: 0 0 0 35px;
-	text-transform: uppercase;
-	font-size: 25px;
-	font-weight: bold;
-	/*border: 2px solid purple;*/
-}
-
-
-/* ---- mobile navigation ----------------------------------------------------- */
-
-/*THIS IS THE HAMBURGER. SHOULD _ONLY_ SHOW ON <500PX*/
-label {
-    /*margin: 0 40px 0 0;*/
-    font-size: 75px;
-    line-height: 70px;
-    display: none;
-    width: 26px;
-    float: right;
-    color: #ffffff!important;
-    /*border: 3px solid yellow;*/
-}
-#toggle {
-    display: none;
-}
-
-@media only screen and (max-width: 767px) {
-
-    .menu .nav-brand {
-    	margin-bottom:125px;
-    }
-    label {
-        display: inline;
-        cursor: pointer;
-        color: #C6131E;
-        text-transform: uppercase;
-    }
-    label i {
-    	font-size:45px;
-    	padding: 35px 0;
-    	margin:0px;
-    }
-    .nav-brand {
-		display: inline;
-		width:100px;
-	}
-	.menu .nav-brand {
-		display: inline;
-		padding-left:0px;
-		width:100px;
-	}
-    .menu {
-        background: #ffffff;
-        text-align: left;
-        width: 100%;
-        display: none;
-        position: fixed;
-		top: 0;
-		left: 0;
-		right: 0;
-		bottom: 0;
-		transition: all 0.3s ease-in-out;
-		padding: 35px 35px;
-    }
-    .menu a {
-        color: #C6131E;
-        display: block;
-        margin: 0;
-        line-height: 1.5em;
-	    font-family: adobe-garamond-pro, serif;
-		font-weight: 600;
-		font-size: 45px;
-		text-transform: none;
-     
-    }
-    #toggle:checked + .menu {
-        display: inline;
-        background:#ffffff;
-    }
-    #toggle:checked + .menu i{
-        color: #C6131E;
-    }
-    .menu_header {
-    	display: grid;
-    	grid-template-columns: repeat(2,1fr);
-    	width:100%;
-    }
-    .nav-list {
-    	margin: 10px 35px 0 0;
-    }
-    nav {
-    	align-items: start;
-	}
-}
-
 /*============== MAIN SECTION STYLES ========================================*/
-
-
-
-
 
 body {
 	/*background: #C6131E;*/
@@ -583,7 +585,25 @@ BLOG POST SECTION ------------------------------- */
     grid-gap: 35px;
     overflow: hidden;
     margin:38px 0px;
-}
+    /*border: 5px green solid;*/
+	}
+	@media only screen and (max-width: 767px) {
+		.blog_post {
+			grid-template-columns: 1fr;
+			grid-gap: 0;
+		}
+		.post_img {
+			margin:0px !important;
+			padding:0 !important;
+			height: 200px !important;
+		}
+		.post_img2 {
+			height: 200px !important;
+		}
+		.post_img3 {
+			height: 150px !important;
+		}
+	}
 .blog_image {
     display: inline-block;
     position: relative;
@@ -604,7 +624,7 @@ BLOG POST SECTION ------------------------------- */
  	background-size: cover;
 	overflow: hidden;
 	
-	border: solid red 5px;
+	/*border: solid red 5px;*/
 
 	margin:15px 0 35px 0;
 }
@@ -620,7 +640,7 @@ BLOG POST SECTION ------------------------------- */
 	height:250px;
  	background-size: cover;
 	overflow: hidden;
-	border: solid #f0f 5px;	
+	/*border: solid #f0f 5px;	*/
 }
 
 /* ----- added from tut */
@@ -806,47 +826,59 @@ BLOG POST SECTION ------------------------------- */
 }
 /* --- vision section @ discover page ---------------*/
 
-.vision-section {
-	/*border-bottom: 8px #C6131E solid;*/
-}
-.vision-section h2 {
-	/*border-top: 4px dotted;*/
-	/*padding-top:35px;*/
-	line-height:1.3em;
-	/*color:#000000;*/
-}
-.vision_layout {
-  display: flex;
-  flex-wrap:wrap;
-  padding:50px;
-  /*flex-direction: column;*/
-  /*justify-content: space-between;*/
-  /*align-items: start;*/
-  /*align-content: start*/
+
+.vision_layout_item {
+  display: grid;
+  /*grid-template-columns: repeat(3,1fr);*/
+  grid-gap: 1em;
 }
 .vision_point {
-	/*width:20%;*/
-	min-width:200px;
-
+	/*min-width:200px;*/
 }
 .vision_rule {
-	width:200px;
-	border-top:4px dotted;
-	margin:25px 50px;
+	width:80%;
+	border-top:2px dotted;
+	margin:25px 0px;
 }
 .vision_details {
-	width:50%;
+	/*width:50%;*/
 	font-size: 22px;
 }
 
+@media only screen and (max-width: 767px) {
+		.vision_layout_item {
+			/*grid-template-columns: 1fr 1fr;*/
+			padding: 15px 35px;
+			grid-gap: .3em;
+		}
+		.vision_layout h2 {
+			color:#ccc !important;
+			font-size: 22px;
+			font-family: Avenir, sans-serif;
+			text-transform: uppercase;
+			padding:0px;
+			margin:0;
+			line-height: .9em;
+		}
+		.vision_layout p {
+			/*text-align: center;*/
+		}
+		.vision_rule {
+			display:none;
+		}
+		.vision_point {
+			padding:0px;
+			margin:0px !important;
+		}
+	}
 
 /*--- EMAIL SIGN UP LARGE ---*/
 
 /*.signup_large {}*/
 
 .signuplrg_wrapper {
-	display: grid;
-	grid-template-columns: repeat(6, 1fr);
+	/*display: grid;*/
+	/*grid-template-columns: repeat(6, 1fr);*/
 	grid-column-gap: 1em;
 	grid-row-gap: 1em;
 	align-items: start;
@@ -858,9 +890,25 @@ BLOG POST SECTION ------------------------------- */
   	grid-row:1;
 	background: #C6131E;
 	padding:75px 55px;
-	min-width:66%;
+	/*min-width:66%;*/
+	}
+	@media screen and only (max-width: 767px) {
+		.signuplrg_wrapper {
+			padding:0 !important;
+			margin:0;
+			/*display:grid;*/
+			/*grid-template-columns: 1fr !important;*/
+		}
+		.signuplrg_details {
+			padding:0px;
+			margin:0px;
+		}
+		.signuplrg_image {
+			padding:0px;
+			margin:0px;
+		}
+	}
 
-}
 .signup_large h2 {
 	color:#ffffff!important;
 }
@@ -913,47 +961,7 @@ BLOG POST SECTION ------------------------------- */
 	grid-gap: 1em;
 	padding:35px 0 0 0 ;
 }
-/*.learn_search {
-	background:#C6131E;
-	padding:15px 0px;
-}
-.learn_form {
-	padding:0px 75px;
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	grid-gap: 1em;
-	align-items: center;
-}
-.learn_search input {
-	border:0px;
-	border-bottom:1px #ffffff solid;
-	width:100%;
-	padding: 5px 10px;
-	margin:5px 0px;
-	font-size: 16px;
-	text-transform: uppercase;
-	font-family: Avenir, sans-serif;
-	font-weight: 500;
-	line-height: 2em;
-	background:none;
-	color:#ffffff;
-	grid-column: 
-}
 
-.learn_search select {
-	border:0px;
-	border-bottom:1px #ffffff solid;
-	width:100%;
-	padding: 5px 10px;
-	margin:5px 0px;
-	font-size: 16px;
-	text-transform: uppercase;
-	font-family: Avenir, sans-serif;
-	font-weight: 500;
-	line-height: 2em;
-	background:none;
-	color:#ffffff;
-}*/
 .learn_intro {
 	padding-bottom: 35px;
 }
@@ -976,10 +984,8 @@ BLOG POST SECTION ------------------------------- */
 .learn_cat_items {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	/*grid-template-columns: repeat ( auto-fit, minmax(200px, 1fr ));*/
 	grid-gap: 2em;
 	align-items: start;
-	/*min-height: 150px auto;*/
 }
 .learn_cat_item {
 	background:#ffffff;

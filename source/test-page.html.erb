@@ -1,67 +1,30 @@
 <div class="container">
-    <div class="post_related_items"><!--  class="post_by_cat"> -->
+      <div class="main-message">
+      <div class="vision_layout">
 
+        <div class="vision_layout_item">        
+          <div class="vision_point"><h2>Who</h2></div>
+          <div class="vision_rule"></div>
+          <div class="vision_details"><p> Movement is a new paradigm in Church culture where Ministers, Christian leaders, the local church and local organisations </p></div>
+        </div>
 
+        <div class="vision_layout_item">        
+          <div class="vision_point"><h2>What</h2></div>
+          <div class="vision_rule"></div>
+          <div class="vision_details"><p> come together in relational unity, reconciled diversity to understand and envision the unique story and pain of their city and engage collaboratively to bring solutions that will</p></div>
+        </div>
 
-          <!-- BRING THROUGH 1 POST FROM EACH CAT -->
-          <div class="post_cat_item">
-            <h3>Story</h3>
-            <div class="">
-              <code> each of these cateogry cards is</code>
-                <% posts = posts_by_tag("Story") %>
-                <% first_post = posts.shift %>
-                <% posts.take(1).each do |index, post| %>
-                    <div class="">
-                      <%= partial "partials/download_list_item", :locals => { :post => post, :include_excerpt => false } %>
-                    </div>
-                <% end %>
-            </div>
+        <div class="vision_layout_item">        
+          <div class="vision_point"><h2>Why</h2></div>
+          <div class="vision_rule"></div>
+          <div class="vision_details"><p>permeate their city with a generous localised Gospel that releases beauty and shalom.</p></div>
+        </div>
 
-
-          </div>
-
-          <div class="post_cat_item">
-            <h3>Theology</h3>
-            <div class="">
-                <% posts = posts_by_tag("Theology") %>
-                <% first_post = posts.shift %>
-                <% posts.take(1).each do |index, post| %>
-                    <div class="">
-                      <%= partial "partials/download_list_item", :locals => { :post => post, :include_excerpt => false } %>
-                    </div>
-                <% end %>
-            </div>
-          </div>
-
-          <div class="post_cat_item">
-            <h3>Podcast</h3><br>
-              <div class="">
-                <code>this would have to be pulled from VIdeo data folder ≠ not posts data folder </code>
-                <% posts = posts_by_tag("Podcast") %>
-                <% first_post = posts.shift %>
-                <% posts.take(1).each do |index, post| %>
-                    <div class="">
-                      <%= partial "partials/download_list_item", :locals => { :post => post, :include_excerpt => false } %>
-                    </div>
-                <% end %>
-              </div>
-          </div>
-
-          <div class="post_cat_item">
-            <h3>Video</h3>
-            <div class="">
-              <code>this would have to be pulled from VIdeo data folder ≠ not posts data folder </code>
-                <% posts = posts_by_tag("Video") %>
-                <% first_post = posts.shift %>
-                <% posts.take(1).each do |index, post| %>
-                    <div class="">
-                      <%= partial "partials/download_list_item", :locals => { :post => post, :include_excerpt => false } %>
-                    </div>
-                <% end %>
-              </div>
-          </div>
-
-
+        <div class="vision_layout_item">        
+          <div class="vision_point"><h2>How</h2></div>
+          <div class="vision_rule"></div>
+          <div  class="vision_details"><p>This catalytic paradigm is championed and empowered through local round tables, workshops, action teams, prayer and city gatherings called Movement Day.</p></div>
+        </div>
 
     </div>
 </div>
