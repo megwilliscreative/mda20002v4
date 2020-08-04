@@ -12,6 +12,17 @@
     grid-gap: 1em;
     /*border: 5px dotted #f0f;*/
 	}
+	@media only screen and (max-width: 767px) {
+		.post_related_items {
+			grid-template-columns: repeat(1,1fr);
+		}
+		.post_share {
+			display:none;
+		}
+		.post_subscribe {
+			display:none;
+		}
+	}
 
 	/*EACH ARTICLE.*/
 	.post_related_item {
@@ -47,7 +58,7 @@
 	}
 	.post_related button {
 		background:none;
-		color:red;
+		color:#C6131E;
 		text-transform: uppercase;
 		font-size: 14px;
 		margin:0;
@@ -389,16 +400,21 @@ button {
 		max-width:1280px;
 		margin: 0 auto;
 		padding: 10px 0px;
-		/*position: relative;*/
 		}
-		.hero .container {
-			padding:35px;
-		}	
+			
 		@media only screen and (max-width: 767px) {
 			.container {
-				/*padding:35px;*/
+				padding:35px;
 				margin:0;
-				min-width:100%;
+			}
+			.feature-img .container {
+				padding:0;
+			}
+			.signup_large .container {
+				padding:0px !important;
+				margin:0px !important;
+				background: #C6131E;
+				width:100%;
 			}
 		}
 
@@ -848,7 +864,7 @@ BLOG POST SECTION ------------------------------- */
 @media only screen and (max-width: 767px) {
 		.vision_layout_item {
 			/*grid-template-columns: 1fr 1fr;*/
-			padding: 15px 35px;
+			padding: 15px 0;
 			grid-gap: .3em;
 		}
 		.vision_layout h2 {
@@ -892,15 +908,15 @@ BLOG POST SECTION ------------------------------- */
 	padding:75px 55px;
 	/*min-width:66%;*/
 	}
-	@media screen and only (max-width: 767px) {
+	@media only screen and (max-width: 767px) {
 		.signuplrg_wrapper {
-			padding:0 !important;
+			padding:20px !important;
 			margin:0;
 			/*display:grid;*/
 			/*grid-template-columns: 1fr !important;*/
 		}
 		.signuplrg_details {
-			padding:0px;
+			padding:15px !important;
 			margin:0px;
 		}
 		.signuplrg_image {
@@ -960,7 +976,27 @@ BLOG POST SECTION ------------------------------- */
 	grid-template-columns: /*1fr 1fr OR */repeat(2, 1fr);
 	grid-gap: 1em;
 	padding:35px 0 0 0 ;
-}
+	}
+	@media only screen and (max-width: 767px) {
+		.learn_overview {
+			grid-template-columns: 1fr;
+		}
+		.learn_overview button {
+			margin:0 0 15px 0;
+			background: none;
+			font-size: 14px;
+			color:#C6131E;
+			padding:0;
+		}
+		.learn_overview button i {
+			color:#C6131E;
+		}
+		.blog_grid a button {
+			padding:0 !important;
+			margin: 0 0 15px 0;
+			text-align: left;
+		}
+	}
 
 .learn_intro {
 	padding-bottom: 35px;
@@ -978,7 +1014,6 @@ BLOG POST SECTION ------------------------------- */
 	width: 100%;
 	margin: 0 auto;
 	height: 300px;
-	/*background:red;*/
 	overflow:hidden;
 }
 .learn_cat_items {
@@ -1134,9 +1169,16 @@ BLOG POST SECTION ------------------------------- */
 	line-height: 1em;
 }
 .engage_intro_grid {
-	display: flex;
+	display: grid;
 	justify-content: space-between;
-}
+	grid-template-columns: repeat(3,1fr);
+	}
+	@media only screen and (max-width: 767px) {
+		.engage_intro_grid {
+			grid-template-columns: 1fr;
+		}
+	}
+
 .engage_intro_grid_white {
 	min-width:33%;
 	border: solid 1px black;
@@ -1257,15 +1299,14 @@ BLOG POST SECTION ------------------------------- */
 	grid-template-columns: repeat(4, 1fr);
 	justify-content: space-between;
 	grid-gap: 5em;
-
-}
-@media only screen and (max-width: 767px) {
-	.support_grid {
-		grid-template-columns: repeat(3,1fr);
-		grid-gap: 1em;
-		padding:35px;
 	}
-}
+	@media only screen and (max-width: 767px) {
+		.support_grid {
+			grid-template-columns: repeat(3,1fr);
+			grid-gap: .5em;
+			/*padding:35px;*/
+		}
+	}
 .media_grid_box, .support_grid_box {
 	/*min-width: 32%;*/
 	background:#ffffff;
@@ -1290,7 +1331,31 @@ BLOG POST SECTION ------------------------------- */
 	grid-gap: .8em;
 	padding:15px 0;
 	margin:0px;
-}
+	}
+	@media only screen and (max-width: 767px) {
+		.city_grid {
+			grid-template-columns: repeat(2, 1fr);
+		}
+		.city_grid h2 {
+			font-size: 18px;
+			line-height: 2em;
+			padding:0;
+		}
+		.city_grid i {
+			font-size: 18px;
+			padding:0;
+			margin:0;
+		}
+		.city_grid ul {
+			line-height: 1em;
+			padding:0px;
+			margin:0px;
+		}
+		.city_grid .team_socials {
+			padding:0px;
+			margin:0px;
+		}
+	}	
 .city_grid_item {
 	/*background:pink;*/
 	text-align: center;
@@ -1319,9 +1384,11 @@ BLOG POST SECTION ------------------------------- */
 	justify-content: space-between;
 	grid-template-columns: repeat(4, 1fr);
 	/*border: 2px dotted #ff00ff;*/
-	grid-gap: 2em;
+	grid-gap: 1em;
 	/*margin*/
-}
+	}
+
+
 #staff_grid .photo {
 	margin:35px 0;
 }
@@ -1372,8 +1439,8 @@ font-size:2em;}
 		/*padding:75px;*/
 		display: grid;
 		justify-content: space-between;
-		grid-template-columns: repeat(2, 1fr);
-		border: 2px dotted #ff00ff;
+		grid-template-columns: repeat(1, 1fr);
+		/*border: 2px dotted #ff00ff;*/
 	}
 	/*.staff_profiles_row {
 		display: flex;
@@ -1419,14 +1486,17 @@ font-size:2em;}
 
 
 /* --- @CONTACT PAGE ------------------------- */
-.contact_section {
-	padding:75px;
-	
-}
+
 .contact_section h2 {
 	line-height: 1.3em;
 	font-size: 40px;
-}
+	}
+	@media only screen and (max-width: 767px) {
+		.contact_address h2 {
+			font-size: 22px;
+		}
+	}
+
 .contact_section h3 {
 	line-height: 3em;
 }
@@ -1507,7 +1577,7 @@ font-size:2em;}
 
 footer {
 	background: #383838;
-	/*padding:35px 15px;*/
+	padding:35px 0;
 	text-align: center;
 	color:#ffffff;
 	margin-top:75px;
