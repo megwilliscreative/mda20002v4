@@ -11,48 +11,48 @@
     grid-template-columns: repeat(4,1fr);
     grid-gap: 1em;
     /*border: 5px dotted #f0f;*/
-}
+	}
 
-/*EACH ARTICLE.*/
-.post_related_item {
-    /*position: relative;*/
-    border-radius: 3px;
-    background: #fff;
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,.1);
-    overflow: hidden;
-    /*display: block;*/
+	/*EACH ARTICLE.*/
+	.post_related_item {
+	    /*position: relative;*/
+	    border-radius: 3px;
+	    background: #fff;
+	    box-shadow: 0 2px 5px 0 rgba(0,0,0,.1);
+	    overflow: hidden;
+	    /*display: block;*/
 
-    /*border: 5px orange dashed;*/
-}
-.post_related_item img {
-    display: block;
-    max-width: 100%;
-    /*margin-bottom: 15px;*/
-}
-#post_text {
-	padding:15px;
-	font-family: Avenir, sans-serif !important;
-}
+	    /*border: 5px orange dashed;*/
+	}
+	.post_related_item img {
+	    display: block;
+	    max-width: 100%;
+	    /*margin-bottom: 15px;*/
+	}
+	#post_text {
+		padding:15px;
+		font-family: Avenir, sans-serif !important;
+	}
 
-.post_related_items h2 {
-	font-size: 22px;
-	font-family: Avenir, sans-serif;
-	font-weight: bold;
-	padding:10px 0;
-	line-height: 1.1em;
-}
-.post_related h6 {
-	text-transform: uppercase;
-	padding-bottom: 5px;
-}
-.post_related button {
-	background:none;
-	color:red;
-	text-transform: uppercase;
-	font-size: 14px;
-	margin:0;
-	padding:10px 0;
-}
+	.post_related_items h2 {
+		font-size: 22px;
+		font-family: Avenir, sans-serif;
+		font-weight: bold;
+		padding:10px 0;
+		line-height: 1.1em;
+	}
+	.post_related h6 {
+		text-transform: uppercase;
+		padding-bottom: 5px;
+	}
+	.post_related button {
+		background:none;
+		color:red;
+		text-transform: uppercase;
+		font-size: 14px;
+		margin:0;
+		padding:10px 0;
+	}
 
 
 
@@ -224,21 +224,21 @@ button i:hover {
 
 	position: fixed;
 
-	top: 0;
-	left: 0;
-	right: 0;
+	top: 5px;
+	left: auto;
+	right: 5px;
 	bottom: auto !important;
 
 	width:100%;
-	max-height:75px;
+	/*max-height:75px;*/
 	/*font-size: 14px;*/
 	padding: 0.5em;
 	text-align: left;
-	background-color: #fff1ac;
-	color:#000000;
+	/*background-color: #fff1ac;*/
+	/*color:#000000;*/
 	z-index: 9999;
-	box-shadow: 0 1px 1em rgba(0, 0, 0, 0.2);
-	text-align: center;
+	/*box-shadow: 0 1px 1em rgba(0, 0, 0, 0.2);*/
+	text-align: right;
 	}
 	.site-notice li {
 		padding-bottom: 15px;
@@ -253,6 +253,7 @@ button i:hover {
 		margin: 25px 0;
 		border-radius: 2px; 
 	}
+
 .border_box {
 	border-top:10px solid #C6131E;
 	border-bottom:10px solid #C6131E;
@@ -261,18 +262,18 @@ button i:hover {
 
 /* --- POPUP STYLES ----------------------------------------------------- */
 
-	.modal_overlay {
-		background-color: rgba(0, 0, 0, 0.5);
-		position: fixed;
-		top: 0;
-		left: 0;
-		right: 0;
-		bottom: 0;
-		transition: all 0.3s ease-in-out;
-		
-		/*opacity: 0;*/
-		opacity: 1;
-		/*z-index: -1;*/
+.modal_overlay {
+	background-color: rgba(0, 0, 0, 0.5);
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	transition: all 0.3s ease-in-out;
+	
+	/*opacity: 0;*/
+	opacity: 1;
+	/*z-index: -1;*/
 	}
 	.modal {
 		background-color: #fff;
@@ -362,9 +363,9 @@ button i:hover {
 		padding:5px;
 		margin:0px;
 	}
-	/*END POPUP STYLES*/
+  /*END POPUP STYLES*/
 
-/* ---------- END GLOBAL STYLES -------------------------------------------------- */
+/* --- END GLOBAL STYLES -------------------------------------------------- */
 
 
 /*========= HEADER STYLES =======================================================*/
@@ -372,14 +373,14 @@ header {
 	background: #C6131E;
 	width:100%;
 	/*height: 5rem;*/
-/*	position:absolute;
+	/*	position:absolute;
 	top:0;
 	left:0;
 	z-index:1;*/
-}
+	}
 header a {
 	color:#ffffff;
-}
+	}
 
 .container {
 	width:100%;
@@ -387,13 +388,14 @@ header a {
 	margin: 0 auto;
 	padding: 10px 0px;
 	/*position: relative;*/
-
-}
-@media only screen and (max-width: 767px) {
-	.container {
-		padding:35px;
 	}
-}
+	@media only screen and (max-width: 767px) {
+		.container {
+			padding:35px;
+			margin:0;
+		}
+	}
+
 nav {
 	width:100%;
 	display: flex;
@@ -410,12 +412,6 @@ nav {
 
  /*--- menu header nav --- */
 .menu {
-/*	position: fixed;
-	top:0;
-	bottom:0;
-	right:0;
-	left:0;*/
-	/*background:#ffffff;*/
 	z-index: 9999;
 }
 .menu .nav-brand {
@@ -440,6 +436,10 @@ nav {
 	font-weight: bold;
 	/*border: 2px solid purple;*/
 }
+
+
+/* ---- mobile navigation ----------------------------------------------------- */
+
 /*THIS IS THE HAMBURGER. SHOULD _ONLY_ SHOW ON <500PX*/
 label {
     /*margin: 0 40px 0 0;*/
@@ -455,7 +455,7 @@ label {
     display: none;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 767px) {
 
     .menu .nav-brand {
     	margin-bottom:125px;
@@ -473,7 +473,6 @@ label {
     }
     .nav-brand {
 		display: inline;
-		/*padding-left:35px;*/
 		width:100px;
 	}
 	.menu .nav-brand {
@@ -493,12 +492,10 @@ label {
 		bottom: 0;
 		transition: all 0.3s ease-in-out;
 		padding: 35px 35px;
-		/*z-index: 9900;*/
     }
     .menu a {
         color: #C6131E;
         display: block;
-        /*border-bottom: 1px solid #EAEAEB;*/
         margin: 0;
         line-height: 1.5em;
 	    font-family: adobe-garamond-pro, serif;
@@ -518,7 +515,6 @@ label {
     	display: grid;
     	grid-template-columns: repeat(2,1fr);
     	width:100%;
-    	/*border: 2px solid purple;*/
     }
     .nav-list {
     	margin: 10px 35px 0 0;
@@ -527,62 +523,6 @@ label {
     	align-items: start;
 	}
 }
-
-/* ---- mobile navigation ----------------------------------------------------- */
-/*.mobile_menu {
-	display:none!important;
-
-	    display: grid;
-	    grid-template-columns: 1fr 1fr;
-	    position: fixed;
-		top: 0;
-		left: 0;
-		right: 0;
-		bottom: 0;
-		transition: all 0.3s ease-in-out;
-		background: #ffffff;
-		padding:35px;
-		z-index: 1501;
-	}*/
-	/*.mobile_menu h2,h3 {
-	    color:#C6131E;
-	}*/
-	/*.mobile_menu li{
-	    list-style: none;
-	    line-height: .9em;
-	    padding:0px;
-	    margin:0px;
-	}*/
-	/*.mobile_menu .logo img {
-	    height: 75px;
-	    width: auto;
-	}
-	*/
-	/*.nav_list {
-	    margin:0;
-	    padding:35px 0;
-	}*/
-	/*.mobile_menu .nav-link  {
-		text-transform: none;
-		font-size:45px;
-		color:#C6131E!important;
-	}*/
-
-	/*.nav_list h2 {
-		font-weight: bold;
-		color:#C6131E!important;
-	}*/
-	/*.mobile_menu ul {
-	    margin:0px;
-	    padding:0px;
-	}*/
-	/*.close_mob_x h3 {
-	    text-align: right;
-	}*/
-	/*.nav_list i {
-		font-size: 4em;
-	}*/
-
 
 /*============== MAIN SECTION STYLES ========================================*/
 
@@ -625,7 +565,7 @@ section {
 		color:#ffffff;
 	}
 	.hero h1 {
-		font-size: 4em;
+		font-size: 2.8em;
 	}
 	.hero h2 br {
 		display: none;
@@ -745,7 +685,26 @@ BLOG POST SECTION ------------------------------- */
 	align-items: center;
 	grid-gap: 1em;
 	justify-content: center;
-}
+	}
+	@media only screen and (max-width: 767px) {
+		.email_slim {
+			padding:35px 15px;
+			margin:0px;
+		}
+		.email_slim_form {
+			grid-template-columns: 1fr;
+			min-width: 200px;
+		}
+		.email_slim_form h2 {
+			font-size: 1.5em !important;
+		}
+		.email_slim_form input {
+			width:inherit;
+		}
+		.email_slim button {
+			margin:10px 0px;
+		}
+	}
 .email_slim_form input[type="email" ] {
   	padding:10px;
 }
@@ -762,7 +721,8 @@ BLOG POST SECTION ------------------------------- */
 	/*font-weight: 600;*/
 }
 .email_slim button {
-	margin:0px 15px;
+	margin:10px 15px;
+
 }
 .email_slim h2 {
 	color:#ffffff!important;
@@ -1557,13 +1517,41 @@ footer div {
 	padding-bottom:35px;
 }
 .footer_layout {
-	display: flex;
-	align-items: flex-start;
-	justify-content: space-between;
+	display: grid;
+	grid-template-columns: 1fr 3fr 1fr 1fr 1fr 1fr 2fr;
+	align-items: start;
 	text-align: left;
 	line-height: 2em;
 	padding: 35px;
+	}
+	@media only screen and (max-width: 767px) {
+		.footer_layout {
+			grid-template-columns: 1fr;
+			padding: 0px;
+			text-align: center;
+		}
+		.footer_layout > div {
+			padding: 0 !important;
+			margin:0;
+		}
+		footer img	{
+			width:75px;
+		}
+		h4 {
+			padding-top: 35px;
+			padding-bottom: 10px;
+			line-height: .3em;
+		}
+		.footer_socials {
+			margin:35px 0 !important;
+		}
+	}
+.footer_layout > div {
+	padding:0 15px;
+	/*background:#f0f;*/
 }
+
+
 .footer_layout h4 {
 	text-transform: uppercase;
 	font-size: 16px;
@@ -1576,7 +1564,7 @@ footer div {
 	font-size: 30px;
 }
 .footer_form input{
-	width:100%;
+	width:90%;
 	background:none;
 	border:0px;
 	border-bottom: 1px solid white;
@@ -1606,12 +1594,5 @@ footer .nav_brand {
 	padding:.3em;
 }
 
-@media only screen and (max-width: 767px) {
-	.footer_layout {
-		display: grid;
-		grid-template-columns: repeat(2, 1fr);
-		/*align-items: center;*/
-		
-	}
-}
+
 /* === END FOOTER STYLES ========================================== */
