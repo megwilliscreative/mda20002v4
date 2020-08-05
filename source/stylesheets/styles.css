@@ -298,6 +298,23 @@ button {
 		width: 580px;
 		max-width: 75%;
 	}
+	@media only screen and (max-width: 767px) {
+		.modal {
+			z-index: 9999;
+
+			background: #ffffff;
+	        text-align: left;
+	        width: 100%;
+	        display: none;
+	        position: fixed;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			transition: all 0.3s ease-in-out;
+			padding: 35px 35px;
+		}
+	}
 	.modal.open {
 		opacity: 1;
 		z-index: 999;
@@ -329,7 +346,7 @@ button {
 	}
 	.modal_image {
 		/*max-width:150px;*/
-		/*padding:15px 0 15px 15px;*/
+		padding:35px 0 15px 15px;
 	}
 	.modal_form input {
 	    width:100%;
@@ -344,8 +361,10 @@ button {
 	    /*opacity: 1;*/
 	    
 	}
-	.modal_form ::placeholder {
+	.modal_form  ::placeholder {
 		text-transform: uppercase;
+		color:#ffffff;
+		opacity: 1 !important;
 	}
 	.modal-body {
 		background:#C6131E;
@@ -363,18 +382,21 @@ button {
 		grid-gap:0px;
 		/*justify-items: end;*/
 		align-items: center;
-		
+	
 	}
 	.close h3 {
 		font-size: 1.2em;
 		padding:0px;
 		margin:0px;
+		color:#C6131E;
 	}
 	.close_x h3 {
 		line-height: 0.9;
 		font-size: 4em;
 		padding:5px;
 		margin:0px;
+		color:#C6131E;
+
 	}
   /*END POPUP STYLES*/
 
