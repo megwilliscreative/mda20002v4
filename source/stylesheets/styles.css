@@ -402,19 +402,20 @@ button {
 		  max-width:80%;
 		}
 
-		@media  (max-width: 567px) {
-/*			.popup {
+		
+		@media only screen and (max-width: 767px) {
+			#delayedPopup {/* .popup */
 				margin:0px;
-				background: #f0f;
+				/*background: #f0f;*/
 				width:100%;
 				min-width:380px;
-				min-height:100% !important;
+				/*min-height:100% !important;*/
 				position: fixed;
 				top:0;
 				right:0;
 				bottom:0;
 				left:0;
-				}*/
+			}
 
 			.popup_title {
 				/*  background: pale green; */
@@ -430,7 +431,6 @@ button {
 			.popup_image img {
 				max-height:300px;
 				}
-
 		}
 
 /* --- END GLOBAL STYLES -------------------------------------------------- */

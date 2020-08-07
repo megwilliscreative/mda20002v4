@@ -88,7 +88,7 @@
 }
 
 @media  (max-width: 567px) {
-	.popup {
+	#delayedPopup { ./*popup */
 		margin:0px;
 		background: #f0f;
 		width:100%;
