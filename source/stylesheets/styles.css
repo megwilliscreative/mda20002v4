@@ -269,138 +269,53 @@ button {
 	padding:35px 0px;
 }
 
-/* --- POPUP STYLES ----------------------------------------------------- */
-
-	.popup_overlay {
-		background-color: rgba(0, 0, 0, 0.5);
-		position: fixed;
-		top: 0;
-		left: 0;
-		right: 0;
-		bottom: 0;
-		transition: all 0.3s ease-in-out;
-		
-		/*opacity: 0;*/
-		opacity: 1;
-		/*z-index: -1;*/
-	}
-	
-	.popup {
-		background: white;
-		width:500px;
-		position: fixed;
-		top:50%;
-		left:50%;
-		margin-top:-350px;
-		margin-left:-250px;
-	}
-	.popup h2 {
-		color:#C6131E !important;
-		font-weight:600px;
-	}
-	.popup_close{
-			color:#C6131E;
-
-			position: absolute;
-			top:0;
-			right:0;
-			padding-right:15px;
-			margin:0px;
-			display: grid;
-			grid-template-columns: 2fr 1fr;
-			grid-gap:0px;
-			justify-items: end;
-			align-items: center;
-		
-		}
-		.close h3 {
-			font-size: 1.2em;
-			padding:0px;
-			margin:0px;
-			color:#C6131E;
-		}
-		.close_x h3 {
-			line-height: 0.9;
-			font-size: 4em;
-			padding:5px;
-			margin:0px;
-			color:#C6131E;
-		}
-
-	.popup_form {
-	  border: 3px dotted #f0f;
-	    background: #C6131E;
-	  	padding:35px 35px 75px 35px;
-	}
-		.popup_form input {
-			    width:98%;
-			    background:none;
-			    border:0px;
-			    border-bottom: 1px solid white;
-			    padding: 6px 0;
-			    margin: 15px 0px;
-			    font-size:18px;
-			    color: #ffffff !important;    
-			}
-		.popup_form ::placeholder {
-				text-transform: uppercase;
-				color:#ffffff;
-				opacity: 1 !important;
-		/*     margin:10px 0; */
-			}
-
-
-	.popup_header {
-	  
-	  background:white;
-	  padding:25px;
-	  display:grid;
-	  grid-template-columns: repeat(5,1fr);
-	}
-	.popup_title {
-	  grid-column: 1/4;
-	  grid-row:1;
-	}
-	.popup_image {
-	  grid-column: 3/6;
-	  grid-row:1;
-	}
-	.popup_image img {
-	  width:400px;
-	}
-
-	@media  (max-width: 567px) {
-		.popup {
-			margin:0px;
-			background: #f0f;
-			width:100%;
-			min-width:380px;
-			min-height:100% !important;
+	/*STYLES FOR POPUP ON @HOME*/
+		/*   This is the background overlay   */
+		.backgroundOverlay {
 			position: fixed;
-			top:0;
-			right:0;
-			bottom:0;
-			left:0;
-			}
-
-		.popup_title {
-			grid-column: 1/6;
-			grid-row:2;
-			}
-		.popup_image {
-			/*padding:35px;*/
-			grid-column: 1/6;
-			grid-row:1;
-			text-align:right;
-			}
-		.popup_image img {
-			/*max-height:80%;*/
-			margin-right:-80px;
-			padding:0px;
-			}
-
-	}
-  /*END POPUP STYLES*/
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			height: 100%;
+			width: 100%;
+			margin: 0;
+			padding: 0;
+			background: #000000;
+			opacity: .85;
+			filter: alpha(opacity=85);
+			-moz-opacity: .85;
+			z-index: 101;
+			display: none;
+		}
+		/*   This is the Popup Window   */
+		.delayedPopupWindow {
+			display: none;
+			position: fixed;
+			width: auto;
+			max-width: 480px;
+			height: 310px;
+			top: 50%;
+			left: 50%;
+			margin-left: -260px;
+			margin-top: -180px;
+			background-color: #efefef;
+			border: 2px solid #333;
+			z-index: 102;
+			padding: 10px 20px;
+		}
+		/*   This is the closing button  */
+		#btnClose {
+			width:100%;
+			display: block;
+			text-align: right;
+			text-decoration: none;
+			color: #BCBCBC;
+		}
+		/*   This is the closing button hover state  */
+		#btnClose:hover {
+			color: #c90c12;
+		}
 
 /* --- END GLOBAL STYLES -------------------------------------------------- */
 
@@ -1750,5 +1665,10 @@ BLOG POST SECTION ------------------------------- */
 		padding:.3em;
 	}
 
-
+/*@media (max-width:767px;) {
+	.mob_cols {
+		display: grid;
+		grid-template-columns: 1fr,1fr;
+	}
+}*/
 /* === END FOOTER STYLES ========================================== */
