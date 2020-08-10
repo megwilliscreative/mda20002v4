@@ -292,11 +292,11 @@ button {
 			filter: alpha(opacity=65);
 			-moz-opacity: .85;
 			z-index: 101;
-			/*display: none;*/
+			display: none;
 		}
 		/*   This is the Popup Window   */
 		.delayedPopupWindow {
-			/*display: none;*/
+			display: none;
 			position: fixed;
 			width: auto;
 			max-width: 600px;
