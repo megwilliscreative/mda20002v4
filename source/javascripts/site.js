@@ -3,9 +3,7 @@ $(document).ready(function () {
 
   var beenHereBefore = localStorage.getItem("iwashere");
 
-  console.log(beenHereBefore);
-
-  if(typeof beenHereBefore === 'undefined') {
+  if(typeof beenHereBefore === 'undefined' || beenHereBefore == null) {
 
     //Controls how the modal popup is closed with the close button
     function HideDialog()
