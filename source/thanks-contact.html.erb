@@ -1,11 +1,34 @@
+<% posts = all_posts %>
+
 <section id="thanks">
 	<div class="container">
 		<div class="thanks">
-			<h3>Thanks for your message. We'll get back to you shortly.</h3>
+			<h1 style="padding-bottom:35px;">Thanks</h1>
+			<p>Thanks for your message. We'll get back to you shortly. <br><br>
 			In the meantime, have you subscribed to our newsletter?<br>
-			<h2>We are passionate about X Y Z</h2>
+			Otherwise come and connect over on <a href="https://www.facebook.com/MDayAus/">Facebook</a> and <a href="https://www.instagram.com/MDayAus/">Instagram</a>.</p>
 		</div>
 	</div>
 </section>
 
-<%= partial "partials/e_signup_lrg" %>
+<%= partial "partials/e_signup_slim" %>
+
+
+<section>
+  <div class="container">
+    <div class=" border_box">
+
+    <div class="">
+      <h2>Recent Posts</h2>
+      <div class="blog_grid">
+
+          <% posts.take(4).each do |index, post| %>
+            <div class="blog_grid_item">
+              <%= partial "partials/post_grid_item", :locals => { :post => post, :include_excerpt => false } %>
+            </div>
+          <% end %>
+      </div>
+
+    </div>
+  </div> <!-- end container -->
+</section>

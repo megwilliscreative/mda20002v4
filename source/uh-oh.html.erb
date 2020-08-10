@@ -1,12 +1,37 @@
+<% posts = all_posts %>
+
 <section id="thanks">
 	<div class="container">
-		<div class="thanks">
+		<div class="404_page">
 			<h1>Uh-oh</h1>
-
-			<h3>Looks like the page you're looking for isnt here.</h3>
-			<h2>If you clicked a link to get here, please let us know.</h2>
-		</div>
+			<br>
+			<p>Looks like the page you're looking for isnt here.</p>
+			<p>If you clicked a link to get here, please let us know.</p>
+			<br>
+			<div style="text-align: center;">
+	          <a href="/index.html">
+	              <button class="btn-white">Return to home page<i class="fas fa-chevron-right"></i></button>
+	          </a>
+      	  	</div>
+		</div>	
 	</div>
 </section>
 
-<%= partial "partials/e_signup_lrg" %>
+<section>
+  <div class="container">
+    <div class=" border_box">
+
+    <div class="">
+		<h2>Recent Posts</h2>
+      	<div class="blog_grid">
+      	
+          <% posts.take(4).each do |index, post| %>
+            <div class="blog_grid_item">
+              <%= partial "partials/post_grid_item", :locals => { :post => post, :include_excerpt => false } %>
+            </div>
+          <% end %>
+      </div>
+
+    </div>
+  </div> <!-- end container -->
+</section>

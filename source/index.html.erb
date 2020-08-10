@@ -49,10 +49,11 @@ BUILD HOME CONTENTS
   <div class="container">
     <div class="border_box">
       <h3>Engage</h3>
-    <code>
+    
+      <div>
+        <code>
   This first article is a duplicate. How do you skip an article?
   </code>
-      <div>
           <% posts.take(3).each do |index, post| %>
             <div>
               <%= partial "partials/post_list_item", :locals => { :post => post, :include_excerpt => true } %>

@@ -1,3 +1,6 @@
+
+<% posts = all_posts %>
+
 <section id="thanks">
 	<div class="container">
 		<div class="thanks">
@@ -7,10 +10,22 @@
 	</div>
 </section>
 
+
 <section>
-	<div class="container">
-		<div>
-			<h2>Insert Latest events, or if none show posts</h2>
-		</div>
-	</div>
+  <div class="container">
+    <div class=" border_box">
+
+    <div class="">
+      <h2>Recent Posts</h2>
+      <div class="blog_grid">
+
+          <% posts.take(4).each do |index, post| %>
+            <div class="blog_grid_item">
+              <%= partial "partials/post_grid_item", :locals => { :post => post, :include_excerpt => false } %>
+            </div>
+          <% end %>
+      </div>
+
+    </div>
+  </div> <!-- end container -->
 </section>
