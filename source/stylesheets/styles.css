@@ -390,6 +390,9 @@ button {
 		  grid-column: 1/4;
 		  grid-row:1;
 		}
+		.popup_title h2 {
+			color:#C6131E !important;
+		}
 		.popup_image {
 		  /*border: 3px dotted black;*/
 		  grid-column: 3/6;
