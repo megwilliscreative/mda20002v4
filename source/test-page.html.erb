@@ -1,33 +1,32 @@
----
-<!-- layout: test -->
----
+<!-- email popup -->
+<div id="bkgOverlay" class="backgroundOverlay"></div>
+  
+  <div id="delayedPopup" class="delayedPopupWindow">
 
-
-<div class="popup_overlay">
-    <div class="popup">
-
-        <div class="popup_close">
-              <div class="close"><h3>close</h3></div>
-              <div class="close_x"><h3>×</h3></div>
-        </div>
-        
+    <!-- Close button -->
+      <div class="popup_close" id="closeModalBtn">
+        <div><a href="#" id="btnClose" class="close"><h3>close</h3></a></div>
+        <div><a href="#" id="btnClose" class="close_x"><h3>×</h3></a></div>
+      </div>
+      
+    <!-- Description -->
         <div class="popup_header">
           <div class="popup_title">
             <h2>Download our vision book</h2>
           </div>
-          <div class="popup_image"><img src="imgs/Book-Mockup-min.png" alt="">
-            
+          <div class="popup_image">
+            <img src="/imgs/Book-Mockup-min.png">
           </div>
         </div>
-        
-        <div class="popup_form">
-           <form>
-                      <input type="text" name="name" placeholder="First Name">
-                      <input type="email" name="email" placeholder="Email">
-                      <button class="btn-white">Submit <i class="fas fa-chevron-right"></i></button>
-                    </form>
-        </div>
 
-    </div>
-
+        <div class="popup_body">      
+            <div class="popup_form">
+                <form action="https://madmimi.com/signups/subscribe/522164c7f4a448f1909e8c21513c42c4">
+                  <input type="text" name="name" placeholder="First Name">
+                  <input type="email" name="email" placeholder="Email">
+                  <button class="btn-white">Submit <i class="fas fa-chevron-right"></i></button>
+                </form>
+            </div>
+        </div> 
+  </div>
 </div>
