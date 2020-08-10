@@ -16,7 +16,7 @@ description: Blog
 <section class="hero">
   <div class="container">
     <div class="main-message">
-      <h1> Blog <i class="fas fa-arrow-down"></i></h1>
+      <h1>Blog <i class="fas fa-arrow-down"></i></h1>
     </div>
   </div>
 </section>
@@ -38,14 +38,10 @@ description: Blog
 </section>
 
 
-
-
-
-
-<!-- DSCRIBE CATEGORIES -->
+<!-- DESCRIBE CATEGORIES -->
 <section>
   <div class="container">
-    <div class="blog_categories">
+    <div class="blog_categories border_box">
       <div class="">
         <br>
         <h2>By Category</h2>
@@ -83,34 +79,52 @@ description: Blog
 </section>
 
 
-
 <!-- INSERT CONTENFUL  BLOG POSTS LIST -->
-
-
-<% if (posts.size > 0) %>
+  <% if (posts.size > 0) %>
   <% first_post = posts.shift %>
 
   <% if (posts.size > 0) %>
     <section id="recent_posts" class="content_section">
-
       <div class="content container">
-      <h2>Recent Posts</h2>
-      
         <div class="recent_posts">
-          <% posts.each do |index, post| %>
+          <h3 style="padding-bottom:0px; margin-bottom:0px;">Recent Posts</h3>
+          <% posts.take(5).each do |index, post| %>
             <div class="post">
               <%= partial "partials/post_list_item", :locals => { :post => post, :include_excerpt => true } %>
             </div>
           <% end %>
         </div>
+        <code>TBA show more link</code>
       </div>
     </section>
   <% end %>
 <% else %>
 <% end %>
 
+<section>
+  <div class="container">
+    <div class="blog_contributors border_box">
+       <h3>Contributers</h3>
+       <code>
+       [1] This people list should only have people who have articles<br>- add 'author' tag to content?</code>
+       <ul class="staff_grid"> 
+          <% committee_members.take(3).each do |index, person| %>
+            <li class="staff_member">
+                <%= partial "partials/people_list_item", :locals => { :person => person } %>
+            </li>
+        <% end %>  
+      </ul>     
+    </div>
+  </div>
+</section>
 
-
+<section>
+  <div class="container">
+    <div class="" style="border-bottom: 0px;">
+    <!-- email sign up large w mockup -->
+    <%= partial "partials/e_signup_lrg" %>
+  </div></div>
+</section>
 
 </body>
 </html>
