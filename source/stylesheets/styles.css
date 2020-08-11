@@ -486,7 +486,7 @@ button {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		padding:35px 0;
+		/*padding:35px 0;*/
 		/*border: 2px solid yellow;*/
 	}
 	.nav-brand {	
@@ -688,7 +688,7 @@ BLOG POST SECTION ------------------------------- */
 				height: 150px !important;
 			}
 			.blog_text {
-				grid-row: 2;
+				grid-row: 2 !important;
 				padding:10px 35px;
 			}
 			.blog_fullwidth h3 {
@@ -698,6 +698,11 @@ BLOG POST SECTION ------------------------------- */
 				padding:0 ;	
 			}
 		}
+	.blog_text {
+		grid-row: 1;
+		padding:10px 35px;
+	}	
+
 	.blog_image {
 	    display: inline-block;
 	    position: relative;
@@ -716,7 +721,8 @@ BLOG POST SECTION ------------------------------- */
 		height:350px;
 	 	background-size: cover;
 		overflow: hidden;
-		
+		padding:20px !important;
+
 		grid-row: 1;
 		/*grid-column: 2/4;*/
 				/*border: solid red 5px;*/
@@ -728,6 +734,7 @@ BLOG POST SECTION ------------------------------- */
 		height:450px;
 	 	background-size: cover;
 		overflow: hidden;
+		padding:20px !important;
 		/*border: solid blue 5px;*/	
 	}
 	.post_img3 {
@@ -735,6 +742,7 @@ BLOG POST SECTION ------------------------------- */
 		height:250px;
 	 	background-size: cover;
 		overflow: hidden;
+		padding:20px !important;
 		/*border: solid #f0f 5px;	*/
 	}
 
