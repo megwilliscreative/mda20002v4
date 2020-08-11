@@ -1,3 +1,6 @@
+backkup css 11 aug 2020
+
+
 
  /*TEST ZONE ---------------------------------------------------- */
  
@@ -666,11 +669,6 @@ BLOG POST SECTION ------------------------------- */
 	    /*border: 5px green solid;*/
 		}
 		@media only screen and (max-width: 767px) {
-			.blog_fullwidth .container {
-				margin:0;
-				padding:0;
-			}
-
 			.blog_post {
 				grid-template-columns: 1fr;
 				grid-gap: 0;
@@ -679,23 +677,12 @@ BLOG POST SECTION ------------------------------- */
 				margin:0px !important;
 				padding:0 !important;
 				height: 200px !important;
-				grid-row: 1;
 			}
 			.post_img2 {
 				height: 200px !important;
 			}
 			.post_img3 {
 				height: 150px !important;
-			}
-			.blog_text {
-				grid-row: 2;
-				padding:10px 35px;
-			}
-			.blog_fullwidth h3 {
-				padding:0 35px;	
-			}
-			.blog_fullwidth .blog_text h3 {
-				padding:0 ;	
 			}
 		}
 	.blog_image {
@@ -717,9 +704,7 @@ BLOG POST SECTION ------------------------------- */
 	 	background-size: cover;
 		overflow: hidden;
 		
-		grid-row: 1;
-		/*grid-column: 2/4;*/
-				/*border: solid red 5px;*/
+		/*border: solid red 5px;*/
 
 		margin:15px 0 35px 0;
 	}
@@ -834,8 +819,8 @@ BLOG POST SECTION ------------------------------- */
 			}
 
 			.email_slim_form input {
-				/*max-width:98%;*/
-				/*margin-right: 50px !important;*/
+				/*max-width:90%;*/
+				margin-right: 50px !important;
 			}
 			.email_slim button {
 				margin:10px 0px;
@@ -962,18 +947,15 @@ BLOG POST SECTION ------------------------------- */
 	}
 	.vision_point {
 		/*min-width:200px;*/
-		grid-row:1;
 	}
 	.vision_rule {
 		width:80%;
 		border-top:2px dotted;
 		margin:25px 0px;
-		grid-row:1;
 	}
 	.vision_details {
 		/*width:50%;*/
 		font-size: 22px;
-		grid-row:1;
 	}
 
 	@media only screen and (max-width: 767px) {
@@ -1284,21 +1266,6 @@ BLOG POST SECTION ------------------------------- */
 		@media only screen and (max-width: 767px) {
 			.blog_grid {
 				grid-template-columns: repeat(1,1fr);
-			}
-			.whats_happening .container {
-				width:100%;
-				margin:0px;
-				padding:0px;
-				/*background: #C6131E;*/
-				/*background: #f0f;*/
-			}
-			/*.? h3 padding*/
-			.whats_happening h3 {
-				padding:5px 35px;
-			}
-			/*.? blog text padding*/
-			.blog_text_dl{
-				padding:10px 35px;
 			}
 		}
 	.blog_grid_item {

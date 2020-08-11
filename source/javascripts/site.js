@@ -2,8 +2,8 @@
 $(document).ready(function () {
 
   var beenHereBefore = localStorage.getItem("iwashere");
-  // REMOVE COMMENT BELOW TO TURN ON STOP_REVISIT
-  // if(typeof beenHereBefore === 'undefined' || beenHereBefore == null) {
+  // REMOVE COMMENT from code BELOW TO TURN ON STOP_REVISIT 
+  if(typeof beenHereBefore === 'undefined' || beenHereBefore == null) {
 
     //Controls how the modal popup is closed with the close button
     function HideDialog()
@@ -24,7 +24,7 @@ $(document).ready(function () {
       localStorage.setItem('iwashere',true);
       e.preventDefault();
     });
-  // REMOVE COMMENT BELOW TO TURN ON STOP_REVISIT 
-  // }
+  // REMOVE COMMENT from code BELOW TO TURN ON STOP_REVISIT 
+  }
 
 });
