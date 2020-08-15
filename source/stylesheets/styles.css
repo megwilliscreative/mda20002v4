@@ -1749,9 +1749,12 @@ BLOG POST SECTION ------------------------------- */
 		border-bottom: 1px solid #000000;
 		padding: 6px 10px;
 		margin: 15px 0px;
-		text-transform: uppercase;
+		
 		font-family: avenir, sans-serif;
 		font-size:14px;
+	}
+	.leave_message textarea::placeholder {
+		text-transform: uppercase;
 	}
 
 
