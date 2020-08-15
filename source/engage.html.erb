@@ -147,32 +147,33 @@ title: Engage
   </div>
 </section>
 
-
-<!-- pull in latest Engage article from contenful -->
+<!-- pull in latest Engage articles from contenful -->
+<!--  POST X 5 -->
 <section class="engage_updates">
   <div class="container">
-
-    <div class="replace_w_contentful">
-      <% posts = posts_by_tag("Engage") %>
-
-      <% first_post = posts.shift %>
-      
-      <code >
-        <!-- [x] Read More = button style ≠ text link <br> -->
-        [2] replace this tag with Engage. <br>
-        [3] add engage tag to Contentful post ^ in code. <br>
-        [4] only working with Story tag. <br>
+    <div class="blog_page_title replace_w_contentful">
+      <!-- <h3>Featured</h3> -->
+      <code>
+        [4] only working with Story tag. _TC<br>
         [5] image into link. <br>
       </code>
+
+      <% posts = posts_by_tag("Story") %>
+      <% first_post = posts.shift %>
+      
       <div class="">
-          <% posts.take(1).each do |index, post| %>
+          <% posts.take(5).each do |index, post| %>
             <div class="">
-              <%= partial "partials/download_list_item", :locals => { :post => post, :include_excerpt => true } %>
+              <%= partial "partials/feature_list_item", :locals => { :post => post, :include_excerpt => true } %>
             </div>
           <% end %>
       </div>
-  </div>
+
+  </div> <!-- end container -->
 </section>
+
+
+
 
 
 <!-- large email sign up -->

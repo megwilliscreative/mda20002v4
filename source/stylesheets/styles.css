@@ -1294,7 +1294,9 @@ BLOG POST SECTION ------------------------------- */
 		}
 
 	/*----- @ learn / stories ------------------------------*/
-	/*.blog_fullwidth {}*/
+	.blog_fullwidth {
+		margin-bottom: 35px;
+	}
 	.blog_grid {
 	    display: grid;
 	    justify-content: space-between;
