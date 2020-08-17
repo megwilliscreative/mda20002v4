@@ -32,28 +32,26 @@ title: Contact
     <div class="contact_form">
       <div class="leave_message">
 
-          <form id="mda_contact" method="POST" data-netlify-recaptcha="true" data-netlify="true" action="/thanks-contact.html">
-            <input type="text" id="fname" name="First Name" placeholder="First Name"><br><br>
-            <input type="text" id="lname" name="Last Name" placeholder="Last Name"><br><br>
-            <input type="email" id="email" name="Email" placeholder="Email">
-            <label for="message">Message</label>
-            <textarea id="message" name="Message" placeholder="Message" rows="10"></textarea>
-            
-            <!-- <div>
-              <div data-netlify-recaptcha="true"></div>
-            </div> -->
-<button type="submit" name="submit" >Send <i class="fas fa-chevron-right"></i></button>
-<!-- 
-            <button type="submit" name="submit" value="Submit" 
-              class="g-recaptcha" 
-              data-sitekey="6LdBBb8ZAAAAAN_8N0ODRpR3aUXnvwzm4OuB3h_y" 
-              data-callback='onSubmit' 
-              data-action='submit'>
-              Send <i class="fas fa-chevron-right"></i>
-            </button> -->
-    <!-- recaptcha = v2 invis -->
-          </form>
+        <form id="mda_contact" method="POST" 
+        data-netlify-recaptcha="true" 
+        data-netlify="true" 
+        action="/thanks-contact.html">
+          <input type="text" id="fname" name="First Name" placeholder="First Name" required ><br><br>
+          <input type="text" id="lname" name="Last Name" placeholder="Last Name"><br><br>
+          <input type="email" id="email" name="Email" placeholder="Email" required >
+          <!-- <label for="message">Message</label> -->
+          <textarea id="message" name="Message" placeholder="Message" rows="10"></textarea>
+
+          <button type="submit" name="submit" value="Submit" 
+            data-callback='onSubmit' 
+            data-action='submit'
+            >
+            Send <i class="fas fa-chevron-right"></i>
+          </button>
+
+        </form>
       </div>
+
       <div class="contact_address">
         <h2>PO&nbsp;Box&nbsp;2216,<br>Toowoomba&nbsp;QLD&nbsp;4350 <br>Ph.&nbsp;07&nbsp;4637&nbsp;8244</h2>
         <a href="mailto:admin@movement.org.au"><h2>admin@movement.org.au</h2></a>
