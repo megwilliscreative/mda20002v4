@@ -1,0 +1,38 @@
+<section class="hero">
+  <div class="container">
+    <div class="main-message">
+      <h1> Podcast <i class="fas fa-arrow-down"></i></h1>
+    </div>
+  </div>
+</section>
+
+<section id="podcast_content" class="content_section shorter">
+  <div class="container">
+    <div class="content">
+
+
+
+      <h2><%= podcast.title %></h2>
+      
+      <p class="dates"><%= podcast.episode_date.day %>  <%= Date::MONTHNAMES[podcast.episode_date.month] %> <%= podcast.episode_date.year %></p>
+      <div class="player">
+        <audio controls class="mejs__player">
+          <source
+            type="audio/mpeg"
+            src="<%= podcast.audio_file.url %>"/>
+            Your browser does not support the <code>audio</code> element.
+        </audio>
+      </div>
+
+      <p class="download_meta">
+        <small><%= friendly_duration(podcast.duration) %> &mdash; <%= podcast.audio_file_size %>kb</small>
+      </p>
+<br>
+      <h3>Episode Notes</h3>
+        <%= Markdown.new(!podcast.formatted_description.nil? ? podcast.formatted_description : "").to_html %>
+
+        <p style="margin-top: 4em;"><a href="/learn/podcast.html" class="button smaller dark">View all Podcast episodes</a>
+        </p>
+    </div>
+  </div>
+</section>

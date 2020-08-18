@@ -1,0 +1,17 @@
+<div class="blog_post_pod"> 
+	<a href="/learn/podcast/<%= podcast.slug %>.html">
+    <div 
+    	class="post_img2 bg-center-center" 
+    	style="background-image: url('<%= podcast.episode_image.url %>')"
+    	>
+    </div>  
+  </a> 
+
+	<div class="blog_text_pod">
+    	<h2><a href="/learn/podcast/<%= podcast.slug %>.html"><%= podcast.title %></a></h2>
+    	<p class="date">
+    		<%= podcast.episode_date.day %> <%= Date::MONTHNAMES[podcast.episode_date.month] %> <%= podcast.episode_date.year %></p>
+   		<p><%= podcast.description %></p>
+ 	</div>  
+</div>
+

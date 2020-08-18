@@ -238,19 +238,14 @@ button {
 
 	top: auto;
 	left: auto;
-	right: 5px;
+	right: auto;
 	bottom: 5px;
 
-	width:100%;
-	/*max-height:75px;*/
-	/*font-size: 14px;*/
+	/*width:100%;*/
 	padding: 0.5em;
 	text-align: left;
-	/*background-color: #fff1ac;*/
-	/*color:#000000;*/
 	z-index: 9999;
-	/*box-shadow: 0 1px 1em rgba(0, 0, 0, 0.2);*/
-	text-align: right;
+	text-align: center;
 	}
 	.site-notice li {
 		padding-bottom: 15px;
@@ -665,6 +660,14 @@ BLOG POST SECTION ------------------------------- */
 	    margin:38px 0px;
 	    /*border: 5px green solid;*/
 		}
+	.blog_post_pod {
+	    display: grid;
+	    grid-template-columns: 1fr 1fr;
+	    grid-gap: 35px;
+	    overflow: hidden;
+	    margin:38px 0px;
+	    /*border: 5px green solid;*/
+		}
 		@media only screen and (max-width: 767px) {
 			.blog_fullwidth .container {
 				margin:0;
@@ -672,6 +675,10 @@ BLOG POST SECTION ------------------------------- */
 			}
 
 			.blog_post {
+				grid-template-columns: 1fr;
+				grid-gap: 0;
+			}
+			.blog_post_pod {
 				grid-template-columns: 1fr;
 				grid-gap: 0;
 			}
@@ -688,7 +695,7 @@ BLOG POST SECTION ------------------------------- */
 				height: 150px !important;
 			}
 			.blog_text {
-				grid-row: 2 !important;
+				
 				padding:10px 35px;
 			}
 			.blog_fullwidth h3 {
@@ -702,7 +709,10 @@ BLOG POST SECTION ------------------------------- */
 		grid-row: 1;
 		padding:10px 35px;
 	}	
-
+.blog_text_pod {
+		grid-row: 1;
+		padding:10px 0px;
+	}
 	.blog_image {
 	    display: inline-block;
 	    position: relative;
@@ -962,7 +972,7 @@ BLOG POST SECTION ------------------------------- */
 
 /* --- @discover page (vision section) ---------------*/
 	.main-message {
-		padding:75px;
+		padding:175px 0 35px 0;
 	}
 
 	.vision_layout_item {
@@ -1241,7 +1251,7 @@ BLOG POST SECTION ------------------------------- */
 	.post_cat_item .post_img2 {
 		height:100%;
 	}
-	 /*--- @ learn / blog ------------------------------ */
+	 /*--- @learn / blog ------------------------------ */
 	 .post_share {
 	 	display:none;
 	 	background: #C6131E;
@@ -1293,7 +1303,7 @@ BLOG POST SECTION ------------------------------- */
 			opacity: 1;
 		}
 
-	/*----- @ learn / stories ------------------------------*/
+	/*----- @learn / stories ------------------------------*/
 	.blog_fullwidth {
 		margin-bottom: 35px;
 	}
@@ -1340,7 +1350,7 @@ BLOG POST SECTION ------------------------------- */
 
 
 
-	 /*---- @ learn / videos ---------------------------------*/
+	 /*---- @learn / videos ---------------------------------*/
 	.video_content {
 		display: grid;
 		grid-template-columns: repeat(1, 1fr);
@@ -1365,6 +1375,23 @@ BLOG POST SECTION ------------------------------- */
 	.video_content h2 {
 		text-align: center;
 	}
+
+	/*---- @learn / podcast ---------------------------------*/
+	.mejs__player {
+		width:100%;
+
+	}
+	.controls {
+		/*color: pink;border:5px solid red;*/
+	}
+#lrg_signup_podcast {
+	background:#f7f7f7; 
+	margin-top: 75px; 
+	padding:35px;
+}
+#lrg_signup_podcast .signup_large {
+	background: none !important;
+}
 
 
 /* --- @engage page -------------------------------- */
@@ -1788,7 +1815,7 @@ BLOG POST SECTION ------------------------------- */
 
 	footer {
 		background: #383838;
-		padding:35px 0;
+		padding:35px 0 15px 0;
 		text-align: center;
 		color:#ffffff;
 		margin-top:75px;
@@ -1801,16 +1828,25 @@ BLOG POST SECTION ------------------------------- */
 		font-family: Avenir, Nunito, sans serif;
 	}
 	footer div {
-		padding-bottom:35px;
+		/*padding-bottom:35px;*/
 	}
-	
+	.footer_bar {
+		padding:0;
+		text-align: right;
+	}
+	.footer_bar ul li {
+		display: inline;
+	}
+	.footer_bar a {
+		color: grey !important;
+	}
 	.footer_layout {
 		display: grid;
 		grid-template-columns: 3fr 1fr 1fr 1fr 1fr 2fr;
 		align-items: start;
 		text-align: left;
 		line-height: 2em;
-		padding: 35px;
+		padding-top: 35px;
 	}
 
 	.footer_layout > div {
@@ -1879,6 +1915,7 @@ BLOG POST SECTION ------------------------------- */
 			.footer_layout > div {
 				padding: 0 !important;
 				margin:0;
+
 			}
 			.footer_contact {
 				grid-column: 1/3;

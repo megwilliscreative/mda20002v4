@@ -1,78 +1,136 @@
 ---
-title: Podcast
+title: Podcast | Resources
+description: Movement Australia Podcast
 ---
-
 
 <!DOCTYPE html>
 <html>
 <head>
   <title> Movement - Podcast</title>
 </head>
-<body>
 
+<body>
+<% podcasts = all_podcasts %>
 
 <!-- NAME & ARROW W RED BG -->
 <section class="hero">
   <div class="container">
     <div class="main-message">
-      <h1> Podcast <i class="fas fa-arrow-down"></i></h1>
+      <h1>Podcast <i class="fas fa-arrow-down"></i></h1>
     </div>
   </div>
 </section>
 
-<!-- FEATURED POST X 1 -->
+
+
+
+
+<!-- 1 FEATURE / MOST POPULAR EPISODE -->
 <section>
   <div class="container">
-    <div class="blog_page_title">
-      <h2>Featured</h2>
+    <div class="blog_feature">
+      <br>
       <code>PODCAST
-- feature article css <br>
-- feat article = post tagged ‘podcast’? _TC <br>
-- create rss <br>
-- create xml TBA <br>
-- layout previous episodes <br>
-- create single post template <br>
-</code>
-    </div>
+      - create rss <br>
+      - create xml TBA <br>
+      x layout previous episodes <br>
+      x create single post template <br>
+      </code>
+      <br>
 
 
-    <div class="post_related">
-      <% posts = all_posts %>
-      <% first_post = posts.shift %>
+      <h3>Featured Episode</h3>
       
-      <code> [1] Contentful posts with tag: Podcast <br> [2] layout: 1 x feature; grid @ 3 columns
-        </code>
-      
-      <div class="post_related_items">
-          <% posts.take(1).each do |index, post| %>
-            <div class="post_related_item">
-              <%= partial "partials/post_list_item_related", :locals => { :post => post, :include_excerpt => false } %>
-            </div>
+      <ul >
+<code>Episode tagged popular ( _TC)</code>
+          <% all_podcasts.take(1).each do |indx, podcast| %>
+            <li class="post" >
+              <%= partial "partials/podcast_list_item", :locals => { :podcast => podcast } %>
+            </li>
           <% end %>
-      </div>
-
+      </ul>
     </div>
-  </div> <!-- end container -->
+  </div>
 </section>
 
-<!-- ALL POSTS 3/ROW -->
+
+<!-- insert about this podcast from Tims code -->
+
+<section id="md_welcome" >
+    <div class="container border_box">
+      <div class="">
+        <% podcast_intro_cb = fetch_content_block('podcast-intro') %>
+        <% if (!podcast_intro_cb.nil?) %>
+          <h2><%= podcast_intro_cb.heading %></h2>
+          <%= Markdown.new(!podcast_intro_cb.content.nil? ? podcast_intro_cb.content : "").to_html %>
+        <% end %>
+      </div>  
+
+      <div id="podcast_overview">       
+        <% podcast_overview_cb = fetch_content_block('podcast-overview') %>
+          <% if (!podcast_overview_cb.nil?) %>
+            <div>
+              <h3><%= podcast_overview_cb.heading %></h3>
+            </div>
+            <div class="content">
+              <%= Markdown.new(!podcast_overview_cb.content.nil? ? podcast_overview_cb.content : "").to_html %>  
+            </div>
+          <% end %>
+      </div> 
+
+    </div>
+</section>
+
+
 <section>
   <div class="container">
-    <div class="post_related">
-      <CODE>[1] layout 3 posts per row <br> [2] exclude featured post above?</CODE>
-      
-      <div class="post_related_items">
-          <% posts.each do |index, post| %>
-            <div class="post_related_item">
-              <%= partial "partials/post_list_item_related", :locals => { :post => post, :include_excerpt => false } %>
-            </div>
-          <% end %>
-      </div>
-
-    </div>
-  </div> <!-- end container -->
+<!-- <code>ADD SECTION: copy in authors section from Blog.html</code> -->    
+  </div>
 </section>
 
+<!-- INSERT FULL episode LIST -->
+<section>
+  <div class="container">
+    <h3>Episodes</h3>
+    <div>
+      <ul class="recent_posts">
+        <% all_podcasts.each do |indx, podcast| %>
+          <li class="post">
+            <%= partial "partials/podcast_list_item", :locals => { :podcast => podcast } %>
+          </li>
+        <% end %>
+      </ul>
+    </div>
+
+    <code>
+      [1] insert back to top <br>
+      [2] stick to side of page. 
+
+     </code>
+
+    <div style="text-align: center;">
+      <a href="#top">
+          <button class="btn-white">Top <i class="fas fa-arrow-up"></i></button>
+      </a>
+    </div>
+
+
+  </div>  
+</section>
+
+
+
+
+
+
+<!-- large signup -->
+<section id="lrg_signup_podcast">
+  <div class="container">
+    <div class="" style="border-bottom: 0px;">
+       <%= partial "partials/e_signup_lrg" %>
+    </div>
+  </div>
+</section>
 
 </body>
 </html>

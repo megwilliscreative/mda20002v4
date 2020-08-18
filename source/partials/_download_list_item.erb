@@ -1,9 +1,10 @@
 
 <div class="blog_fullwidth">
 
-    <div class="post_img2 bg-center-center" style="background-image: url('<%= post.hero_image.url %>')">  
-      <a href="/learn/blog/<%= post.slug %>.html"></a>
-    </div>  
+    <a href="/learn/blog/<%= post.slug %>.html">
+      <div class="post_img2 bg-center-center" style="background-image: url('<%= post.hero_image.url %>')">  
+      </div>  
+    </a>  
 
     <div class="blog_text_dl">
         <% if (!post.tags.nil?) %> 

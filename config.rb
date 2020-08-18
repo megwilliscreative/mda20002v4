@@ -113,18 +113,18 @@ if Dir.exist?(config.data_dir + "/website")
   end
 
   # posts
-  # if Dir.exist?(config.data_dir + "/website/podcastEpisode")
-  #   data.website.podcastEpisode.each do |id, podcast|
-  #     proxy "/learn/podcast/#{podcast.slug}.html", 
-  #       '/learn/podcast/podcast.html', 
-  #       locals: { podcast: podcast }, 
-  #       data: { 
-  #         :title => podcast.title + " | Love Your City Podcast | ", 
-  #         :header_class => "", 
-  #         :append_js => ['vendor/media-element/mediaelement-and-player.min.js'], 
-  #         :append_css => ['podcasts', 'vendor/media-element/mediaelementplayer.min.css'] 
-  #       }, 
-  #       :ignore => true
-  #   end
-  # end
+  if Dir.exist?(config.data_dir + "/website/podcastEpisode")
+    data.website.podcastEpisode.each do |id, podcast|
+      proxy "/learn/podcast/#{podcast.slug}.html", 
+        '/learn/podcast/podcast.html', 
+        locals: { podcast: podcast }, 
+        data: { 
+          :title => podcast.title + " | Love Your City Podcast | ", 
+          :header_class => "", 
+          :append_js => ['vendor/media-element/mediaelement-and-player.min.js'], 
+          :append_css => ['podcasts', 'vendor/media-element/mediaelementplayer.min.css'] 
+        }, 
+        :ignore => true
+    end
+  end
 end
