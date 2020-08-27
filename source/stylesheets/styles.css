@@ -1384,34 +1384,37 @@ BLOG POST SECTION ------------------------------- */
 	.controls {
 		/*color: pink;border:5px solid red;*/
 	}
-#lrg_signup_podcast {
-	background:#f7f7f7; 
-	margin-top: 75px; 
-	padding:35px;
-}
-#lrg_signup_podcast .signup_large {
-	background: none !important;
-}
-.scroll_top {
-    text-align: center;
-    background: rgba(0,0,0,.4);
-    text-decoration: none;
-    position: fixed;
-    z-index: 99999;
-    bottom: 125px;
-    right: 0;
-    -webkit-border-top-left-radius: 5px;
-    -webkit-border-bottom-left-radius: 5px;
-    -moz-border-radius-topleft: 5px;
-    -moz-border-radius-bottomleft: 5px;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-    display: none;
-    cursor: pointer;
-    font-size: 30px;
-    padding: 5px;
-    color: #f0f;
-}
+	#lrg_signup_podcast {
+		background:#f7f7f7; 
+		margin-top: 75px; 
+		padding:35px;
+	}
+	#lrg_signup_podcast .signup_large {
+		background: none !important;
+	}
+	.scroll_top {
+	    text-align: center;
+	    background: rgba(0,0,0,.4);
+	    text-decoration: none;
+	    position: fixed;
+	    z-index: 99999;
+	    bottom: 125px;
+	    right: 0;
+	    -webkit-border-top-left-radius: 5px;
+	    -webkit-border-bottom-left-radius: 5px;
+	    -moz-border-radius-topleft: 5px;
+	    -moz-border-radius-bottomleft: 5px;
+	    border-top-left-radius: 5px;
+	    border-bottom-left-radius: 5px;
+	    display: none;
+	    cursor: pointer;
+	    font-size: 30px;
+	    padding: 5px;
+	    color: #f0f;
+	}
+
+	/*PODCAST INTRO SECTION*/
+	
 
 
 /* --- @engage page -------------------------------- */
