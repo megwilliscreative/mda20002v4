@@ -1481,13 +1481,15 @@ BLOG POST SECTION ------------------------------- */
 	.recent_podcasts {
 		display: grid;
 		grid-template-columns: repeat(3,1fr);
-		grid-gap: 1.3em;
-		max-width: 100%;
+		grid-gap: 2em;
+		/*max-width: 100%;*/
+		/*padding:0 15px;*/
 	}
 	.podcast_img {
 		height:400px;
 	 	background-size: cover;
 		overflow: hidden;
+		margin:15px 0;
 	}
 	@media only screen and (max-width: 767px) {
 		.podcast h1{
