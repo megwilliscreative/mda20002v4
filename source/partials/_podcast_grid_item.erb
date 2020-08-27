@@ -1,0 +1,30 @@
+
+<div class="">
+
+  <div class="podcast_img bg-center-center" style="background-image: url('<%= podcast.episode_image.url %>')">  
+    <a href="/learn/podcast/<%= podcast.slug %>.html"></a>
+  </div> 
+
+  <div id="pod_text">
+    <h6><i class="far fa-calendar-alt"></i> 
+      <%= podcast.episode_date.day %> 
+      <%= Date::MONTHNAMES[podcast.episode_date.month] %> 
+      <%= podcast.episode_date.year %>
+    </h6>
+    
+    <!-- <h6><i class="far fa-user"></i> </h6> -->
+    
+    <h2><a href="/learn/podcast/<%= podcast.slug %>.html"><%= podcast.title %></a></h2>
+  
+
+    <div>
+      <p><%= podcast.description %></p>
+      
+      <a href="/learn/podcast/<%= podcast.slug %>.html"><button class="btn-white">Read More <i class="fas fa-chevron-right"></i></button></a>
+    
+    </div>  <!-- end overview -->
+
+</div>
+</div> <!-- end post -->
+
+

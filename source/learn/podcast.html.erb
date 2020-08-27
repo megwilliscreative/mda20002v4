@@ -15,19 +15,22 @@ description: Movement Australia Podcast
 <!-- NAME & ARROW W RED BG -->
 <section class="hero">
   <div class="container">
-    <div class="main-message">
-      <h1>Podcast <i class="fas fa-arrow-down"></i></h1>
+    <div class="main-message learn_h1">
+      <h1>Learn <i class="fas fa-arrow-down"></i></h1>
     </div>
   </div>
 </section>
 
 
+
+
 <!-- LISTEN ON PODCASTS, PODCASTONE, AND SPOTIFY -->
 <section>
   <div class="container">
+    <h1>Podcast</h1>
     <div class="pod_pic_blurb">
       
-    <div class="box pod_pic">
+    <div class="box pod_pic ">
       <!-- <img src="https://is4-ssl.mzstatic.com/image/thumb/Podcasts123/v4/f3/15/71/f3157176-4a1d-8696-81a0-55b14b2de681/mza_3066438481763965409.png/313x0w.png"> -->
     </div>
 
@@ -42,80 +45,14 @@ description: Movement Australia Podcast
     </div>
 
     </div> <!-- end grid -->
-    <div>
-      <h2>Episodes</h2>
-    </div>
+
   </div> <!-- end container -->
 </section>
 
 
-
-<!-- 1 FEATURE / MOST POPULAR EPISODE -->
-<section>
-  <div class="container">
-    <div class="blog_feature">
-      <br>
-      <code>PODCAST
-      - create rss <br>
-      - create xml TBA <br>
-      x layout previous episodes <br>
-      x create single post template <br>
-      </code>
-      <br>
-
-
-      <h3>Featured Episode</h3>
-      
-      <ul >
-<code>Episode tagged popular ( _TC)</code>
-          <% all_podcasts.take(1).each do |indx, podcast| %>
-            <li class="post" >
-              <%= partial "partials/podcast_list_item", :locals => { :podcast => podcast } %>
-            </li>
-          <% end %>
-      </ul>
-    </div>
-  </div>
-</section>
-
-
-<!-- insert about this podcast from Tims code -->
-
-<section id="md_welcome" >
-    <div class="container border_box">
-      <div class="">
-        <% podcast_intro_cb = fetch_content_block('podcast-intro') %>
-        <% if (!podcast_intro_cb.nil?) %>
-          <h2><%= podcast_intro_cb.heading %></h2>
-          <%= Markdown.new(!podcast_intro_cb.content.nil? ? podcast_intro_cb.content : "").to_html %>
-        <% end %>
-      </div>  
-
-      <div id="podcast_overview">       
-        <% podcast_overview_cb = fetch_content_block('podcast-overview') %>
-          <% if (!podcast_overview_cb.nil?) %>
-            <div>
-              <h3><%= podcast_overview_cb.heading %></h3>
-            </div>
-            <div class="content">
-              <%= Markdown.new(!podcast_overview_cb.content.nil? ? podcast_overview_cb.content : "").to_html %>  
-            </div>
-          <% end %>
-      </div> 
-
-    </div>
-</section>
-
-
-<section>
-  <div class="container">
-<!-- <code>ADD SECTION: copy in authors section from Blog.html</code> -->    
-  </div>
-</section>
-
 <!-- INSERT FULL episode LIST -->
 <section>
-  <div class="container">
+  <div class="container border_box">
     <h3>Episodes</h3>
     <div>
       <ul class="recent_posts">
@@ -129,10 +66,13 @@ description: Movement Australia Podcast
 
     <code>
       [1] insert back to top <br>
-      [2] stick to side of page. 
+      [2] stick to side of page. <br>
 
-     </code>
-
+      - create rss <br>
+      - create xml TBA <br>
+      x layout previous episodes <br>
+      x create single post template <br>
+      </code>
     <div class="scroll_top" style="text-align: center;">
       <a href="#top">
           <button class="btn-white">Top <i class="fas fa-arrow-up"></i></button>
@@ -149,11 +89,11 @@ description: Movement Australia Podcast
 
 
 <!-- large signup -->
-<section id="lrg_signup_podcast">
+<section id="">
   <div class="container">
-    <div class="" style="border-bottom: 0px;">
+    <div >
        <%= partial "partials/e_signup_lrg" %>
-    </div>
+    </div> 
   </div>
 </section>
 
