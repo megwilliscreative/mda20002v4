@@ -1413,6 +1413,68 @@ BLOG POST SECTION ------------------------------- */
     color: #f0f;
 }
 
+/*PODCAST PAGE IMAGE SHADOWS*/
+
+.pod_pic_blurb {
+	width:80%;
+	margin:40px auto;
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	grid-gap: 2em;
+	justify-content: start;
+}
+.red {
+	color:red;
+	border:2px solid red;
+	}
+.box {
+	width:313px;
+	height:313px;
+	background-image: url("https://is4-ssl.mzstatic.com/image/thumb/Podcasts123/v4/f3/15/71/f3157176-4a1d-8696-81a0-55b14b2de681/mza_3066438481763965409.png/313x0w.png");
+	margin:40px auto;
+	}
+.pod_pic {
+	position: relative;
+	margin:40px;
+	}
+.pod_pic:before, .pod_pic:after {
+	z-index: -1; 
+    /*z-index: 1;*/
+	/*position: absolute;*/
+	content: "";
+	bottom: 12px;
+	left: 5px;
+	width: 48%;
+	top: 80%;
+	max-width:313px;
+	background: #777;
+
+	-webkit-box-shadow: 0 15px 10px #777;
+	-moz-box-shadow: 0 15px 10px #777;
+	box-shadow: 0 15px 10px #777;
+	-webkit-transform: rotate(-3deg);
+	-moz-transform: rotate(-3deg);
+	-o-transform: rotate(-3deg);
+	-ms-transform: rotate(-3deg);
+	transform: rotate(-3deg);
+	}
+.pod_pic:after
+{
+  -webkit-transform: rotate(3deg);
+  -moz-transform: rotate(3deg);
+  -o-transform: rotate(3deg);
+  -ms-transform: rotate(3deg);
+  transform: rotate(3deg);
+  right: 10px;
+  left: auto;
+}
+
+
+.pod_blurb {
+	margin:40px auto;
+}
+
+
 
 /* --- @engage page -------------------------------- */
 
