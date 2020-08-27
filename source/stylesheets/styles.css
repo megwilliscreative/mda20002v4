@@ -1,6 +1,8 @@
 
  /*TEST ZONE ---------------------------------------------------- */
- 
+ .fix {
+ 	border: 2px solid #f0f;
+ }
 	/*WRAPS AROUND ALL 3 ARTICLES*/
  .post_related_items {
     display: grid;
@@ -1414,7 +1416,104 @@ BLOG POST SECTION ------------------------------- */
 	}
 
 	/*PODCAST INTRO SECTION*/
+	/* --- PODCAST PAGE IMAGE SHADOWS --- */
+	.learn_h1 h1{
+		font-size: 45px;
+	}
+	.pod_pic_blurb {
+		width:100%;
+		margin:40px auto;
+		display: grid;
+		grid-template-columns: 1fr 2fr;
+		grid-gap: 1em;
+		justify-content: start;
+	}
 	
+	.box {
+		width:313px;
+		height:313px;
+		background-image: url("https://is4-ssl.mzstatic.com/image/thumb/Podcasts123/v4/f3/15/71/f3157176-4a1d-8696-81a0-55b14b2de681/mza_3066438481763965409.png/313x0w.png");
+		margin:auto 40px ;
+		}
+	.pod_pic {
+		position: relative;
+		margin:40px auto;
+		}
+	.pod_pic:before, .pod_pic:after {
+		z-index: -1; 
+	    /*z-index: 1;*/
+		position: absolute;
+		content: "";
+		bottom: 12px;
+		left: 5px;
+		width: 48%;
+		top: 80%;
+		max-width:313px;
+		background: #777;
+
+		-webkit-box-shadow: 0 15px 10px #777;
+		-moz-box-shadow: 0 15px 10px #777;
+		box-shadow: 0 15px 10px #777;
+		-webkit-transform: rotate(-3deg);
+		-moz-transform: rotate(-3deg);
+		-o-transform: rotate(-3deg);
+		-ms-transform: rotate(-3deg);
+		transform: rotate(-3deg);
+		}
+	.pod_pic:after
+	{
+	  -webkit-transform: rotate(3deg);
+	  -moz-transform: rotate(3deg);
+	  -o-transform: rotate(3deg);
+	  -ms-transform: rotate(3deg);
+	  transform: rotate(3deg);
+	  right: 10px;
+	  left: auto;
+	}
+
+
+	.pod_blurb {
+		margin:40px auto;
+	}
+	.pod_blurb p, .pod_blurb h5 {
+		font-size: 22px;
+	}
+	.recent_podcasts {
+		display: grid;
+		grid-template-columns: repeat(3,1fr);
+		grid-gap: 1.3em;
+		max-width: 100%;
+	}
+	.podcast_img {
+		height:400px;
+	 	background-size: cover;
+		overflow: hidden;
+	}
+	@media only screen and (max-width: 767px) {
+		.podcast h1{
+			font-size: 40px;
+		}
+		.box {
+			width:275px;
+			height:250px;
+			margin:0;
+		}
+		.pod_pic_blurb {
+			grid-template-columns: 1fr;
+			margin:35px auto;
+		}
+		.recent_podcasts {
+			grid-template-columns: repeat(1,1fr);
+		}
+		.podcast_img {
+			height:250px;
+			width:250px;
+		}
+		#pod_text {
+			width:250px;
+			padding:15px;
+		}
+	}
 
 
 /* --- @engage page -------------------------------- */
