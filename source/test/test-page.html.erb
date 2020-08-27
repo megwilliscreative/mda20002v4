@@ -1,0 +1,36 @@
+<<<<<<< Updated upstream:source/test-page.html.erb
+=======
+<section>
+    <div class="container">
+        <form 
+            name="Contact Message @ Test page" 
+            id="mda_contact" 
+            method="POST" 
+            data-netlify-recaptcha="true" 
+            data-netlify="true" 
+            action="/thanks-contact.html">
+
+          <input type="text" id="fname" name="First Name" placeholder="First Name" required >
+          <br><br>
+          <input type="text" id="lname" name="Last Name" placeholder="Last Name">
+          <br><br>
+          <input type="email" id="email" name="Email" placeholder="Email" required >
+          <!-- <label for="message">Message</label> -->
+          <textarea id="message" name="Message" placeholder="Message" rows="10"></textarea>
+
+          <button 
+            type="submit" name="submit" value="Submit" 
+            data-callback='onSubmit' 
+            data-action='submit'
+            >
+            Send <i class="fas fa-chevron-right"></i>
+          </button>
+
+        </form>
+    </div>
+</section>
+  
+<br>
+<hr> <br>
+
+>>>>>>> Stashed changes:source/test/test-page.html.erb
