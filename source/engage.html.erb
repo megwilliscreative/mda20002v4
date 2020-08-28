@@ -56,8 +56,19 @@ title: Engage
       <h2>Tell us whats happening in  your city!</h2>
       <div class="engage_share_form">
 
-<form 
-    name="Engage Contact Form" action="/thanks-contact.html" method="POST" data-netlify="true" 
+<head>
+<!-- <title>reCAPTCHA demo: Simple page</title> -->
+   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+   <script>
+     function onSubmit(token) {
+       document.getElementById("demo-form").submit();
+     }
+   </script>
+</head>
+
+<body class="">
+  <form 
+    id='demo-form' name="Contact Page Form" action="/thanks-contact.html" method="POST" data-netlify="true" 
     >
 
     <input type="text" name="First Name" placeholder="First Name">
@@ -65,17 +76,11 @@ title: Engage
     <input type="email" name="Email" placeholder="email" required>
     <textarea name="Message" placeholder="Message" rows="10"></textarea>
 
-    <div data-netlify-recaptcha="true"></div>
-  
-    <button type="submit">
-      Send <i class="fas fa-chevron-right"></i>
-    </button>
-
-
-
+    <button class="g-recaptcha" data-sitekey="6LdtXMQZAAAAACJRSwzgS39Lc4XzPdX6alW-NDit" data-callback='onSubmit'>Submit</button>
+    <br/>
   </form>
+</body>
 
- 
       </div>
     </div>
   </div>

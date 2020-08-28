@@ -27,53 +27,33 @@ title: Contact
     <div class="contact_form">
       <div class="leave_message">
         
-<form 
-name="Contact Page Form" action="/thanks-contact.html" method="POST" data-netlify="true" 
->
 
-<input type="text" name="First Name" placeholder="First Name">
-<input type="text" name="Last Name" placeholder="Last Name">
-<input type="email" name="Email" placeholder="email" required>
-<textarea name="Message" placeholder="Message" rows="10"></textarea>
+<head>
+<!-- <title>reCAPTCHA demo: Simple page</title> -->
+   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+   <script>
+     function onSubmit(token) {
+       document.getElementById("demo-form").submit();
+     }
+   </script>
+</head>
 
-<div data-netlify-recaptcha="true"></div>
+<body class="">
+  <form 
+    id='demo-form' name="Contact Page Form" action="/thanks-contact.html" method="POST" data-netlify="true" 
+    >
 
-<button type="submit">
-  Send <i class="fas fa-chevron-right"></i>
-</button>
+    <input type="text" name="First Name" placeholder="First Name">
+    <input type="text" name="Last Name" placeholder="Last Name">
+    <input type="email" name="Email" placeholder="email" required>
+    <textarea name="Message" placeholder="Message" rows="10"></textarea>
 
+    <button class="g-recaptcha" data-sitekey="6LdtXMQZAAAAACJRSwzgS39Lc4XzPdX6alW-NDit" data-callback='onSubmit'>Submit</button>
+    <br/>
+  </form>
+</body>
 
-
-</form>
       </div>
-
-
-
-
-
-
-
-      <!-- <div class="leave_message">
-        <form name="Contact Message" id="mda_contact" method="POST" 
-        data-netlify-recaptcha="true" 
-        data-netlify="true" 
-        action="/thanks-contact.html">
-          <input type="text" id="fname" name="First Name" placeholder="First Name" required ><br><br>
-          <input type="text" id="lname" name="Last Name" placeholder="Last Name"><br><br>
-          <input type="email" id="email" name="Email" placeholder="Email" required >
-          
-          <textarea id="message" name="Message" placeholder="Message" rows="10"></textarea>
-
-          <button type="submit" name="submit" value="Submit" 
-            data-callback='onSubmit' 
-            data-action='submit'
-            >
-            Send <i class="fas fa-chevron-right"></i>
-          </button>
-
-        </form>
-      </div> -->
-
       <div class="contact_address">
         <h2>PO&nbsp;Box&nbsp;2216,<br>Toowoomba&nbsp;QLD&nbsp;4350 <br>Ph.&nbsp;07&nbsp;4637&nbsp;8244</h2>
         <a href="mailto:admin@movement.org.au"><h2>admin@movement.org.au</h2></a>

@@ -58,39 +58,31 @@
 
 <section>
 	<div class="container">
-		test 
 
+		<head>
+		<!-- <title>reCAPTCHA demo: Simple page</title> -->
+			 <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+			 <script>
+			   function onSubmit(token) {
+			     document.getElementById("demo-form").submit();
+			   }
+			 </script>
+		</head>
 
-		<html>
-  <head>
-    <title>reCAPTCHA demo: Simple page</title>
-     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-     <script>
-       function onSubmit(token) {
-         document.getElementById("demo-form").submit();
-       }
-     </script>
-  </head>
-  <body>
-	<form 
-		id='demo-form' name="Test Page Contact Form" action="/thanks-contact.html" method="POST" data-netlify="true" 
-		>
+		<body class="leave_message">
+			<form 
+				id='demo-form' name="Test Page Contact Form" action="/thanks-contact.html" method="POST" data-netlify="true" 
+				>
 
-		<input type="text" name="First Name" placeholder="First Name">
-		<input type="text" name="Last Name" placeholder="Last Name">
-		<input type="email" name="Email" placeholder="email" required>
-		<textarea name="Message" placeholder="Message" rows="10"></textarea>
+				<input type="text" name="First Name" placeholder="First Name">
+				<input type="text" name="Last Name" placeholder="Last Name">
+				<input type="email" name="Email" placeholder="email" required>
+				<textarea name="Message" placeholder="Message" rows="10"></textarea>
 
-
-
-
-      <button class="g-recaptcha" data-sitekey="6LdtXMQZAAAAACJRSwzgS39Lc4XzPdX6alW-NDit" data-callback='onSubmit'>Submit</button>
-      <br/>
-    </form>
-  </body>
-</html>
-
-
+				<button class="g-recaptcha" data-sitekey="6LdtXMQZAAAAACJRSwzgS39Lc4XzPdX6alW-NDit" data-callback='onSubmit'>Submit</button>
+				<br/>
+			</form>
+		</body>
 
 	</div>
 </section>
