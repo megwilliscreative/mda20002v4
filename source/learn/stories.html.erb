@@ -29,8 +29,7 @@ title: Stories
       <h3>Featured</h3>
 
       <% posts = posts_by_tag("Story") %>
-      <% first_post = posts.shift %>
-      
+            
       <div class="">
           <% posts.take(1).each do |index, post| %>
             <div class="">
@@ -46,16 +45,19 @@ title: Stories
 <section>
   <div class="container">
     <div class=" border_box">
-<code>first 2 articles are duplicates _TC</code>
-    <div class="">
-      <div class="blog_grid">
-          <% posts.each do |index, post| %>
-            <div class="blog_grid_item">
-              <%= partial "partials/post_grid_item", :locals => { :post => post, :include_excerpt => false } %>
-            </div>
-          <% end %>
-      </div>
+    <code>first 2 articles are duplicates _TC</code>
+    <% first_post = posts.shift %>
 
+      <div class="">
+        <div class="blog_grid">
+            <% posts.each do |index, post| %>
+              <div class="blog_grid_item">
+                <%= partial "partials/post_grid_item", :locals => { :post => post, :include_excerpt => false } %>
+              </div>
+            <% end %>
+        </div>
+      
+      </div>
     </div>
   </div> <!-- end container -->
 </section>

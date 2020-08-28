@@ -10,7 +10,7 @@ title: Theology
 </head>
 <body>
       <% posts = posts_by_tag("Theology") %>
-      <% first_post = posts.shift %>
+      
 
 <!-- NAME & ARROW W RED BG -->
 <section class="hero">
@@ -45,6 +45,7 @@ title: Theology
 <!-- ALL POSTS 3/ROW -->
 <section>
   <div class="container">
+    <% first_post = posts.shift %>
     <div class="post_related border_box">
       <h3>Articles</h3>
       <div class="post_related">

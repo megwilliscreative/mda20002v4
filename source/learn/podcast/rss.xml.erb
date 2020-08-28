@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<% podcasts = all_podcasts %>
+<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0">
+  <channel>
+    <title>Love Your City Podcast</title>
+    <link>https://www.movementday.com.au/resources/podcast</link>
+    <language>en-au</language>
+    <itunes:subtitle>Brought to you by Movement Day Australia</itunes:subtitle>
+    <itunes:author>Movement Day Australia</itunes:author>
+    <itunes:summary>In the Love Your City Podcast presenters Sam Jackson and Letitia Shelton discuss the importance of gospel movements in towns and cities around the world. Through a unified church that proclaims the good news of the gospel, much can be done to see the transformational life of the gospel and the expansion of the Kingdom of God come to our communities and places. You will hear stories from around the world, from various denominational, social, generational and ethnic leaders, so that more city gospel movement champions can be raised up to impact their places. There will also be discussions on the key issues and themes that surround gospel movements and how everyone can get involved. We invite you to join the conversation. This podcast is brought to you by Movement Day Australia. If you would like to reach out to us you can do so at contact@movementday.com.au</itunes:summary>
+    <description>In the Love Your City Podcast presenters Sam Jackson and Letitia Shelton discuss the importance of gospel movements in towns and cities around the world. Through a unified church that proclaims the good news of the gospel, much can be done to see the transformational life of the gospel and the expansion of the Kingdom of God come to our communities and places. You will hear stories from around the world, from various denominational, social, generational and ethnic leaders, so that more city gospel movement champions can be raised up to impact their places. There will also be discussions on the key issues and themes that surround gospel movements and how everyone can get involved. We invite you to join the conversation. This podcast is brought to you by Movement Day Australia. If you would like to reach out to us you can do so at contact@movementday.com.au</description>
+    <itunes:owner>
+      <itunes:name>Movement Day Australia</itunes:name>
+      <itunes:email>contact@movementday.com.au</itunes:email>
+    </itunes:owner>
+    <itunes:explicit>no</itunes:explicit>
+    <% if podcasts.size > 0 %>
+    <itunes:image href="http:<%= podcasts.first.last.episode_image.url %>" />
+    <% end %>
+    <itunes:category text="Religion &amp; Spirituality">
+      <itunes:category text="Christianity" />
+    </itunes:category>
+
+    <% podcasts.each do |id, podcast| %>
+    <item>
+        <title><%= Rack::Utils.escape_html(podcast.title) %></title>
+        <itunes:summary><%= Rack::Utils.escape_html(podcast.description) %></itunes:summary>
+        <description><%= Rack::Utils.escape_html(podcast.description) %></description>
+        <link>https://www.movement.org.au/learn/podcast/<%= podcast.slug %></link>
+        <enclosure url="http:<%= podcast.audio_file.url %>" type="audio/mpeg" length="<%= podcast.audio_file_size %>"></enclosure>
+        <pubDate><%= DateTime.new(podcast.episode_date.year, podcast.episode_date.month, podcast.episode_date.day).rfc822 %></pubDate>
+        <itunes:author>Movement Day Australia</itunes:author>
+        <itunes:duration><%= podcast.duration %></itunes:duration>
+        <itunes:explicit>no</itunes:explicit>
+        <guid>https://www.movement.org.au/learn/podcast/<%= podcast.slug %></guid>
+    </item> 
+    <% end %>
+  </channel>
+</rss>
