@@ -1674,6 +1674,7 @@ BLOG POST SECTION ------------------------------- */
 	.engage_share_form {
 		padding:35px 0px;	
 		/*width: 66%;*/
+
 	}
 
 
@@ -1701,6 +1702,9 @@ BLOG POST SECTION ------------------------------- */
 		border-bottom: 1px solid #000000;
 		padding: 6px 10px;
 		margin: 15px 0px;
+
+		font-family: avenir, sans-serif;
+		font-size:14px;
 	}
 
 
