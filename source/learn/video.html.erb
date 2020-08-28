@@ -38,20 +38,21 @@ description: Movement Australia Videos
 
 <!-- INSERT FULL episode LIST -->
 <section>
-  <div class="container border_box" style="padding:35px 0;">
+  <div class="container" style="padding:35px 0;">
     <div>
       <ul class="recent_videos">
-
-
-
-
-        <% all_podcasts.each do |indx, podcast| %>
-          <li class="post">
-
-
-
-
-            <%= partial "partials/podcast_grid_item", :locals => { :podcast => podcast } %>
+        <% fetch_videos.each do |year, videos| %>
+          <li class="border_box" style="border-bottom:0px;">
+            <h3><%= year %></h3>
+            <ul class="video_by_year ">
+              <% videos.each do |id, video| %>
+                <li>
+                  <iframe src="<%= video.video_url %>?title=0&byline=0&portrait=0" width="640" height="320" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                  <h2><%= video.title %></h2>
+                  <%# Markdown.new(!video.description.nil? ? video.description : "").to_html %>
+                </li>
+              <% end %>
+            </ul>
           </li>
         <% end %>
       </ul>
@@ -75,7 +76,7 @@ description: Movement Australia Videos
 
 <!-- large signup -->
 <section id="">
-  <div class="container">
+  <div class="container border_box" style="border-bottom:0px;">
     <div >
        <%= partial "partials/e_signup_lrg" %>
     </div> 
