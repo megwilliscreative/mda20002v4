@@ -179,7 +179,18 @@ h5 {
 p {
 	padding-bottom: 15px;
 	font-family: adobe-garamond-pro, serif;
-
+}
+ul {
+	font-family: adobe-garamond-pro, serif;
+}
+ol {
+	font-family: adobe-garamond-pro, serif;
+	padding-left:25px;
+	padding-bottom: 15px;
+	padding-top: 15px;
+}
+ol li {
+	padding:5px 5px;
 }
 code {
 	background:#f0f;
@@ -1282,6 +1293,8 @@ BLOG POST SECTION ------------------------------- */
 	 }
 	 
 	 .post_content {
+	 	/*position: absolute;*/
+	 	min-height: 600px;
 	 	
 	 }
 	 .post_subscribe {
@@ -1317,10 +1330,14 @@ BLOG POST SECTION ------------------------------- */
 	  /*border:2px solid black;*/
 	  height:450px;
 	  width:25%;
-	  text-align:center;
+	  /*text-align:center;*/
 	  margin:35px;
 	  margin-right: 0;
 	  color:black;
+
+
+	  /*position: fixed;*/
+	  /*bottom:15px;*/
 	}
 
 	.floatRight {
