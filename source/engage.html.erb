@@ -85,18 +85,11 @@ title: Engage
 <!--  POST X 5 -->
 <section class="engage_updates">
   <div class="container">
-    <div class="blog_page_title replace_w_contentful">
-      <!-- <h3>Featured</h3> -->
-      <code>
-        [4] only working with Story tag. _TC<br>
-        [5] image into link. <br>
-      </code>
-
-      <% posts = posts_by_tag("Story") %>
-      <% first_post = posts.shift %>
+    <div class="blog_page_title ">
+      <% posts = posts_by_tag("Engage") %>
       
       <div class="">
-          <% posts.take(5).each do |index, post| %>
+          <% posts.each do |index, post| %>
             <div class="">
               <%= partial "partials/feature_list_item", :locals => { :post => post, :include_excerpt => true } %>
             </div>

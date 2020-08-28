@@ -155,6 +155,7 @@ h3 {
 	text-transform: uppercase;
 	font-size: 25px;
 	line-height: 1.3em;
+	padding:15px 0;
 }
 h4 {
 	text-transform: uppercase;
@@ -709,7 +710,7 @@ BLOG POST SECTION ------------------------------- */
 		}
 	.blog_text {
 		grid-row: 1;
-		padding:10px 35px;
+		padding:10px 35px 10px 0px;
 	}	
 .blog_text_pod {
 		grid-row: 1;

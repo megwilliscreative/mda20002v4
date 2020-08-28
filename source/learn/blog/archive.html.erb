@@ -1,0 +1,42 @@
+---
+title: Blog | Resources
+description: Blog
+---
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Movement - Blog</title>
+</head>
+
+<body>
+<% posts = all_posts %>
+
+<!-- NAME & ARROW W RED BG -->
+<section class="hero">
+  <div class="container">
+    <div class="main-message">
+      <h1>Archive <i class="fas fa-arrow-down"></i></h1>
+    </div>
+  </div>
+</section>
+
+
+<section>
+  <div class="container">
+    <div class="recent_posts">
+          <% posts.each do |index, post| %>
+            <div class="post">
+              <%= partial "partials/post_list_item", :locals => { :post => post, :include_excerpt => true } %>
+            </div>
+          <% end %>
+        </div>
+        <div>
+          <p style="text-align: center; font-size: 25px; color:grey; margin:75px;"> ~ end ~</p>
+        </div>
+  </div>
+</section>
+
+
+</body>
+</html>

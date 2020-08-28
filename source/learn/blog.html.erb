@@ -1,5 +1,5 @@
 ---
-title: Blog | Resources
+title: Blog Archive
 description: Blog
 ---
 
@@ -94,29 +94,25 @@ description: Blog
             </div>
           <% end %>
         </div>
-        <code>TBA show more link</code>
+        <div style="text-align:center;">
+          <button class="btn-white" >
+            <a href="./blog/archive.html">Read More  <i class="fas fa-chevron-right"></i></a>
+          </button>
+          
+        </div>
       </div>
     </section>
   <% end %>
 <% else %>
 <% end %>
 
-<section>
-  <div class="container">
-    <div class="blog_contributors border_box">
-       <h3>Contributers</h3>
-       <code>
-       [1] This people list should only have people who have articles<br>- add 'author' tag to content?</code>
-       <ul class="staff_grid"> 
-          <% committee_members.take(3).each do |index, person| %>
-            <li class="staff_member">
-                <%= partial "partials/people_list_item", :locals => { :person => person } %>
-            </li>
-        <% end %>  
-      </ul>     
-    </div>
-  </div>
-</section>
+
+
+
+
+
+
+
 
 <section>
   <div class="container">
