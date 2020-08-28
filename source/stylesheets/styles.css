@@ -23,6 +23,9 @@
 		.post_subscribe {
 			display:none;
 		}
+		.wrap_post_subscribe {
+			display: none;
+		}
 	}
 
 	/*EACH ARTICLE.*/
@@ -1279,13 +1282,14 @@ BLOG POST SECTION ------------------------------- */
 	 }
 	 
 	 .post_content {
-	 	/*position: relative;*/
+	 	
 	 }
 	 .post_subscribe {
+	 	position: relative;
 	 	background: #C6131E;
-	 	width: 25%;
+	 	/*width: 25%;*/
 	 	float: right;
-	 	margin-left:35px;
+	 	/*margin:35px 0 35px 25px;*/
 	 	padding:25px;
 	 }
 	.post_subscribe h2 {
@@ -1307,6 +1311,22 @@ BLOG POST SECTION ------------------------------- */
 			text-transform: uppercase;
 			opacity: 1;
 		}
+	/*add in wrap and floatRight*/
+
+	.wrap_post_subscribe {
+	  /*border:2px solid black;*/
+	  height:450px;
+	  width:25%;
+	  text-align:center;
+	  margin:35px;
+	  margin-right: 0;
+	  color:black;
+	}
+
+	.floatRight {
+	  float: right;
+	}
+
 
 	/*----- @learn / stories ------------------------------*/
 	.blog_fullwidth {

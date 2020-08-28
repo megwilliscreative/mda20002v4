@@ -36,18 +36,21 @@
 
     <div class="border_box post_content">
    
-      <code>move red box down, words to wrap above and below</code>
-      <div class="post_subscribe">
-        <h2>Download our vision book</h2>
-        <div>
-          <form>
-            <code>set up form action</code>
-            <input type="text" name="eame" placeholder="First Name">
-            <input type="Email" name="email" placeholder="Email">
-            <button class="btn-white" name="subscribe">Subscribe</button>
-          </form>
+      
+      <div class="wrap_post_subscribe floatRight"> 
+          <div class="post_subscribe">
+            
+            <h2>Download our vision book</h2>
+            <div>
+              <form>
+                <code>set up form action</code>
+                <input type="text" name="eame" placeholder="First Name">
+                <input type="Email" name="email" placeholder="Email">
+                <button class="btn-white" name="subscribe">Subscribe</button>
+              </form>
+            </div>
+          </div>
         </div>
-      </div>
 
       <div class="content">
         <%= Markdown.new(!post.content.nil? ? post.content : "").to_html %>
@@ -60,7 +63,7 @@
 <section id="post_related">
   <div class="container">
     <div class="post_related">
-    	<h2>Recent</h2>
+    	<h3>Recent</h3>
     	<div class="post_related_items">
           <% posts.take(4).each do |index, post| %>
             <div class="post_related_item">
