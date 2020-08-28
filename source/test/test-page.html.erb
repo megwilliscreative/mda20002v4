@@ -1,14 +1,47 @@
 <section>
 	<div class="container">
-		<div id="post_content">
+		<div>
+			
+<style type="text/css">
+	input {
+		border:0;
+		border-bottom: 2px solid black;
+		display:block;
+		margin:15px;
+		padding:6px 0;
+		width:100%;
+	}
+	input::placeholder {
+		text-transform: uppercase;
+		color:#000;
+		opacity: 1;
+	}
 
-			<div id="content_written">
-				this is the article content
-			</div>
+</style>
 
-			<div id="post_subscribe">
-				this is the form
-			</div>
+
+<!-- --- -->
+
+
+
+<form 
+	name="Test Page Contact Form" 
+	action="/thanks-contact.html"
+	method="POST" 
+	data-netlify="true"
+	>
+
+	<input type="text" name="First Name" placeholder="First Name">
+	<input type="email" name="Email" placeholder="email">
+	<button
+		type="submit"
+	>
+		Send INSERT_CHEV
+	</button>
+
+
+
+</form>
 
 		</div>
 	</div>
