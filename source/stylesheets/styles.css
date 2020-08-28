@@ -1,5 +1,7 @@
 
  /*TEST ZONE ---------------------------------------------------- */
+ 
+
  .fix {
  	border: 2px solid #f0f;
  }
@@ -1394,6 +1396,17 @@ BLOG POST SECTION ------------------------------- */
 		font-size: 25px;
 	}
 	/*---- @learn / podcast ---------------------------------*/
+	.tune_in {
+		padding:35px;
+		text-align: center;
+	}
+	.tune_in a{
+		color: #C6131E;
+	}
+	.tune_in {
+		font-size:;
+	}
+
 	.mejs__player {
 		width:100%;
 
@@ -1445,9 +1458,9 @@ BLOG POST SECTION ------------------------------- */
 	}
 	
 	.box {
-		width:313px;
-		height:313px;
-		background-image: url("https://is4-ssl.mzstatic.com/image/thumb/Podcasts123/v4/f3/15/71/f3157176-4a1d-8696-81a0-55b14b2de681/mza_3066438481763965409.png/313x0w.png");
+		width:400px;
+		height:400px;
+		background-image: url("/imgs/pod-cover.png");
 		margin:auto 40px ;
 		}
 	.pod_pic {
@@ -1531,6 +1544,31 @@ BLOG POST SECTION ------------------------------- */
 			padding:15px;
 		}
 	}
+
+	/*BACK TO TOP BUTTON*/
+	#myBtn {
+		display: none; /* Hidden by default */
+		position: fixed; /* Fixed/sticky position */
+		bottom: 20px; /* Place the button at the bottom of the page */
+		right: 30px; /* Place the button 30px from the right */
+		z-index: 99; /* Make sure it does not overlap */
+		border: none; /* Remove borders */
+		outline: none; /* Remove outline */
+		background-color: rgba(198, 19, 30, 0.33); /* Set a background color */
+		color: white; /* Text color */
+		cursor: pointer; /* Add a mouse pointer on hover */
+		padding: 15px 25px; /* Some padding */
+		border-radius: 5px; /* Rounded corners */
+		
+	}
+	#myBtn i {
+		font-size: 18px; /* Increase font size */
+		padding:0;
+	}
+
+	#myBtn:hover {
+		background-color: #C6131E; /* Add a dark-grey background on hover */
+	}	
 
 
 /* --- @engage page -------------------------------- */

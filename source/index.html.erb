@@ -55,9 +55,6 @@ BUILD HOME CONTENTS
       <!-- </div> -->
       
       <div>
-          <code>
-             👇 This first article is a duplicate. How do you skip an article? _TC
-          </code>
           <% posts.take(3).each do |index, post| %>
             <div>
               <%= partial "partials/post_list_item", :locals => { :post => post, :include_excerpt => true } %>
