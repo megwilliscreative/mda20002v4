@@ -1379,6 +1379,13 @@ BLOG POST SECTION ------------------------------- */
 		text-align: center;
 	}
 
+	.recent_videos {
+		display: grid;
+		grid-template-columns: repeat(2,1fr);
+		grid-gap: 2em;
+		/*max-width: 100%;*/
+		/*padding:0 15px;*/
+	}
 	/*---- @learn / podcast ---------------------------------*/
 	.mejs__player {
 		width:100%;

@@ -1,50 +1,86 @@
 ---
-title: Videos
+title: Video | Learn
+description: Movement Australia Videos
 ---
-
 
 <!DOCTYPE html>
 <html>
 <head>
   <title> Movement - Videos</title>
 </head>
-<body>
 
+<body>
+<% podcasts = all_podcasts %>
 
 <!-- NAME & ARROW W RED BG -->
 <section class="hero">
   <div class="container">
-    <div class="main-message">
-      <h1> Videos <i class="fas fa-arrow-down"></i></h1>
+    <div class="main-message learn_h1">
+      <h1>Learn <i class="fas fa-arrow-down"></i></h1>
     </div>
   </div>
 </section>
 
-<!-- RECENT POSTS -->
-<section id="video_section">
+
+<!-- video intro -->
+<section>
   <div class="container">
-    <div class="video_content">
-      <code>[1] Connect to Contentful <br> [2] Is this layout approved? Layout design is part of INV0745 <br> [3] Style the h4 to center and closer to video <br> [4] include a filter? by location? <br> [5] jump back to top button at end of page <br> [6] remove vimeo branding</code>
-      <% fetch_videos.each do |year, videos| %>
-        <div class="video_year">
-          <h2><%= year %></h2>
-          <div class="video_item">
-            <% videos.each do |id, video| %>
-              <div>
-                <iframe src="<%= video.video_url %>?title=0&byline=0&portrait=0" width="640" height="320" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-                <h4><%= video.title %></h4>
-                <%# Markdown.new(!video.description.nil? ? video.description : "").to_html %>
-              </div>
-            <% end %>
-          </div>
-        </div>
-      <% end %>
+    <h1>Video</h1>
+    <div class="pod_blurb">
+      <p>Videos below are from Movement Day Australia gatherings. In 2017 videos are from the National Gathering.</p>
+      <p>Join our emails to get the latest updates.</p>
+      <code>click button to subscribe?</code><br>
+      <button class="fix">Subscribe</button>
     </div>
-   </div> <!-- end container -->
+  </div> <!-- end container -->
 </section>
 
 
+<!-- INSERT FULL episode LIST -->
+<section>
+  <div class="container border_box" style="padding:35px 0;">
+    <div>
+      <ul class="recent_videos">
 
+
+
+
+        <% all_podcasts.each do |indx, podcast| %>
+          <li class="post">
+
+
+
+
+            <%= partial "partials/podcast_grid_item", :locals => { :podcast => podcast } %>
+          </li>
+        <% end %>
+      </ul>
+    </div>
+
+    <code>
+      [1] insert back to top <br>
+      [2] stick to side of page. <br>
+    </code>
+
+    <div class="scroll_top" style="text-align: center;">
+      <a href="#top">
+          <button class="btn-white">Top <i class="fas fa-arrow-up"></i></button>
+      </a>
+    </div>
+
+
+  </div>  
+</section>
+
+
+<!-- large signup -->
+<section id="">
+  <div class="container">
+    <div >
+       <%= partial "partials/e_signup_lrg" %>
+    </div> 
+  </div>
+</section>
 
 </body>
 </html>
