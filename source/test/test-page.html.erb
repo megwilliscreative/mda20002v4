@@ -28,7 +28,7 @@
 <!-- --- -->
 
 
-<div class="leave_message">
+<!-- <div class="leave_message">
 	<code>this form doesnt HAS spam protection</code>
 	<form 
 		name="Test Page Contact Form" action="/thanks-contact.html" method="POST" data-netlify="true" 
@@ -53,7 +53,7 @@
 
 		</div>
 	</div>
-</section>
+</section> -->
 
 
 <section>
@@ -72,7 +72,18 @@
      </script>
   </head>
   <body>
-    <form id='demo-form' action="?" method="POST">
+	<form 
+		id='demo-form' name="Test Page Contact Form" action="/thanks-contact.html" method="POST" data-netlify="true" 
+		>
+
+		<input type="text" name="First Name" placeholder="First Name">
+		<input type="text" name="Last Name" placeholder="Last Name">
+		<input type="email" name="Email" placeholder="email" required>
+		<textarea name="Message" placeholder="Message" rows="10"></textarea>
+
+
+
+
       <button class="g-recaptcha" data-sitekey="6LdtXMQZAAAAACJRSwzgS39Lc4XzPdX6alW-NDit" data-callback='onSubmit'>Submit</button>
       <br/>
     </form>
