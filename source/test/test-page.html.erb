@@ -16,6 +16,11 @@
 		color:#000;
 		opacity: 1;
 	}
+	textarea::placeholder {
+		text-transform: uppercase;
+		color:#000;
+		opacity: 1;
+	}
 
 </style>
 
@@ -23,7 +28,8 @@
 <!-- --- -->
 
 
-
+<div class="leave_message">
+	<code>this form doesnt have spam protection</code>
 <form 
 	name="Test Page Contact Form" 
 	action="/thanks-contact.html"
@@ -34,17 +40,17 @@
 	<input type="text" name="First Name" placeholder="First Name">
 	<input type="text" name="Last Name" placeholder="Last Name">
 	<input type="email" name="Email" placeholder="email" required>
-	<input type="textarea" name="Message" placeholder="Message">
+	<textarea name="Message" placeholder="Message" rows="10"></textarea>
 	<button
 		type="submit"
-	>
-		Send INSERT_CHEV
+		>
+		Send <i class="fas fa-chevron-right"></i>
 	</button>
 
 
 
 </form>
-
+</div>
 		</div>
 	</div>
 </section>
