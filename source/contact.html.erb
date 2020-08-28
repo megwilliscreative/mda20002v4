@@ -26,28 +26,25 @@ title: Contact
     <h2>Get In Touch</h2> 
     <div class="contact_form">
       <div class="leave_message">
-        <code>HAS spam protection in Form tag</code>
+        
         <form 
-          name="Contact Page Form (27 Aug)" 
-          action="/thanks-contact.html"
-          method="POST" 
-          data-netlify="true"
-          data-netlify-recaptcha="true"
-          >
+        name="Test Page Contact Form" action="/thanks-contact.html" method="POST" data-netlify="true" 
+        >
 
-          <input type="text" name="First Name" placeholder="First Name">
-          <input type="text" name="Last Name" placeholder="Last Name">
-          <input type="email" name="Email" placeholder="email" required>
-          <textarea name="Message" placeholder="Message" rows="10"></textarea>
-          <button
-            type="submit"
-            >
-            Send <i class="fas fa-chevron-right"></i>
-          </button>
+        <input type="text" name="First Name" placeholder="First Name">
+        <input type="text" name="Last Name" placeholder="Last Name">
+        <input type="email" name="Email" placeholder="email" required>
+        <textarea name="Message" placeholder="Message" rows="10"></textarea>
+
+        <div data-netlify-recaptcha="true"></div>
+      
+        <button type="submit">
+          Send <i class="fas fa-chevron-right"></i>
+        </button>
 
 
 
-        </form>
+      </form>
       </div>
 
 
