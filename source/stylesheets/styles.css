@@ -257,7 +257,7 @@ button {
 	
 
 .site-notice {
-	/*display: none;*/
+	display: none;
 
 	position: fixed;
 
