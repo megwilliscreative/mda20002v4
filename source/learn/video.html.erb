@@ -41,19 +41,21 @@ description: Movement Australia Videos
 
 
 <!-- INSERT FULL episode LIST -->
-<section>
+<section class="video_list">
   <div class="container" style="padding:35px 0;">
     <div>
-      <ul class="recent_videos fix1">
+      <ul class="recent_videos ">
         <% fetch_videos.each do |year, videos| %>
-          <li class="border_box fix2" style="border-bottom:0px;">
+          <li class="border_box " style="border-bottom:0px;">
             <h3><%= year %></h3>
             <ul class="video_by_year ">
               <% videos.each do |id, video| %>
-                <li class="fix3">
-                  <iframe src="<%= video.video_url %>?title=0&byline=0&portrait=0" width="640" height="320" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                <li class="">
+                  <div class="video_item">
+                    <iframe src="<%= video.video_url %>?title=0&byline=0&portrait=0" width="640" height="320" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
                   <h2><%= video.title %></h2>
                   <%# Markdown.new(!video.description.nil? ? video.description : "").to_html %>
+                  </div>
                 </li>
               <% end %>
             </ul>
