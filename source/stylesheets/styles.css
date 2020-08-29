@@ -1574,6 +1574,9 @@ BLOG POST SECTION ------------------------------- */
 		.podcast h1{
 			font-size: 40px;
 		}
+		.podcast_list h3{
+			padding-left:35px;
+		}
 		.box {
 			width:275px;
 			height:250px;
@@ -1587,12 +1590,12 @@ BLOG POST SECTION ------------------------------- */
 			grid-template-columns: repeat(1,1fr);
 		}
 		.podcast_img {
-			height:250px;
-			width:250px;
+			/*height:250px;
+			width:250px;*/
 		}
 		#pod_text {
-			width:250px;
-			padding:15px;
+			/*width:250px;*/
+			padding:35px;
 		}
 	}
 

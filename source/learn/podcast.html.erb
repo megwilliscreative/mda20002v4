@@ -55,17 +55,19 @@ description: Movement Australia Podcast
 
 
 <!-- INSERT FULL episode LIST -->
-<section>
+<section class="podcast_list">
   <div class="container border_box" style="padding:35px 0;">
-    <h3>Episodes</h3>
-    <div>
-      <ul class="recent_podcasts">
-        <% all_podcasts.each do |indx, podcast| %>
-          <li class="post">
-            <%= partial "partials/podcast_grid_item", :locals => { :podcast => podcast } %>
-          </li>
-        <% end %>
-      </ul>
+    <div class="">
+      <h3>Episodes</h3>
+      <div>
+        <ul class="recent_podcasts">
+          <% all_podcasts.each do |indx, podcast| %>
+            <li class="post">
+              <%= partial "partials/podcast_grid_item", :locals => { :podcast => podcast } %>
+            </li>
+          <% end %>
+        </ul>
+      </div>
     </div>
 
 
