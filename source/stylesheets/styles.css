@@ -2,8 +2,14 @@
  /*TEST ZONE ---------------------------------------------------- */
  
 
- .fix {
- 	border: 2px solid #f0f;
+ .fix1 {
+ 	border: 2px solid blue;
+ }
+  .fix2 {
+ 	border: 2px solid red;
+ }
+  .fix3 {
+ 	border: 2px solid lime;
  }
 	/*WRAPS AROUND ALL 3 ARTICLES*/
  .post_related_items {
@@ -1431,6 +1437,16 @@ BLOG POST SECTION ------------------------------- */
 	}
 	.video_by_year h2 {
 		font-size: 25px;
+	}
+
+
+	@media only screen and (max-width: 767px) {
+		.video_year {
+			display: grid;
+			grid-template-columns: 1fr;
+			grid-gap: 1em;
+		}
+
 	}
 	/*---- @learn / podcast ---------------------------------*/
 	.tune_in {
