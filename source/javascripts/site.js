@@ -3,7 +3,7 @@ $(document).ready(function () {
 
   var beenHereBefore = localStorage.getItem("iwashere");
   // REMOVE COMMENT from code BELOW TO TURN ON STOP_REVISIT 
-  // if(typeof beenHereBefore === 'undefined' || beenHereBefore == null) {
+  if(typeof beenHereBefore === 'undefined' || beenHereBefore == null) {
 
     //Controls how the modal popup is closed with the close button
     function HideDialog()
@@ -25,7 +25,7 @@ $(document).ready(function () {
       e.preventDefault();
     });
   // REMOVE COMMENT from code BELOW TO TURN ON STOP_REVISIT 
-  // }
+  }
 
 });
 
