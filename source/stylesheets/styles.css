@@ -2,22 +2,22 @@
  /*TEST ZONE ---------------------------------------------------- */
  
 
- .fix1 {
- 	border: 2px solid blue;
- }
-  .fix2 {
- 	border: 2px solid red;
- }
-  .fix3 {
- 	border: 2px solid lime;
- }
+	 .fix1 {
+	 	border: 2px solid blue;
+	 }
+	  .fix2 {
+	 	border: 2px solid red;
+	 }
+	  .fix3 {
+	 	border: 2px solid lime;
+	 }
 	/*WRAPS AROUND ALL 3 ARTICLES*/
- .post_related_items {
-    display: grid;
-    justify-content: space-between;
-    grid-template-columns: repeat(4,1fr);
-    grid-gap: 1em;
-    /*border: 5px dotted #f0f;*/
+ 	.post_related_items {
+	    display: grid;
+	    justify-content: space-between;
+	    grid-template-columns: repeat(4,1fr);
+	    grid-gap: 1em;
+	    /*border: 5px dotted #f0f;*/
 	}
 	@media only screen and (max-width: 767px) {
 		.post_related_items {
