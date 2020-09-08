@@ -1511,9 +1511,15 @@ BLOG POST SECTION ------------------------------- */
 	.box {
 		width:400px;
 		height:400px;
-		background-image: url("/imgs/pod-cover.png");
+		/*background-image: url("/imgs/pod-cover.png");*/
+		
 		margin:auto 40px ;
-		}
+	}
+	.box img {
+		object-fit: scale-down;
+		border: red solid 2px;
+		max-width: 400px;	
+	}
 	.pod_pic {
 		position: relative;
 		margin:40px auto;
