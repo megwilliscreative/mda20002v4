@@ -1511,10 +1511,13 @@ BLOG POST SECTION ------------------------------- */
 	.box {
 		width:400px;
 		height:400px;
-		object-fit: scale-down;
+		/*background-image: url("/imgs/pod-cover.png");*/
+		
 		margin:auto 40px ;
 	}
 	.box img {
+		object-fit: scale-down;
+		border: red solid 2px;
 		max-width: 400px;	
 	}
 	.pod_pic {
