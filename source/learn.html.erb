@@ -20,7 +20,7 @@ title: Learn
   </div>
 </section>
 
-<section class="feature-img">
+<section class="feature-img ">
    <div class="container">
     <div class="">
       <!-- <h3> Discover </h3> -->
@@ -70,16 +70,16 @@ title: Learn
 
 
 <!-- BROWSE ARTICLES = 3 X BLOGS, READ MORE -->
-<section id="learn_browse">
-  <div class="container border_box">
-    <div class="learn_browse">
-      <h2>Browse</h2>
+<section class="learn_browse_full">
+  <div class="container border_box ">
+    <div class="learn_browse ">
+      <span><h2>Browse</h2></span>
           <!-- INSERT CONTENT FROM CONTENTFUL -->
           <% posts = all_posts %>
           <% first_post = posts.shift %>
 
 
-            <div>
+            <div class="">
                 <% posts.take(3).each do |index, post| %>
                   <div>
                     <%= partial "partials/learn_list_item", :locals => { :post => post, :include_excerpt => true } %>

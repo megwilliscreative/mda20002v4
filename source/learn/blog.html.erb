@@ -23,7 +23,7 @@ description: Blog
 
 
 <!-- 1 FEATURE ARTICLE -->
-<section>
+<section class="learn_articles_full">
   <div class="container">
     <div class="blog_feature">
       <div> <!-- featured post -->
@@ -84,10 +84,10 @@ description: Blog
   <% first_post = posts.shift %>
 
   <% if (posts.size > 0) %>
-    <section id="recent_posts" class="content_section">
+    <section id="recent_posts" class="content_section recent_posts_full">
       <div class="content container">
         <div class="recent_posts">
-          <h3 style="padding-bottom:0px; margin-bottom:0px;">Recent Posts</h3>
+          <span><h3 style="padding-bottom:0px; margin-bottom:0px;">Recent Posts</h3></span>
           <% posts.take(5).each do |index, post| %>
             <div class="post">
               <%= partial "partials/post_list_item", :locals => { :post => post, :include_excerpt => true } %>

@@ -1,7 +1,7 @@
 
-<div class="blog_post">
+<div class="blog_post ">
 
-  <div class="blog_text" >
+  <div class="blog_text " >
 
     <% if (!post.tags.nil?) %> 
         <h3>
@@ -11,16 +11,8 @@
         </h3>
     <% end %>
 
-
-
-
-
-    <!-- <code>[x] post.tags code is bringing unwanted characters</code><br> -->
-    <!-- <code>[2] post.tags is only bringing through 'Story'</code> -->
-
     <h2><a href="/learn/blog/<%= post.slug %>.html"><%= post.title %></a></h2>
     
-
     <!-- tims content pulling in EXCERPTS -->
     <% if include_excerpt %>
     <%= Markdown.new(!post.excerpt.nil? ? post.excerpt : "").to_html %>

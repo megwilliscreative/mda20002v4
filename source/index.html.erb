@@ -26,14 +26,10 @@ BUILD HOME CONTENTS
 </section>
 
 <!-- whats happening -->
-<section id="whats-happening" class="whats_happening">
-  <div class="container">
-
-    <h3>What's Happening</h3>
-
-
+<section id="whats-happening" class="whats_happening ">
+  <div class="container ">
+    <span><h3>What's Happening</h3></span>
     <% posts = all_posts %>
-    
     <div><!--  class="recent_posts"> -->
       <% posts.take(1).each do |index, post| %>
         <div><!--  class="post"> -->
@@ -46,9 +42,10 @@ BUILD HOME CONTENTS
 </section>
 
 <!-- 3 entries from the blog -->
-<section class="blog_fullwidth">
-  <div class="container">
-    <div class="border_box">
+<!-- <section class=""> -->
+<section class="blog_fullwidth ">
+  <div class="container ">
+    <div class="border_box ">
       <h3>Engage</h3>
       <% first_post = posts.shift %>
       <div>
