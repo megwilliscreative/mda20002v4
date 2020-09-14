@@ -49,22 +49,22 @@ BUILD HOME CONTENTS
 <section class="blog_fullwidth">
   <div class="container">
     <div class="border_box">
-      <!-- <div> -->
-        <h3>Engage</h3>
-        <% first_post = posts.shift %>
-      <!-- </div> -->
-      
+      <h3>Engage</h3>
+      <% first_post = posts.shift %>
       <div>
-          <% posts.take(3).each do |index, post| %>
-            <div>
-              <%= partial "partials/post_list_item", :locals => { :post => post, :include_excerpt => true } %>
-            </div>
-          <% end %>
-        </div>
+        <% posts.take(3).each do |index, post| %>
+          <div class="home_posts_desktop">
+            <%= partial "partials/post_list_item", :locals => { :post => post, :include_excerpt => true } %>
+          </div>
+        <% end %>
       </div>
-
-
-
+      <div>
+        <% posts.take(3).each do |index, post| %>
+          <div class="home_posts_mob">
+            <%= partial "partials/download_list_item", :locals => { :post => post, :include_excerpt => true } %>
+          </div>
+        <% end %>
+      </div>
     </div>
   </div>
 </section>

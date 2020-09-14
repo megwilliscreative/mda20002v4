@@ -675,7 +675,17 @@ section {
 
 /* ------ @home 
 BLOG POST SECTION ------------------------------- */
-
+	.home_posts_mob {
+		display: none;
+	}
+	@media only screen and (max-width: 767px) { 
+		.home_posts_desktop {
+			display: none;
+		}
+		.home_posts_mob {
+			display: block;
+		}
+	}
 
 	.blog_post {
 	    display: grid;
