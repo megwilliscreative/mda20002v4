@@ -1,6 +1,9 @@
 
  /*TEST ZONE ---------------------------------------------------- */
  
+.hidden {
+	display: none;
+}
 
 	 .fix1 {
 	 	border: 2px solid blue;

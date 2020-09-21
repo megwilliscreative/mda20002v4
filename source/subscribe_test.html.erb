@@ -7,13 +7,15 @@
   <input name="utf8" type="hidden" value="?" />
   <div class="form_row">
     <div class="field_container third">
-      <input id="signup_name" name="signup[name]" type="text" data-required-field="This field is required" placeholder="Name" />
+      <input id="signup_name" name="signup[name]" type="text" data-required-field="This field is required" placeholder="Name" class="mimi_field required" />
     </div>
     <div class="field_container third">
-      <input id="signup_email" name="signup[email]" type="text" data-required-field="This field is required" placeholder="Email address"/>
+      <input id="signup_email" name="signup[email]" type="text" data-required-field="This field is required" placeholder="Email address" class="mimi_field required" />
     </div>
     <div class="field_container third">
       <input type="submit" class="button red filled" value="Subscribe" id="webform_submit_button" data-default-text="Subscribe" data-submitting-text="Sending..." />
     </div>
   </div>
+<p class="error-message hidden">Error</p>
+<p class="thanks-message hidden">Thanks</p>
 </form>
