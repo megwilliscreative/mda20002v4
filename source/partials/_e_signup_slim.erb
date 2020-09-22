@@ -1,25 +1,35 @@
+<CODE>
+[1] spacing on wrapper <br>
+[2] hide placeholder on mobile
+</CODE>
+
 <section class="email_signup_slim">
     <div class="container">
-
-     <div class="email_slim">
-<CODE>[1] spacing on wrapper <br>
-[2] hide placeholder on mobile</CODE>
-          <form action="/thanks-subscribe.html" name="Subscribe (Slim)" class="email_slim_form" method="POST" data-netlify="true">
-             
-              <div>
-                  <h2>Discover. <br>Learn. <br>Engage.</h2>
-                  <h3>Enter Your Email and We’ll Send You Our Vision Book</h3>
-              </div>
+      <div class="email_slim">
+        <form action="/thanks-subscribe.html" name="Subscribe (Slim)" class="email_slim_form" method="POST" data-netlify="true">
+          <div>
+              <h2>Discover. <br>Learn. <br>Engage.</h2>
+              <h3>Enter Your Email and We’ll Send You Our Vision Book</h3>
+          </div>
                 
-              <div class="e_slm_form_input"> 
-                <input name="email" type="email" placeholder="Enter Your Email and We’ll Send You Our Vision Book"/>
-              </div>
+          <div class="e_slm_form_input"> 
+            <input name="email" type="email" placeholder="Enter Your Email and We’ll Send You Our Vision Book"/>
+          </div>
              
-              <div>
-                <button type="submit" value="Submit" class="btn-white">Send <i class="fas fa-chevron-right"></i></button>
-              </div>
+          <div>
+            <button type="submit" value="Submit" class="btn-white">Send <i class="fas fa-chevron-right"></i></button>
+          </div>
            
           </form>
  
       </div>
  </section>
+
+<!-- REMOVE AFTER ERRORS FIXED -->
+ <script type="text/css">
+   .e_slm_form_input input::placeholder {
+        display:none;
+    }
+
+
+ </script>
