@@ -941,20 +941,8 @@ BLOG POST SECTION ------------------------------- */
 			.email_slim_form h3 {
 				display: block;
 			}
-			/*.e_slm_form_input {
-				width:100%;
-				margin:0px;
-			}*/
-			
-		/*errors 👇*/
-			.email_slim input ::placeholder {
-			
-				display: none !important;
-			}
-
-			.email_slim_form input {
-				/*max-width:98%;*/
-				/*margin-right: 50px !important;*/
+			.email_slim input::placeholder {
+			    color: transparent !important;	
 			}
 			.email_slim button {
 				margin:10px 0px;
