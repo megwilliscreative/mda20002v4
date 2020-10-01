@@ -549,7 +549,15 @@ button {
 		margin: 0 auto;
 		padding: 10px 0px;
 		}
-			
+		
+		@media only screen and (max-width: 1024px) {
+			.container {
+				padding:35px;
+				margin:0;
+			}
+
+		}
+
 		@media only screen and (max-width: 767px) {
 			.container {
 				padding:35px;
@@ -624,9 +632,20 @@ button {
 	#toggle {
 	    display: none;
 	}
+	@media only screen and (max-width: 1024px) {
+		.menu a {
+	        margin: 0 8px;
+	        line-height: 1.5em;
+			font-weight: 600;
+			font-size: 18px;
+			text-transform: none;
+			cursor: pointer;
+	    	text-transform: uppercase;
+	    }
+	}
 
 	@media only screen and (max-width: 767px) {
-
+	/*@media only screen and (max-width: 1024px) {*/
 	    .menu .nav-brand {
 	    	margin-bottom:125px;
 	    }
@@ -719,6 +738,22 @@ section {
 }
 .hero h2 {
 	text-align: right;
+}
+@media only screen and (max-width: 1024px) {
+	.hero {
+		background: #C6131E;
+		/*padding:0 30px;*/
+		max-height:100vh;
+	}
+	.hero a {
+		color:#ffffff;
+	}
+	.hero h1 {
+		font-size: 3.5em;
+	}
+	.hero h2 br {
+		display: none;
+	}
 }
 
 @media only screen and (max-width: 767px) {
