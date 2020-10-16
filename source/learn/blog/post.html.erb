@@ -11,14 +11,26 @@
 <% posts = all_posts %>
 
 <section>
-  <div class="post_share">
-    <ul><code>remove on mobile</code>
-      <li><h3>Share</h3></li>
-      <li><i class="fab fa-facebook"></i></li>
-      <li><i class="fas fa-envelope"></i></li>
-      <li><i class="fab fa-linkedin-in"></i></li>
-    </ul>
-  </div>
+  <!-- INSERT SHARE BOX HERE -->
+
+    <div class="post_share_container">
+      <iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fmda20002v4.netlify.app/learn/blog/<%= post.slug %>.html&layout=button&size=small&appId=115296581825185&width=67&height=20" width="67" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+
+      <div class="post_share">
+      <h3>Share</h3>
+      <ul>
+        <li>
+          <a 
+          target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fmovement.org.au/learn/blog/learn/blog/<%= post.slug %>.html">
+          <i class="fab fa-facebook-f"></i></a></li>
+        <li>
+          <a href="mailto:admin@movement.org.au">
+          <i class="fas fa-envelope"></i></a></li>
+        <li></li>
+      </ul>
+    </div>
+
+</div>
   <div class="container">
     <div class="">
       
