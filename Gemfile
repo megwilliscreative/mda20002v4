@@ -10,8 +10,5 @@ gem 'middleman-livereload'
 # middleman & contentful integration
 gem 'contentful_middleman', '>= 4.0.0'
 
-# gem 'unsplash'
-
-
 # redcarpet for markdown
 gem 'redcarpet'
