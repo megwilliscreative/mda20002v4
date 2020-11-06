@@ -28,14 +28,16 @@ BUILD HOME CONTENTS
 <!-- whats happening -->
 <section id="whats-happening" class="whats_happening ">
   <div class="container ">
-    <span><h3>What's Happening</h3></span>
-    <% posts = all_posts %>
+    <span><h3>What's Happening test</h3></span>
+    
+    <% featured_posts = posts_by_tag("Featured") %>
+    <% featured_post = featured_posts.first.last %>
     <div><!--  class="recent_posts"> -->
-      <% posts.take(1).each do |index, post| %>
+      
         <div><!--  class="post"> -->
-          <%= partial "partials/download_list_item", :locals => { :post => post, :include_excerpt => true } %>
+          <%= partial "partials/download_list_item", :locals => { :post => featured_post, :include_excerpt => true } %>
         </div> <!-- end post -->
-      <% end %>
+      
     </div> <!-- end recent posts -->
 
   </div>
@@ -47,7 +49,8 @@ BUILD HOME CONTENTS
   <div class="container ">
     <div class="border_box ">
       <h3>Engage</h3>
-      <% first_post = posts.shift %>
+      <% posts = all_posts.select{ |id, post| post.slug != featured_post.slug } %>
+      
       <div>
         <% posts.take(3).each do |index, post| %>
           <div class="home_posts_desktop">
