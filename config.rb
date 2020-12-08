@@ -112,6 +112,13 @@ if Dir.exist?(config.data_dir + "/website")
     end
   end
 
+  # video - Middleman docs @ https://middlemanapp.com/advanced/dynamic-pages/
+  if Dir.exist?(config.data_dir + "/website/video")
+    data.website.video.each do |id, video|
+      proxy "/learn/video/#{video.id}.html", '/learn/video/video.html', locals: { video: video }, data: { :title => video.title + " | Video | ", :header_class => "", :append_js => [], :append_css => ['posts'] }, :ignore => true
+    end
+  end
+
   # posts
   if Dir.exist?(config.data_dir + "/website/podcastEpisode")
     data.website.podcastEpisode.each do |id, podcast|

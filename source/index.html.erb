@@ -49,19 +49,27 @@ BUILD HOME CONTENTS
   <div class="container ">
     <div class="border_box ">
       <!-- <h3>Engage</h3> -->
-      <% posts = all_posts.select{ |id, post| post.slug != featured_post.slug } %>
+      <% items = posts_and_videos.select{ |id, item| !item.respond_to?(:slug) || item.slug != featured_post.slug } %>
       
       <div>
-        <% posts.take(3).each do |index, post| %>
+        <% items.take(3).each do |index, item| %>
           <div class="home_posts_desktop">
-            <%= partial "partials/post_list_item", :locals => { :post => post, :include_excerpt => true } %>
+            <% if item['_meta']['content_type_id'] == 'video' %>
+              <%= partial "partials/video_list_item", :locals => { :video => item, :include_description => true } %>
+            <% else %>
+              <%= partial "partials/post_list_item", :locals => { :post => item, :include_excerpt => true } %>
+            <% end %>
           </div>
         <% end %>
       </div>
       <div>
-        <% posts.take(3).each do |index, post| %>
+        <% items.take(3).each do |index, item| %>
           <div class="home_posts_mob">
-            <%= partial "partials/download_list_item", :locals => { :post => post, :include_excerpt => true } %>
+            <% if item['_meta']['content_type_id'] == 'video' %>
+              <%= partial "partials/download_video_item", :locals => { :video => item, :include_description => true } %>
+            <% else %>
+              <%= partial "partials/download_list_item", :locals => { :post => item, :include_excerpt => true } %>
+            <% end %>
           </div>
         <% end %>
       </div>

@@ -1574,7 +1574,16 @@ BLOG POST SECTION ------------------------------- */
 		.video_item {
 			text-align:center;
 		}
+		.video_item iframe {
+			height: 200px;
+		}
 
+	}
+
+	@media only screen and (min-width: 768px) {
+		.video_item iframe {
+			height: 640px;
+		}
 	}
 
 

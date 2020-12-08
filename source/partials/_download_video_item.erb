@@ -1,0 +1,29 @@
+
+<% video_date = DateTime.parse(video['_meta']['created_at']) %>
+
+<div class="blog_fullwidth ">
+
+<!-- IMG -->
+    <a href="/learn/video/<%= video.id %>.html">
+      <div class="post_img2  bg-center-center" style="background-image: url('<%= video_thumbnail(video) %>'); background-size: 100%; background-repeat: no-repeat;">  
+      </div>  
+    </a>  
+
+    <div class="blog_text_dl ">
+        <h3>
+            <span>Video</span>
+        </h3>
+
+        <h2><a href="/learn/video/<%= video.id %>.html"><%= video.title %></a></h2>
+
+        <!-- tims content pulling in EXCERPTS -->
+        <% if include_description %>
+           <%= Markdown.new(!video.description.nil? ? video.description : "").to_html %>
+        <% end %>
+
+        <a href="/learn/video/<%= video.id %>.html">
+            <button>Watch <i class="fas fa-chevron-right"></i></button>
+        </a>
+    </div>  <!-- end overview -->
+
+</div> <!-- end post -->

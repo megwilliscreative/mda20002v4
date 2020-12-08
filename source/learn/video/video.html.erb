@@ -1,0 +1,71 @@
+
+<section class="hero">
+  <div class="container">
+    <div class="main-message">
+      <h1> Watch <i class="fas fa-arrow-down"></i></h1>
+    </div>
+  </div>
+</section>
+
+<!-- this Helper is used for Contentful -->
+<% videos = all_videos %>
+
+<section>
+  <!-- INSERT SHARE BOX HERE -->
+
+    <div class="post_share_container">
+      <iframe src="https://www.facebook.com/plugins/share_button.php?href=https://mda20002v4.netlify.app/learn/blog/<%= video.slug %>.html&layout=button&size=small&appId=115296581825185&width=67&height=20" width="67" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+
+      <div class="post_share">
+      <h3>Share</h3>
+      <ul>
+        <li>
+          <a 
+          target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://movement.org.au/learn/blog/learn/blog/<%= video.slug %>.html">
+          <i class="fab fa-facebook-f"></i></a></li>
+        <li>
+      <a 
+          target="_blank" 
+          href="mailto:howareyou@email.com?subject=Article%20from%20Movement.org.au%20%7C%20 <%= video.title %> &body=Hello%2C%0A%0AHave%20a%20look%20at%20this%20article%20from%20Movement%20Australia.%0A%0Ahttps://movement.org.au/learn/blog/learn/blog/<%= video.slug %>.html%0A">
+          <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+      </ul>
+    </div>
+
+  </div>
+  <div class="container">
+    
+    <h2><%= video.title %></h2>
+
+    <div class="border_box video_content">
+      <div class="content">
+        <div class="video_item">
+          <iframe src="<%= video.video_url %>?title=0&byline=0&portrait=0" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        </div>
+        <%= Markdown.new(!video.description.nil? ? video.description : "").to_html %>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="post_related">
+  <div class="container">
+    <div class="post_related">
+    	<h3>Recent</h3>
+    	<div class="post_related_items">
+          <% videos.reject { |id, _| id == video.id }.take(4).each do |index, video| %>
+            <div class="video_item">
+              <a href="/learn/video/<%= video.id %>.html">
+                <img src="<%= video_thumbnail(video) %>">
+                <h2><%= video.title %></h2>
+              </a>
+            </div>
+          <% end %>
+        </div>
+
+    </div>
+  </div>
+</section>
+
+

@@ -1,0 +1,33 @@
+<% video_date = DateTime.parse(video['_meta']['created_at']) %>
+
+<div class="blog_post">
+
+  <div class="blog_text ">
+    <h3><span>Video</span></h3>
+
+    <h2>
+      <a href="/learn/video/<%= video.id %>.html">
+        <%= video.title %>
+      </a>
+    </h2>
+    <p class="date">
+      <%= video_date.day %> <%= Date::MONTHNAMES[video_date.month] %> <%= video_date.year %>
+    </p>
+
+    <!-- tims content pulling in EXCERPTS -->
+    <% if include_description %>
+      <%= Markdown.new(!video.description.nil? ? video.description : "").to_html %>
+    <% end %>
+    <a href="/learn/video/<%= video.id %>.html">
+      <button>Watch <i class="fas fa-chevron-right"></i></button>
+    </a>
+  </div>  <!-- end blog text -->
+
+
+  <div class="post_img bg-center-center" style="background-image: url('<%= video_thumbnail(video) %>')">
+    <a href="/learn/video/<%= video.id %>.html">&nbsp;</a>
+  </div>
+  
+  
+
+</div> <!-- end post -->
