@@ -263,10 +263,10 @@ ol {
 ol li {
 	padding:3px 5px;
 }
-code {
+/*code {
 	background:#f0f;
 	color:#ffffff;
-}
+}*/
 @media only screen and (max-width: 767px) {
 	h1 {
 		font-size: 80px;
