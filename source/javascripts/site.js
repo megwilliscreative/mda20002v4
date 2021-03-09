@@ -13,10 +13,10 @@ $(document).ready(function () {
     }
 
     //Fade in delay for the background overlay (control timing here)
-    $("#bkgOverlay").delay(4800).fadeIn(400);
+    $("#bkgOverlay").delay(11800).fadeIn(400);
 
     //Fade in delay for the popup (control timing here)
-    $("#delayedPopup").delay(5000).fadeIn(400);
+    $("#delayedPopup").delay(12000).fadeIn(400);
 
     //Hide dialog and background when the user clicks the close button
     $("#btnClose").click(function (e) {
