@@ -1,0 +1,173 @@
+---
+title: Movement Australia
+---
+ 
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Movement Australia </title>
+</head>
+<body>
+<!--
+BUILD HOME CONTENTS
+-->
+<!-- hero "you are the movement." -->
+<section class="hero">
+  <div class="container">
+    <h2 style="padding-bottom:35px; color:#ffffff!important;">
+      <i>Together</i>, local Ministers, local Christian<br>
+        leaders, local churches and local<br>
+        organisations are uniquely positioned<br>
+        to bring social, cultural and spiritual<br>
+        change <i>in their city, for their city.</i></h2>
+    <h1 style="text-align: right;"> You are the Movement.<br>
+    <a href="#whats-happening"><i class="fas fa-arrow-down"></i></a></h1>
+  </div>
+</section>
+
+<!-- whats happening -->
+<section id="whats-happening" class="whats_happening ">
+  <div class="container ">
+    <span><h3>What's Happening</h3></span>
+    
+    <% featured_posts = posts_by_tag("Featured") %>
+    <% featured_post = featured_posts.first.last %>
+    <div><!--  class="recent_posts"> -->
+      
+        <div><!--  class="post"> -->
+          <%= partial "partials/download_list_item", :locals => { :post => featured_post, :include_excerpt => true } %>
+        </div> <!-- end post -->
+      
+    </div> <!-- end recent posts -->
+
+  </div>
+</section>
+
+<section>
+      <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/460372559?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div>
+      <!-- <script src="https://player.vimeo.com/api/player.js"></script> -->
+  
+</section>
+
+<section>
+  <div class="container">
+    <div>
+      
+    </div>
+  </div>
+</section>
+
+
+<!-- 3 entries from the blog -->
+<!-- <section class=""> -->
+<section class="blog_fullwidth ">
+  <div class="container ">
+    <div class="border_box ">
+      <!-- <h3>Engage</h3> -->
+      <% items = posts_and_videos.select{ |id, item| !item.respond_to?(:slug) || item.slug != featured_post.slug } %>
+      
+      <div>
+        <% items.take(3).each do |index, item| %>
+          <div class="home_posts_desktop">
+            <% if item['_meta']['content_type_id'] == 'video' %>
+              <%= partial "partials/video_list_item", :locals => { :video => item, :include_description => true } %>
+            <% else %>
+              <%= partial "partials/post_list_item", :locals => { :post => item, :include_excerpt => true } %>
+            <% end %>
+          </div>
+        <% end %>
+      </div>
+      <div>
+        <% items.take(3).each do |index, item| %>
+          <div class="home_posts_mob">
+            <% if item['_meta']['content_type_id'] == 'video' %>
+              <%= partial "partials/download_video_item", :locals => { :video => item, :include_description => true } %>
+            <% else %>
+              <%= partial "partials/download_list_item", :locals => { :post => item, :include_excerpt => true } %>
+            <% end %>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- slim email signup -->
+<%= partial "partials/_e_signup_slim" %>
+
+<!-- stats section -->
+<!-- <section>
+  <div class="stats_home">
+    <div class="container">
+      <div class="">
+          
+            <div class="stats_1">
+              <h2>
+                <span>30+</span> 
+                <br>Towns & Cities</h2>
+            </div>
+          
+      </div>
+    </div>
+  </div>
+</section> -->
+
+<!-- downloads section -->
+<section class="download_wallpaper">
+  <div class="replace_w_contentful container">
+    <% posts = all_posts %>
+    <div class="">
+      <% posts.take(1).each do |index, post| %>
+        <div class="">
+          <%= partial "partials/download_list_item", :locals => { :post => post, :include_excerpt => true } %>
+        </div> 
+      <% end %>
+    </div> 
+  </div>
+</section>
+
+
+<!-- email popup -->
+<div id="bkgOverlay" class="backgroundOverlay"></div>
+  
+  <div id="delayedPopup" class="delayedPopupWindow">
+
+    <!-- Close button -->
+      <div class="popup_close" id="btnClose">
+        
+
+
+
+        <!-- <div id="btnClose"> -->
+          <div><a href="#" class="close"><h3>close</h3></a></div>
+          <div><a href="#" class="close_x"><h3>×</h3></a></div>
+        </div>
+
+
+      <!-- </div> -->
+      
+    <!-- Description -->
+        <div class="popup_header">
+          <div class="popup_title">
+            <h2>Download our vision book</h2>
+          </div>
+          <div class="popup_image">
+            <img src="/imgs/Book-Mockup-min.png">
+          </div>
+        </div>
+
+        <div class="popup_body">      
+            <div class="popup_form">
+                <form name="Subscribe (Popup)" action="/thanks-subscribe.html" method="POST" data-netlify="true">
+                  <input type="text" name="name" placeholder="First Name">
+                  <input type="email" name="email" placeholder="Email">
+                  <button class="btn-white">Subscribe <i class="fas fa-chevron-right"></i></button>
+                </form>
+            </div>
+        </div> 
+  </div>
+</div>
+
+
+</body>
+</html>
