@@ -176,7 +176,7 @@ GLOBAL STYLES*/
 }
 html {
 	font-family: Avenir, Nunito, sans serif;
-	font-size:16px;
+	font-size:18px;
 	box-sizing: border-box;
 }
 a {
@@ -235,13 +235,13 @@ h3 {
 }
 h4 {
 	text-transform: uppercase;
-	font-size: 18px;
+	font-size: 20px;
 	line-height: 1.3em;
 	padding-top:10px;
 	padding-bottom:15px;
 }
 h5 {
-	font-size: 14px;
+	font-size: 18px;
 	font-weight: bold;
 	line-height: 1.3em;
 	padding-top:10px;
@@ -356,6 +356,16 @@ button {
 	border-top:10px solid #C6131E;
 	border-bottom:10px solid #C6131E;
 	padding:35px 0px;
+}
+.blog_fullwidth .border_box{
+	border-bottom:0px;
+	padding-bottom:0px;
+	margin-bottom: 0px;
+}
+.blog_fullwidth .container {
+	border-bottom:0px;
+	padding-bottom:0px;
+	margin-bottom: 0px;
 }
 
 	/*STYLES FOR POPUP ON @HOME*/
@@ -1777,11 +1787,13 @@ BLOG POST SECTION ------------------------------- */
 		font-weight: 600;
 		font-size: 50px;
 		line-height: 1em;
+		padding-top:0px;
 	}
 	.engage_intro_grid {
 		display: grid;
 		justify-content: space-between;
-		grid-template-columns: repeat(3,1fr);
+		/*grid-template-columns: repeat(3,1fr);*/
+		grid-template-columns: repeat(1,1fr);
 		}
 		@media only screen and (max-width: 767px) {
 			.engage_intro_grid {
