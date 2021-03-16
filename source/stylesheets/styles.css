@@ -7,7 +7,7 @@
 
 	 .fix1 {
 	 	border: 2px solid blue;
-	 	background:blue;
+	 	background: #f7f7f7;
 	 }
 	  .fix2 {
 	 	border: 2px solid red;
@@ -2344,3 +2344,13 @@ BLOG POST SECTION ------------------------------- */
 
 
 /* === END FOOTER STYLES ========================================== */
+
+
+/*STATUS PAGE STYLES */
+#status_details .container {
+	display:flex;
+}
+.preview_links iframe {
+	min-height:100vh;
+	min-width:500px;
+}
